@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Main</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<header>
+			<div class="container d-flex justify-content-between align-items-center">
+				<div class="mail-address">
+					<img src="./img/mail-24px.svg" alt="info@rivet.solutions"/>
+					<span>info@rivet.solutions</span>
+				</div>
+				<div class="phone-number">
+					<img src="./img/call-24(solid)px.svg" alt="+971 6 7474794 | +971 52 7088651"/>
+					<span>+971 6 7474794 | +971 52 7088651</span>
+				</div>
+				<ul class="d-flex align-items-center">
+					<li><img src="./img/facebook.svg" alt=""/></li>
+					<li><img src="./img/twitter.svg" alt=""/></li>
+					<li><i class="fa fa-instagram"></i></li>
+					<li><img src="./img/linkedin.svg" alt=""/></li>
+					<li style="margin-right: 0;"><img src="./img/youtube.svg" alt=""/></li>
+				</ul>
+			</div>
+		</header>
+		<nav>
+			<div class="container d-flex justify-content-between align-items-center">
+				<img src="./img/logo1.png" alt=""/>
+				<div class="d-flex">
+					<ul class="align-items-center" id="navlist">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">SMS API</a></li>
+						<li><a href="#">Two-Way SMS</a></li>
+						<li><a href="#">Pricing</a></li>
+						<li><a href="#">Bulk SMS Marketing</a></li>
+						<li><a href="#">FAQs</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+					<button class="login-button">Login</button>
+				</div>
+				<button class="navbar-toggle">
+					<i class="fa fa-bars"></i>
+				</button>
+			</div>
+		</nav>
+		<section>
+			<div class="test-drive">
+				<div class="test-drive-content">
+					<div class="container">
+						<div class="test-drive-text">
+						<h1>Test Drive</h1>
+						<h2>Our State-Of-The-Art Secure SMS Gateway Rest API</h2>
+						<p>With an open rate of 98%, SMS is the most direct and effective way to connect with your customers and clients.</p>
+						<button>Buy Now</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="callbackbar">
+				<div class="container d-flex align-items-center justify-content-between">
+					<div>
+						<h4>Receive a Call-Back</h4>
+						<p>Let our team help you cater your technical requirements</p>
+					</div>
+					<div class="request-form d-flex justify-content-between align-items-end">
+						<div class="inputbar">
+							<label>Name<span>*</span></label>
+							<input type="text" name="fullname" placeholder="Enter your full name"/>
+						</div>
+
+						<div class="inputbar">
+							<label>Work Email<span>*</span></label>
+							<input type="email" name="email" placeholder="Enter your full email"/>
+						</div>
+
+						<div class="inputbar">
+							<label>Phone Number<span>*</span></label>
+							<input type="text" name="phoneNumber" placeholder="Enter your phone number"/>
+						</div>
+
+						<div>
+							<button>Send Request</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pricing-option">
+				<div class="container">
+					<h1>Simple, Flexible pricing options</h1>
+					<div class="d-flex justify-content-around">
+						<div class="pricing-option-item">
+							<div class="optionimg">
+								<img src="./img/pay.svg" alt=""/>
+							</div>
+							<h6>Pay-as-you-go</h6>
+							<p>Simple usage-based pricing means you don't get locked into big contracts</p>
+						</div>
+						<div class="pricing-option-item">
+							<div class="optionimg">
+								<img src="./img/paper-plane.png" alt=""/>
+							</div>
+							<h6>Volume Discounts</h6>
+							<p>Discounts trigger as your usage grows, so you can always get a fair price</p>
+						</div>
+						<div class="pricing-option-item">
+							<div class="optionimg">
+								<img src="./img/easy-use.png" alt=""/>
+							</div>
+							<h6>Committed-use Discounts</h6>
+							<p>Talk with our sales team for access to deeper discounts when you commit to usage</p>
+						</div>
+
+					</div>
+				</div>
+			</div>	
+			<div class="buynowbuttonbar">
+				<div class="container">
+					<p>Start Building Today With Free Trial Credit And Full API Access</p>
+					<button>Buy now</button>
+				</div>
+			</div>
+			<div class="table-controlbar">
+				<div class="container d-flex align-items-end justify-content-between">
+					<div class="selectbar">
+						<label>View by</label>
+						<select>
+							<option>Country</option>
+						</select>
+					</div>
+					<div class="selectbar">
+						<label>Sort by</label>
+						<select>
+							<option>Name (A-Z)</option>
+						</select>
+					</div>
+					<div class="searchbar">
+						<input type="text" name="search" placeholder="Search">
+						<img src="./img/search-24px.svg" alt=""/>
+					</div>
+					<div class="pdfdownload" class="d-flex align-items-center">
+						<img src="./img/pdf.svg" alt=""/>
+						<a href="#">Download PDF</a>
+					</div>
+					<div class="xlsdownload" class="d-flex align-items-center">
+						<img src="./img/xls.svg" alt=""/>
+						<a href="#">Download Excel</a>
+					</div>
+				</div>
+			</div>
+			<div class="table-main">
+				<div class="container">
+					<table width="100%">
+						<thead> 
+							<tr>
+								<th>Network Name</th>
+								<th>Country</th>
+								<th>Price (USD)</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>AWCC (Afghan Wireless Communication Company)</td>
+								<td>Afghanistan</td>
+								<td>0.436209267</td>
+							</tr>
+
+							<tr>
+								<td>Afghan Telecom (SALAAM)</td>
+								<td>Afghanistan</td>
+								<td>0.407883983</td>
+							</tr>
+
+							<tr>
+								<td>Etisalat Afghanistan</td>
+								<td>Afghanistan</td>
+								<td>0.379558712</td>
+							</tr>
+
+							<tr>
+								<td>MTN Afghanistan</td>
+								<td>Afghanistan</td>
+								<td>0.362563552</td>
+							</tr>
+							<tr>
+								<td>ROSHAN (TDCA Ltd)</td>
+								<td>Afghanistan</td>
+								<td>0.447539378</td>
+							</tr>
+
+							<tr>
+								<td>Afghan Telecom (SALAAM)</td>
+								<td>Afghanistan</td>
+								<td>0.407883983</td>
+							</tr>
+
+							<tr style="border: none;">
+								<td>AWCC (Afghan Wireless Communication Company)</td>
+								<td>Afghanistan</td>
+								<td>0.436209267</td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="table-page d-flex justify-content-end">
+						<p>Showing 1 out of 50</p>
+						<ul class="d-flex justify-content-around">
+							<li>1</li>
+							<li>2</li>
+							<li>3</li>
+							<li>4</li>
+							<li>5</li>
+						</ul>
+						<p class="nextbutton">Next</p>
+					</div>
+				</div>
+			</div>
+			<div class="require-form">
+				<div class="container">
+					<h1>Have a project we can help with?</h1>
+					<h5>Let our team help you cater your technical requirements</h5>
+					<div>
+						<form>
+							<div class="input-item d-flex justify-content-center">
+								<div>
+									<label>First Name<span>*</span></label>
+									<input type="text" name="firstName" placeholder="Enter your first name"/>
+								</div>
+								<div>
+									<label>Last Name<span>*</span></label>
+									<input type="text" name="lastName" placeholder="Enter your last name"/>
+								</div>
+								<div style="margin-right: 0">
+									<label>Work Email<span>*</span></label>
+									<input type="text" name="email" placeholder="Enter your work email"/>
+								</div>
+							</div>
+
+							<div class="input-item d-flex justify-content-center">
+								<div>
+									<label>Phone Number<span>*</span></label>
+									<input type="text" name="phoneNumber" placeholder="Enter your phone number"/>
+								</div>
+								<div>
+									<label>Company<span>*</span></label>
+									<input type="text" name="lastName" placeholder="Enter your company's name"/>
+								</div>
+								<div style="margin-right: 0">
+									<label>Website<span>*</span></label>
+									<input type="text" name="email" placeholder="Enter URL of your website"/>
+								</div>
+							</div>
+
+							<div class="textarea-form">
+								<label>Description</label>
+								<textarea placeholder="Enter Description"></textarea>
+							</div>
+
+							<div class="submitbutton">
+								<button>Submit</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="container">
+					<div class="logo-bottom">
+						<img style="width: 253px;" src="./img/logo2.png" alt=""/>
+					</div>
+					<div class="bottom-main d-flex justify-content-between">
+						<div class="about">
+							<h5>About</h5>
+							<h4>
+								We're a client-focused, corporate SMS provider you can count on...
+								We are a privately held, self funded, profitable company based in Ajman, United Arab Emirates.
+								We form that vital link between mobile networks and businesses who want to communicate via text message with their potential customers.
+							</h4>
+							<div class="d-flex align-items-center">
+								<img style="margin-right: 15px;" src="./img/visa2.png" alt=""/>
+								<img src="./img/paypal2.png" alt=""/>
+							</div>
+						</div>
+						<div class="contact-info">
+							<h5>Contact Info</h5>
+							<h6>Adress</h6>
+							<p>B1 422, Ajman Free Zone, Ajman, United Arab Emirates</p>
+							<div class="d-flex justify-content-between">
+								<div>
+									<h6>Office</h6>
+									<p>00971 6 7474794</p>
+								</div>
+								<div>
+									<h6>Mobile</h6>
+									<p>00971 52 708 8651</p>
+								</div>
+							</div>
+
+							<div>
+								<h6>Mail</h6>
+								<p>info@rivet.solutions</p>
+							</div>
+						</div>
+						<div class="form-call-back">
+							<h5>Receive a call-back</h5>
+							<form>
+								<div>
+									<label>Name<span>*</span></label>
+									<input type="text" name="fullName" placeholder="Enter your full name"/>
+								</div>
+								<div class="d-flex">
+									<div class="email-bottom">
+										<label>Work Email<span>*</span></label>
+										<input type="email" name="email" placeholder="Enter your work email"/>	
+									</div>
+									<div>
+										<label>Phone Number<span>*</span></label>
+										<input type="text" name="phoneNumber" placeholder="Enter your phone number"/>
+									</div>
+								</div>
+								<button>Send Request</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer>
+			<div class="container d-flex justify-content-between align-items-center">
+				<div class="fotter-iconbar d-flex align-items-center">
+					<ul class="d-flex align-items-center">
+						<li><img src="./img/facebook2.svg" alt=""/></li>
+						<li><img src="./img/twitter2.svg" alt=""/></li>
+						<li class="d-flex align-items-center"><i class="fa fa-instagram"></i></li>
+						<li><img src="./img/linkedin2.svg" alt=""/></li>
+						<li><img src="./img/youtube2.svg" alt=""/></li>
+					</ul>
+					<p>&copy; 2013 - 2021 Rivet Solutions FZE All Rights Reserved.</p>
+				</div>
+				<div>
+					<a href="#">Terms & Conditions</a> | 
+					<a href="#">Privacy Policy</a>
+				</div>
+			</div>
+		</footer>
+		</div>
+		<!-- Option 1: Bootstrap Bundle with Popper -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+  				$(".navbar-toggle").click(function(){
+    				$("#navlist").toggle();
+  				});
+			});
+		</script>
+	</body>
+</html>
