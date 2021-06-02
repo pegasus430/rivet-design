@@ -26,9 +26,6 @@ button {
 	outline: none;
 	transition: 0.3s all ease-in;
 }
-a {
-	transition: 0.2s all ease-in;
-}
 input {
 	outline: none;
 }
@@ -70,6 +67,12 @@ header ul li {
 header ul li i,
 footer ul li i {
 	font-size: 25px !important;
+}
+header ul li i:hover {
+	color: #fff34f;
+}
+footer ul li i:hover {
+	color: #D2302C;
 }
 nav {
 	position: fixed;
@@ -117,7 +120,8 @@ nav ul li a:hover {
 }
 nav .login-button {
 	background: #FFFFFF;
-	padding: 12px 45px;
+	width: 136px;
+	height: 45px;
 	border: 1px solid #989898;
 	border-radius: 5px;
 	margin-right: 0;
@@ -125,7 +129,8 @@ nav .login-button {
 }
 nav .login-button:hover {
 	color: white;
-	background: #989898;
+	background: #D2302C;
+	border-color: #D2302C;
 }
 section {
 	padding-top: 164px;
@@ -277,8 +282,18 @@ section .table-controlbar {
 	margin-bottom: 40px;
 }
 section .table-controlbar .selectbar {
+	position: relative;
 	width: 214px;
 	margin-right: 24px;
+}
+section .table-controlbar .selectbar .select-arrow {
+	position: absolute;
+	transform: matrix(0, -1, 1, 0, 0, 0);
+	right: 33px;
+	bottom: 18px;
+	font-size: 20px;
+	width: 12px;
+	height: 20px;
 }
 section .table-controlbar label {
 	width: 100%;
@@ -288,6 +303,7 @@ section .table-controlbar label {
 section .table-controlbar select {
 	width: 100%;
 	padding-left: 19px;
+	padding-right: 40px;
 	outline: none;
 	background: #FFFFFF;
 	box-shadow: 0px 0px 20px #00000014;
@@ -295,6 +311,10 @@ section .table-controlbar select {
 	border-radius: 5px;
 	font: normal normal 300 18px/20px Gilroy-Light;
 	height: 57px;
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	-webkit-appearance: none;
+  	-moz-appearance: none;
 }
 section .table-controlbar .searchbar {
 	flex-grow: 1;
@@ -340,14 +360,39 @@ section .table-main .container {
 	padding-bottom: 50px;
 }
 section .table-main table {
+	width: 100%;
 	margin-bottom: 72px;
 }
 section .table-main table thead tr {
 	border-bottom: 1px solid #b8b8b8;
 }
 section .table-main table thead tr th {
+	position: relative;
 	font: normal normal 20px/24px Gilroy-Medium;
 	padding: 33px 0 20px;
+}
+section .table-main table thead tr th select {
+	margin-left: 12px;
+	padding-left: 14px;
+	width: 82px;
+	height: 38px;
+	background: #FFFFFF;
+	border: 1px solid #E8E8E8;
+	border-radius: 5px;
+	font: normal normal 300 14px/16px Gilroy-Light;
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	-webkit-appearance: none;
+  	-moz-appearance: none;
+}
+section .table-main table thead tr th .arrow-down {
+	position: absolute;
+	transform: matrix(0, -1, 1, 0, 0, 0);
+	left: 115px;
+	bottom: 32px;
+	font-size: 14px;
+	width: 8px;
+	height: 14px;
 }
 section .table-main table tbody tr {
 	
@@ -370,18 +415,36 @@ section .table-main .table-page {
 	font: normal normal 300 18px/24px Gilroy-Light;
 	letter-spacing: 1.1px;
 }
+section .table-main .table-page .prevbutton,
 section .table-main .table-page .nextbutton {
 	text-decoration: underline;
 	margin-right: 71px;
+	letter-spacing: 1.1px;
+	padding: 0;
+	background: transparent;
+}
+section .table-main .table-page .prevbutton {
+	display: none;
+	margin-right: 0;
+	margin-left: 38px;
+}
+section .table-main .table-page .prevbutton:hover,
+section .table-main .table-page .nextbutton:hover {
+	color: #d2302d;
 }
 section .table-main .table-page p {
 	margin-bottom: 0;
 }
 section .table-main .table-page ul {
-	padding: 0 38px;
+	padding-left: 0;
+	margin: 0 48px;
+	width: 164px;
 }
 section .table-main .table-page ul li {
-	padding: 0 10px;
+	
+}
+section .table-main .table-page ul li:hover {
+	color: #d2302d;
 }
 section .require-form {
 	margin-bottom: 108px;
@@ -530,9 +593,16 @@ footer a {
 	font: normal normal 300 20px/32px Gilroy-Light;
 	color: #023047;
 }
+footer a:hover {
+	color: #D2302C;
+}
+
 @media (max-width: 1400px) {
 	section .test-drive-content {
 		background: transparent;
+	}
+	nav ul li {
+		margin-right: 28px;
 	}
 }
 @media (max-width:1200px) {
@@ -623,6 +693,12 @@ footer a {
 	}
 }
 @media (max-width:768px) {
+	section .test-drive h1 {
+		font-size: 50px;
+	}
+	section .test-drive h2 {
+		font-size: 37px;
+	}
 	section .pricing-option .container > div {
 		flex-direction: column;
 	}
@@ -658,10 +734,47 @@ footer a {
 	footer p {
 		text-align: center;
 	}
+	section .table-main table {
+		width: 768px;
+	}
+	section .table-main .container {
+		overflow-x: scroll;
+	}
+	section .table-main .table-page {
+		flex-direction: column;
+	}
+	section .table-main .table-page .prevbutton, 
+	section .table-main .table-page .nextbutton {
+		margin: 0 10px;
+	}
+	/*section .table-main .table-page ul {
+		width: 50px;
+		margin: 0 10px;
+	}*/
+	section .table-main .table-page p {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	.prevbutton {
+		display: block !important;
+		visibility: hidden;
+	}
 }
 @media (max-width:576px) {
+	section .test-drive h1 {
+		font-size: 40px;
+	}
+	section .test-drive h2 {
+		font-size: 24px;
+	}
 	section .require-form h1 {
 		font-size: 38px;
+	}
+	section .test-drive p {
+		font-size: 18px;
+	}
+	section .test-drive button {
+		padding: 10px 16px;
 	}
 }
 
