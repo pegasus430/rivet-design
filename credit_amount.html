@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>Credit Amount</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="css/credit_amount_style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="credit-amount ridge">
+				<div class="title-container">
+					<p class="main-title">Please Enter Credit Amount</p>
+				</div>
+				<div class="smscard">
+					<div class="smscard-header">
+						<div class="smscard-header-main">
+							<span class="smscard-header-title">AED</span>
+							<input class="smscard-header-value" type="text" name="smsvalue" value="20"/>
+						</div>
+					</div>
+					<div class="smscard-section">
+						<div class="smscard-section-card">
+							<div class="smscard-section-card-top"></div>
+							<div class="smscard-section-card-main">
+								<h1>7.0</h1>
+								<h2>Fils/SMS</h2>
+							</div>
+							<div class="smscard-section-card-bottom"></div>
+						</div>
+						<div class="smscard-section-card">
+							<div class="smscard-section-card-top"></div>
+							<div class="smscard-section-card-main">
+								<h1>6.5</h1>
+								<h2>Fils/SMS</h2>
+							</div>
+							<div class="smscard-section-card-bottom"></div>
+						</div>
+						<div class="smscard-section-card">
+							<div class="smscard-section-card-top"></div>
+							<div class="smscard-section-card-main">
+								<h1>5.6</h1>
+								<h2>Fils/SMS</h2>
+							</div>
+							<div class="smscard-section-card-bottom"></div>
+						</div>
+						<div class="smscard-section-card" style="margin-right: 0;">
+							<div class="smscard-section-card-top"></div>
+							<div class="smscard-section-card-main">
+								<h1>5.3</h1>
+								<h2>Fils/SMS</h2>
+							</div>
+							<div class="smscard-section-card-bottom"></div>
+						</div>
+					</div>
+					<div class="smscard-footer">
+						<div class="smscard-footer-left">
+							<h3>Estimated</h3>
+							<h4>SMS Volume:</h4>
+						</div>
+						<div>
+							<div class="smscard-footer-main">
+							<p class="smscard-footer-title">=</p>
+							<p class="smscard-footer-value">285</p>
+						</div>
+						</div>
+						<div class="smscard-footer-right">
+							<h3>Plan</h3>
+							<h4 class="smscard-footer-change">Freestyle</h4>
+						</div>
+					</div>
+				</div>
+				<div class="smalltxt">
+					<p class="smalltxt-left">Have a voucher? <a href=#>Apply Here</a></p>
+					<p class="smalltxt-right">*Message rates based on: UAE</p>
+				</div>
+				<div class="checkout">
+					Checkout with
+				</div>
+				<div class="paypalbar">
+					<div class="paypal" role="button">
+						<img src="./img/paypal.png" alt=""/>
+					</div>
+					<div class="credit-card-txt" role="button">
+						<p>Credit Card</p>
+					</div>
+				</div>
+				<div class="visa">
+					<img src="./img/visa.png" alt=""/>
+				</div>
+				<div class="footer-txt">
+					We follow a standard review procedure for PayPal payments to ensure legitimate use of our service and to prevent fraudulent activities. The manual review can take up to 24 hrs.
+				</div>
+			</div>
+			<div class="payment-billing">
+				<div class="title-container">
+					<p class="main-title">Please Comfirm Payment and Billing Details</p>
+				</div>
+				<div class="payment-billing-details">
+					<div class="details-container details-container-left">
+						<div class="detail-title">
+							Payment Details
+						</div>
+						<div class="detail-form">
+							<div>
+								<label><span>*</span>Name on credit card</label>
+								<input type="text" name="credit-name"/>
+							</div>
+							<div class="credit-number">
+								<label><span>*</span>Credit card number</label>
+								<input type="text" name="number"/>
+								<img src="./img/visa.png" alt=""/>
+							</div>
+							<div>
+								<label><span>*</span>Expiration month</label>
+								<div class="select_arrow">&#10094;</div>
+								<select>
+									<option></option>
+								</select>
+							</div>
+							<div>
+								<label><span>*</span>Expiration year</label>
+								<div class="select_arrow">&#10094;</div>
+								<select>
+									<option></option>
+								</select>
+							</div><div>
+								<label><span>*</span>CVN</label>
+								<input type="text" name="cvn">
+							</div>
+							<div class="checkboxbar">
+								<input type="checkbox" name="save">
+								<label>Save my card info</label>
+							</div>
+							<div class="detail-form-footer-txt">
+								Only VISA and MasterCard are accepted
+							</div>
+						</div>
+					</div>
+					<div class="details-container">
+						<div class="detail-title">
+							Billing Details
+						</div>
+						<div class="detail-form">
+							<div>
+								<label><span>*</span>Name</label>
+								<input type="text" name="name"/>
+							</div>
+							<div>
+								<label><span>*</span>Email</label>
+								<input type="email" name="email"/>
+							</div>
+							<div>
+								<label><span>*</span>Address</label>
+								<input type="text" name="address"/>
+							</div>
+							<div class="city-country">
+								<div class="city-input">
+									<label><span>*</span>City</label>
+									<input type="text" name="city"/>
+								</div>
+								<div class="country-input">
+									<label><span>*</span>Country</label>
+									<input type="text" name="country"/>
+								</div>	
+							</div>
+							<div class="state-postcode">
+								<div class="state-input">
+									<label><span>*</span>State</label>
+									<input type="text" name="state"/>
+								</div>
+								<div class="postcode-input">
+									<label><span>*</span>Postcode</label>
+									<input type="text" name="postcode"/>
+								</div>	
+							</div>
+							<div class="checkboxbar">
+								<input type="checkbox" name="save">
+								<label>Save my billing info</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="purchase-button">
+					<button>Confirm Purchase of AED <span id="sms-value">285</span></button>
+				</div>
+			</div>
+		</div>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){	
+  				$(".smscard-section-card-main:eq(0)").click(function(){
+  					$(this).css({'background': '#5baed8', 'color': 'white'});
+  					$(".smscard-section-card-main:eq(1)").css({'background': 'white', 'color': '#023047'})
+  					$(".smscard-section-card-main:eq(2)").css({'background': 'white', 'color': '#023047'})
+  					$(".smscard-section-card-main:eq(3)").css({'background': 'white', 'color': '#023047'})
+  					$(".smscard-header").css({'background': '#5baed8'})
+  					$(".smscard-footer").css({'background': '#5baed8'})
+  					for (let i = 0; i <= 3; i++ ) {
+  						if ( i == 0) {
+  							$(".smscard-section-card-top:eq(" + i + ")").css({'border-color': '#5baed8 transparent transparent transparent'})
+  							$(".smscard-section-card-bottom:eq(" + i + ")").css({'border-color': 'transparent transparent #5baed8 transparent'})	
+  							continue;
+  						}
+  						$(".smscard-section-card-top:eq(" + i + ")").css({'border-color': 'transparent'})
+  						$(".smscard-section-card-bottom:eq(" + i + ")").css({'border-color': 'transparent'})
+  					}
+  					$('.smscard-header-value').val("20");
+  					$('.smscard-footer-value').html("285");
+  					$('.smscard-footer-change').html("Freestyle");
+  				});
+  				$(".smscard-section-card-main:eq(1)").click(function(){
+  					$(this).css({'background': '#689fdb', 'color': 'white'});
+  					$(".smscard-section-card-main:eq(0)").css({'background': 'white', 'color': '#023047'})
+  					$(".smscard-section-card-main:eq(2)").css({'background': 'white', 'color': '#023047'})
+  					$(".smscard-section-card-main:eq(3)").css({'background': 'white', 'color': '#023047'})
+  					$(".smscard-header").css({'background': '#689fdb'})
+  					$(".smscard-footer").css({'background': '#689fdb'})
+  					for (let i = 0; i <= 3; i++ ) {
+  						if ( i == 1) {
+  							$(".smscard-section-card-top:eq(" + i + ")").css({'border-color': '#689fdb transparent transparent transparent'})
+  							$(".smscard-section-card-bottom:eq(" + i + ")").css({'border-color': 'transparent transparent #689fdb transparent'})	
+  							continue;
+  						}
+  						$(".smscard-section-card-top:eq(" + i + ")").css({'border-color': 'transparent'})
+  						$(".smscard-section-card-bottom:eq(" + i + ")").css({'border-color': 'transparent'})
+  					}
+  					$('.smscard-header-value').val("500");
+  					$('.smscard-footer-value').html("7692");
+  					$('.smscard-footer-change').html("Fiexi");
+  				});
+  				$(".smscard-section-card-main:eq(2)").click(function(){
+  					$(this).css({'background': '#446da4', 'color': 'white'});
+  					$(".smscard-section-card-main:eq(0)").css({'background': 'white', 'color': '#023047'})
+  					$(".smscard-section-card-main:eq(1)").css({'background': 'white', 'color': '#023047'})
+  					$(".smscard-section-card-main:eq(3)").css({'background': 'white', 'color': '#023047'})
+  					$(".smscard-header").css({'background': '#446da4'})
+  					$(".smscard-footer").css({'background': '#446da4'})
+  					for (let i = 0; i <= 3; i++ ) {
+  						if ( i == 2) {
+  							$(".smscard-section-card-top:eq(" + i + ")").css({'border-color': '#446da4 transparent transparent transparent'})
+  							$(".smscard-section-card-bottom:eq(" + i + ")").css({'border-color': 'transparent transparent #446da4 transparent'})	
+  							continue;
+  						}
+  						$(".smscard-section-card-top:eq(" + i + ")").css({'border-color': 'transparent'})
+  						$(".smscard-section-card-bottom:eq(" + i + ")").css({'border-color': 'transparent'})
+  					}
+  					$('.smscard-header-value').val("100");
+  					$('.smscard-footer-value').html("1428");
+  					$('.smscard-footer-change').html("Professional");
+  				});
+  				$(".smscard-section-card-main:eq(3)").click(function(){
+  					$(this).css({'background': '#2a3282', 'color': 'white'});
+  					$(".smscard-section-card-main:eq(0)").css({'background': 'white', 'color': '#023047'})
+  					$(".smscard-section-card-main:eq(1)").css({'background': 'white', 'color': '#023047'})
+  					$(".smscard-section-card-main:eq(2)").css({'background': 'white', 'color': '#023047'})
+  					$(".smscard-header").css({'background': '#2a3282'})
+  					$(".smscard-footer").css({'background': '#2a3282'})
+  					for (let i = 0; i <= 3; i++ ) {
+  						if ( i == 3) {
+  							$(".smscard-section-card-top:eq(" + i + ")").css({'border-color': '#2a3282 transparent transparent transparent'})
+  							$(".smscard-section-card-bottom:eq(" + i + ")").css({'border-color': 'transparent transparent #2a3282 transparent'})	
+  							continue;
+  						}
+  						$(".smscard-section-card-top:eq(" + i + ")").css({'border-color': 'transparent'})
+  						$(".smscard-section-card-bottom:eq(" + i + ")").css({'border-color': 'transparent'})
+  					}
+  					$('.smscard-header-value').val("100");
+  					$('.smscard-footer-value').html("1428");
+  					$('.smscard-footer-change').html("Enterprise");
+  				});
+
+  				$(".credit-card-txt").click(function(){
+  					$(".credit-amount").css({'display': 'none'})
+  					$(".payment-billing").css({'display': 'block'})
+  					let bgcolor = $(".smscard-header").css('background-color')
+  					let value = $(".smscard-footer-value").html()
+  					$(".detail-title:eq(0)").css({'background': bgcolor})
+  					$(".detail-title:eq(1)").css({'background': bgcolor})
+  					$("#sms-value").html(value)
+  				});
+  				$(".purchase-button button").click(function(){
+  					window.location.href = "./pricing.html"
+  				});
+			});
+
+		</script>
+	</body>
+</html>

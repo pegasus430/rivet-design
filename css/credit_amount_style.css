@@ -1,0 +1,421 @@
+@font-face {
+	font-family: "Gilroy-ExtraBold";
+	src: url("../fonts/Gilroy-ExtraBold.otf");
+}
+@font-face {
+	font-family: "Gilroy-Light";
+	src: url("../fonts/Gilroy-Light.otf");
+}
+@font-face {
+	font-family: "Gilroy-Medium";
+	src: url("../fonts/Gilroy-Medium.ttf");
+}
+@font-face {
+	font-family: "Segoe-Print-Bold";
+	src: url("../fonts/Segoe-Print-Bold_39951.ttf");
+}
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+button {
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+.container {
+	box-shadow: 0px 0px 20px #00000014;
+	border: 1px solid #e8e8e8;
+	border-radius: 5px;
+	padding: 50px 10px;
+	margin: 10px auto;
+}
+.credit-amount {
+	max-width: 587px;
+	margin: auto;
+}
+.payment-billing {
+	max-width: 880px;
+	margin: auto;
+}
+.main-title {
+	font-size: 24px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 29px;
+	font-family: Gilroy-ExtraBold;
+}
+.smscard {
+	margin-bottom: 13px;
+}
+.smscard-header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	background: #5baed8;
+} 
+.smscard-footer {
+	position: relative;
+	justify-content: space-between;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	background: #5baed8;
+}
+.smscard-header {
+	height: 72px;
+	border-radius: 5px 5px 0 0;
+}
+.smscard-footer {
+	padding: 16px 37px;
+	border-radius: 0 0 5px 5px;
+}
+.smscard-header-main {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 238px;
+	background: white;
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+.smscard-header input {
+	width: 100%;
+	padding-right: 25px;
+}
+.smscard-footer-main {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 238px;
+	margin: auto;
+	background: white;
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+.smscard-header input {
+	outline: none;
+	border:  none;
+} 
+.smscard-footer-title {
+	position: absolute;
+	top: 50%;
+	font-size: 18px;
+	line-height: 21px;
+	color: #e8e8e8;
+}
+.smscard-header-title {
+	font-size: 18px;
+	line-height: 21px;
+	color: #e8e8e8;
+	font-family: Gilroy-Medium;
+	left: 50%;
+}
+.smscard-footer-title {
+	transform: translateY(-50%);
+	font-family: Gilroy-ExtraBold;
+}
+.smscard-header input, 
+.smscard-footer-value {
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: 800;
+	text-align: center;
+	color: #023047;
+	letter-spacing: 1.2px;
+	margin-bottom: 0;
+	font-family: Gilroy-ExtraBold;
+}
+.smscard-section {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 37px;
+	background: #f8f8f8;
+}
+.smscard-section-card {
+	position: relative;
+	width: 103px;
+	padding: 27px 0;
+	margin-right: 5px;
+	text-align: center;
+}
+.smscard-section-card-top, .smscard-section-card-bottom {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	border-style: solid;
+	border-width: 20px 11.5px;
+	border-color: transparent;
+}
+.smscard-section-card-top {
+	top: 0;
+}
+.smscard-section-card-bottom {
+	bottom: 0;
+}
+.smscard-section-card:nth-child(1) .smscard-section-card-main {
+	background: #5baed8;
+	color: white;
+}
+.smscard-section-card:nth-child(1) .smscard-section-card-top {
+	border-color: #5baed8 transparent transparent transparent;
+}
+.smscard-section-card:nth-child(1) .smscard-section-card-bottom {
+	border-color: transparent transparent #5baed8 transparent;
+}
+.smscard-section-card-main {
+	cursor: pointer;
+	background: white;
+	max-width: 103px;
+	max-height: 103px;
+	margin: auto;
+	border-radius: 10px;
+	border: 1px solid #e8e8e8;
+	color: #023047;
+	padding: 25px 0 20px;
+}
+.smscard-section-card-main h1 {
+	font-size: 32px;
+	line-height: 39px;
+	letter-spacing: 1.6px;
+	font-weight: 500;
+	font-family: Gilroy-Medium;
+}
+.smscard-section-card-main h2 {
+	font-size: 12px;
+	line-height: 15px;
+	font-weight: 500;
+	font-family: Gilroy-Medium;
+}
+.smscard-footer h3 {
+	color: #fff;
+	opacity: 0.32;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 400;
+	font-family: Gilroy-Light;
+}
+.smscard-footer h4 {
+	color: #fff;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 300;
+	font-family: Gilroy-Light;
+}
+.smalltxt {
+	display: flex;
+	justify-content: space-between;
+	color: #023047;
+	font-size: 12px;
+	line-height: 14px;
+	margin-bottom: 40px;
+	font-family: Gilroy-Light;
+}
+.smalltxt p a {
+	color: #D2302C;
+	font-size: 12px;
+}
+.checkout {
+	font-size: 18px;
+	line-height: 21px;
+	color: #023047;
+	text-align: center;
+	margin-bottom: 29px;
+	font-family: Gilroy-Medium;
+}
+.paypalbar {
+	display: flex;
+	justify-content: center;
+	padding: 0 30px;
+	margin-bottom: 30px;
+}
+.paypal, .credit-card-txt {
+	cursor: pointer;
+	position: relative;
+	width: 200px;
+	height: 59px;
+	text-align: center;
+	border-radius: 5px;
+	background: #d2302c;
+	border: 1px solid #d2302c;
+	color: white;
+	font-family: Gilroy-Medium;
+	transition: 0.3s all ease-in;
+}
+.paypal {
+	margin-right: 18px;
+	background: white;
+	border: 1px solid #e8e8e8;
+}
+.credit-card-txt:hover {
+	background: #ec625f;
+	border-color: #ec625f;
+}
+.paypal img, .credit-card-txt p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.credit-card-txt p {
+	width: 100%;
+	font-size: 24px;
+	line-height: 29px;
+}
+.visa {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 20px;
+}
+.footer-txt {
+	color: #023047;
+	font-size: 12px;
+	line-height: 14px;
+	text-align: center;
+	padding: 0 30px;
+	font-family: Gilroy-Light;
+}
+.payment-billing {
+	display: none;
+}
+.payment-billing-details {
+	display: flex;
+	justify-content: space-between;
+}
+.details-container {
+	width: 50%;
+	background: #f8f8f8;
+	margin-bottom: 28px;
+}
+.details-container-left {
+	margin-right: 12px;
+}
+.detail-title {
+	background: #5baed8;
+	color: white;
+	padding: 10px 50px;
+	border-radius: 5px;
+	font-size: 18px;
+	line-height: 21px;
+	font-family: Gilroy-Medium;
+}
+
+.detail-form {
+	padding: 24px 50px;
+}
+.detail-form > div {
+	position: relative;
+}
+.detail-form label span {
+	color: #D2302C;
+}
+.detail-form label {
+	color: #023047;
+	font-size: 14px;
+	line-height: 16px;
+	width: 100%;
+	font-weight: 300;
+	margin-bottom: 8px;
+	font-family: Gilroy-Light;
+}
+.detail-form .select_arrow {
+	position: absolute;
+	transform: matrix(0, -1, 1, 0, 0, 0);
+	right: 15px;
+	bottom: 15px;
+	font-size: 16px;	
+}
+.detail-form input, .detail-form select {
+	width: 100%;
+	padding: 0 15px;
+	line-height: 38px;
+	border-radius: 5px;
+	border: 1px solid #e8e8e8;
+	margin-bottom: 8px;
+}
+.detail-form .credit-number {
+	position: relative;
+}
+.detail-form .credit-number img { 
+	position: absolute;
+	width: 65px;
+	right: 10px;
+	bottom: 15px;
+}
+.detail-form select {
+	height: 40px;
+	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	-webkit-appearance: none;
+  	-moz-appearance: none;
+}
+.detail-form input[type='checkbox'] {
+	width: 25px;
+	height: 25px;
+	margin-right: 7px;
+}
+.checkboxbar {
+	display: flex;
+	place-items: center;
+}
+.detail-form .city-country,
+.detail-form .state-postcode {
+	display: flex;
+	justify-content: space-between;
+}
+.detail-form .city-country > div,
+.detail-form .state-postcode > div {
+	width: 100%;
+}
+.city-input, .state-input {
+	margin-right: 16px;
+}
+.detail-form-footer-txt {
+	color: #c4c4c4;
+	font-size: 12px;
+	line-height: 14px;
+	font-weight: 300;
+	font-family: Gilroy-Light;
+	margin-top: 10px;
+}
+.purchase-button {
+	text-align: center;
+}
+.purchase-button button {
+	padding: 15px 30px;
+	background: #d2302c;
+	box-shadow: 0px 10px 20px #00000014;
+	color: white;
+	font-size: 24px;
+	line-height: 29px;
+	border-radius: 5px;
+	font-family: Gilroy-Medium;
+	transition: 0.3s all ease-in;
+}
+.purchase-button button:hover {
+	background: #ec625f;
+}
+ @media screen and (max-width: 576px) {
+	.container {
+		padding: 30px 10px;
+	}
+	.payment-billing-details {
+		flex-direction: column;
+	}
+	.details-container-left {
+		margin-right: 0;
+	}
+	.details-container {
+		width: 100%;
+	}
+	.purchase-button button {
+		font-size: 16px;
+	}
+	.smscard-header-main,
+	.smscard-footer-main {
+		width: 150px;
+	}
+} 

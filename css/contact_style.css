@@ -1,0 +1,341 @@
+body {
+	transition: 10s all ease-in;
+}
+section {
+	position: relative;
+}
+section .contact-title {
+	width: 100%;
+	background: #ff7171;
+	height: 248px;
+	padding-top: 51px;
+}
+section .contact-title h1 {
+	font: normal normal 800 48px/59px Gilroy-ExtraBold;
+	color: #FFFFFF;
+	text-transform: uppercase;
+}
+.bottom {
+	padding-top: 713px;
+}
+section .contact-main {
+	position: absolute;
+	top: 317px;
+	left: 0;
+	width: 100%;
+	z-index: 1;
+	background: transparent;
+}
+section .contact-main .container {
+	background: #FFFFFF;
+	box-shadow: 0px 0px 20px #00000014;
+	border-radius: 5px;
+	height: 692px;
+}
+section .contact-main-content {
+	padding: 75px 85px 85px;
+}
+section .contact-main-content h2 {
+	font: normal normal 800 32px/40px Gilroy;
+	color: #023047;
+	text-transform: capitalize;
+	margin-bottom: 48px;
+}
+section .contact-main-content label {
+	width: 169px;
+	font: normal normal 300 18px/20px Gilroy-Light;
+}
+section .contact-main-content label span {
+	color: #D2302C;
+}
+section .contact-main-content input::placeholder,
+ section .contact-main-content textarea::placeholder {
+	font: normal normal 300 18px/20px Gilroy;
+	color: rgba(0, 0, 0, 0.5);
+}
+section .contact-main-content input {
+	width: 282px;
+	height: 47px;	
+}
+section .contact-main-content textarea {
+	width: 731px;	
+	height: 99px;
+}
+section .contact-main-content input,
+section .contact-main-content textarea {
+	padding-left: 14px;
+	background: #F8F8F8 0% 0% no-repeat padding-box;
+	border: 1px solid #E8E8E8;
+	border-radius: 5px;
+	color: rgba(0, 0, 0, 0.5);
+}
+section .contact-main-content .form-content {
+	display: flex;
+	justify-content: space-between;
+}
+section .contact-main-content .inputbar > div {
+	display: flex;
+}
+section .contact-main-content .inputbar .name-content,
+section .contact-main-content .inputbar .company-email,
+section .contact-main-content .inputbar .phone-website {
+	margin-bottom: 12px;
+}
+section .contact-main-content .inputbar {
+	width: 900px;
+}
+section .contact-main-content .google-map {
+	width: 417px;
+	height: 371px;
+	border: 1px solid #DEDEDE;
+	border-radius: 5px;	
+}
+section .contact-main-content .firstname,
+section .contact-main-content .lastname,
+section .contact-main-content .company,
+section .contact-main-content .workemail,
+section .contact-main-content .phone-number,
+section .contact-main-content .website {
+	width: 50%;
+	display: flex;
+	align-items: center;
+}
+section .contact-main-content .lastname input,
+section .contact-main-content .workemail input,
+section .contact-main-content .website input {
+	margin-left: 19px;
+}
+section .contact-main-content .lastname label,
+section .contact-main-content .workemail label,
+section .contact-main-content .website label {
+	text-align: right;
+}
+section .contact-main-content .description {
+	margin-bottom: 17px;
+}
+section .contact-main-content .check-robot {
+	background: #F8F8F8 0% 0% no-repeat padding-box;
+	border: 1px solid #E8E8E8;
+	border-radius: 5px;
+	width: 290px;
+	height: 78px;
+	margin-left: 169px;
+	margin-bottom: 26px;
+	align-items: center;
+	padding-left: 24px;
+}
+section .contact-main-content .check-robot input {
+	width: 36px;
+	height: 36px;
+	margin-right: 17px;
+}
+section .contact-main-content .check-robot p {
+	margin-bottom: 0;
+	font: normal normal 14px/16px Gilroy-Medium;
+	color: #023047;
+}
+section .contact-main-content .check-robot > div {
+	width: 46px;
+	height: 53px;
+	margin-left: 48px;
+}
+section .contact-main-content .check-robot > div img {
+	width: 100%;
+	height: 100%;
+}
+section .contact-main-content .buttonbar {
+	margin-left: 169px;
+}
+section .contact-main-content .buttonbar button {
+	width: 221px;
+	height: 47px;
+	box-shadow: 0px 10px 20px #00000014;
+	border-radius: 5px;
+	font: normal normal 18px/21px Gilroy-Medium;
+	letter-spacing: 0.9px;
+}
+section .contact-main-content .buttonbar button.submit {
+	background: #D2302C;
+	margin-right: 12px;
+	color: white;
+}
+section .contact-main-content .buttonbar button.reset {
+	background: white;
+	color: #023047;
+}
+section .contact-main-content .google-map {
+	position: relative;
+}
+section .contact-main-content .google-map img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+section .contact-main-content .google-map p {
+	position: absolute;
+	bottom: 17px;
+	right: 32px;
+	font: normal normal 300 15px/15px Gilroy-Light;
+	margin-bottom: 0;
+}
+@media screen and (max-width: 1550px) {
+	section .contact-main-content .inputbar {
+		width: 800px;
+	}
+	section .contact-main-content .google-map {
+		width: 300px;
+		height: 267px;
+	}
+	section .contact-main-content .check-robot,
+	section .contact-main-content .buttonbar {
+		margin-left: 149px;
+ 	}
+}
+@media screen and (max-width: 1400px) {
+	section .contact-main-content .inputbar {
+		width: 650px;
+	}
+	section .contact-main-content .google-map {
+		width: 270px;
+		height: 240px;
+	}
+	section .contact-main-content .check-robot, 
+	section .contact-main-content .buttonbar {
+		margin-left: 120px;
+	}
+}
+@media screen and (max-width: 1200px) {
+	section .contact-main-content .form-content {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	section .contact-main-content .google-map {
+		width: 417px;
+		height: 371px;
+		margin-bottom: 32px;
+	}
+	section .contact-main-content .inputbar {
+		width: 100%;
+	}
+	section .contact-main-content {
+		padding: 75px 20px 85px;
+	}
+	section .contact-main .container {
+		height: 1093px;
+	}
+	.bottom {
+		padding-top: 1135px;
+	}
+}
+@media screen and (max-width: 768px) {
+	section .contact-main-content .inputbar > div {
+		flex-direction: column;
+	}	
+	section .contact-main-content .firstname, 
+	section .contact-main-content .lastname, 
+	section .contact-main-content .company, 
+	section .contact-main-content .workemail, 
+	section .contact-main-content .phone-number, 
+	section .contact-main-content .website {
+		width: 100%;
+	}
+	section .contact-main-content .lastname label, 
+	section .contact-main-content .workemail label, 
+	section .contact-main-content .website label {
+		text-align: left;
+	}
+	section .contact-main-content .lastname input, 
+	section .contact-main-content .workemail input, 
+	section .contact-main-content .website input {
+		margin-left: 0;
+	}
+	section .contact-main-content .firstname, 
+	section .contact-main-content .lastname, 
+	section .contact-main-content .company, 
+	section .contact-main-content .workemail, 
+	section .contact-main-content .phone-number, 
+	section .contact-main-content .website {
+		flex-direction: column;
+		margin-bottom: 13px;
+	}
+	section .contact-main-content label,
+	section .contact-main-content input,
+	section .contact-main-content textarea {
+		width: 100%;
+	}
+	section .contact-main-content label {
+		margin-bottom: 11px;
+	}
+	section .contact-main-content .inputbar .name-content, 
+	section .contact-main-content .inputbar .company-email, 
+	section .contact-main-content .inputbar .phone-website {
+		margin-bottom: 0;
+	}
+	section .contact-main-content .check-robot, 
+	section .contact-main-content .buttonbar {
+		flex-direction: row !important;
+		margin-left: 0;
+	}
+	section .contact-main .container {
+		height: 1493px;
+	}
+	.bottom {
+		padding-top: 1522px;
+	}
+	section .contact-main-content .description {
+		margin-bottom: 24px;
+	}
+	section .contact-main-content .check-robot {
+		margin-bottom: 28px;
+	}
+	section .contact-main-content .google-map p {
+		bottom: 15px;
+		right: 27px;
+	}
+}
+@media screen and (max-width: 576px) {
+	section .contact-title {
+		height: 94px;
+		padding-top: 32px;
+	}
+	section .contact-title h1 {
+		font-size: 24px;
+		line-height: 29px;
+	}
+	section .contact-main {
+		top: 236px;
+	}
+	section .contact-main-content {
+		padding: 32.85px 0 60px;
+	}
+	section .contact-main-content h2 {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 32px;
+	}
+	section .contact-main-content .google-map {
+		width: 360px;
+		height: 320px;
+	}
+	section .contact-main-content label {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	section .contact-main-content textarea {
+		height: 126px;
+	}
+	section .contact-main-content .buttonbar button.submit {
+		margin-right: 8px;
+	}
+	section .contact-main-content .buttonbar button {
+		height: 41px;
+		font-size: 16px;
+	}
+	section .contact-main .container {
+		height: 1352px;
+ 	}
+ 	.bottom {
+ 		padding-top: 1397px;
+ 	}
+}

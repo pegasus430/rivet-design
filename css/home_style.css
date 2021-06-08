@@ -1,0 +1,557 @@
+
+section .bulk {
+	width: 100%;
+	margin-bottom: 13px;
+	background: transparent linear-gradient(120deg, #D2302C 0%, #962CD2 100%) 0% 0% no-repeat padding-box;
+	background-size: 100% 890px;
+}
+section .bulk .container {
+	display: flex;
+	justify-content: space-between;
+}
+section .bulk-text {
+	padding-top: 188px;
+	color: white;
+}
+section .bulk-text h1 {
+	position: relative;
+	font: normal normal 800 72px/88px Gilroy-ExtraBold;
+	margin-bottom: 13px;
+}
+section .bulk-text h1 span {
+	position: absolute;
+	top: -70px;
+	left: 255px;
+	font: normal normal bold 196px/196px Segoe-Script-Bold;
+	color: #F9D142;
+}
+section .bulk-text h2 {
+	text-transform: uppercase;
+	font: normal normal 800 42px/51px Gilroy-ExtraBold;
+	margin-bottom: 21px;
+}
+section .bulk-text h3 {
+	font: normal normal 32px/39px Gilroy-Medium;
+	margin-bottom: 18px;
+}
+section .bulk-text p {
+	max-width: 435px;
+	font: normal normal 300 24px/32px Gilroy-Light;
+	margin-bottom: 44px;
+}
+section .bulk-text button {
+	background: #FFFFFF;
+	box-shadow: 0px 10px 20px #00000030;
+	border-radius: 5px;
+	font: normal normal 24px/29px Gilroy-Medium;
+	width: 291px;
+	height: 57px;
+}
+section .bulk-text button:hover {
+	background: #D2302C;
+	color: white;
+}
+section .bulk-img {
+	padding: 50px 0 81px;
+	width: 720px;
+}
+section .bulk-img img {
+	width: 100%;
+}
+section .fontfamilytype {
+	margin-bottom: 166px;
+}
+section .fontfamilytype .font-title .container {
+	display: flex;
+	align-items: center;
+	margin-bottom: 39px;
+}
+section .fontfamilytype .font-title img {
+	margin-right: 12px;
+}
+section .fontfamilytype .fonttype {
+	color: #AAAAAA;
+	display: flex;
+	width: max-content;
+}
+section .fontfamilytype .fonttype p {
+	padding: 0 30px;
+}
+section .fontfamilytype .fonttype .qanaya {
+	font: normal normal normal 30px/34px Qanaya-Regular;
+	letter-spacing: -0.75px;
+}
+section .fontfamilytype .fonttype .inkfree {
+	font: normal normal normal 30px/34px Inkfree;
+	letter-spacing: -0.6px;
+}
+section .fontfamilytype .fonttype .kaushan {
+	font: normal normal normal 30px/34px KaushanScript-Regular;
+	letter-spacing: -0.6px;
+}
+section .fontfamilytype .fonttype .gotham {
+	font: normal normal 29px/33px GothamRounded-Medium;
+	letter-spacing: -0.58px;
+}
+section .fontfamilytype .fonttype .grinched {
+	font: normal normal normal 30px/34px GrinchedRegular;
+	letter-spacing: -0.6px;
+}
+section .fontfamilytype .fonttype .impact {
+	font: normal normal normal 30px/34px impact;
+	letter-spacing: -0.6px;
+}
+section .fontfamilytype .font-title p {
+	font: normal normal 24px/36px Gilroy-Medium;
+	letter-spacing: -0.48px;
+	color: #023047;
+	margin-bottom: 0;
+}
+section .valued-services {
+	margin-bottom: 214px;
+}
+section .valued-services h1 {
+	font: normal normal 800 48px/59px Gilroy-ExtraBold;
+	color: #023047;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 60px;
+}
+section .valued-services h6 {
+	font: normal normal 300 24px/36px Gilroy-Light;
+	color: #000000;
+	text-align: center;
+	margin-bottom: 77px;
+}
+section .valued-services .service-item-content {
+	display: flex;
+	justify-content: space-around;
+}
+section .valued-services .service-item {
+	text-align: center;
+	max-width: 373px;
+	margin-right: 20px;
+}
+section .valued-services .service-item img {
+	margin-bottom: 23px;
+	height: 71px;
+}
+section .valued-services .service-item h2 {
+	font: normal normal 28px/34px Gilroy-Medium;
+	color: #034464;
+	margin-bottom: 32px;
+}
+section .valued-services .service-item p {
+	font: normal normal 300 18px/32px Gilroy-Light;
+	color: #000000;
+	margin-bottom: 0;
+}
+section .geteway {
+	background: url(../img/smartmockups_kobpaz9a.png) no-repeat;
+	background-size: 761px auto;
+	background-position: right center;
+	margin-bottom: 185px;
+}
+section .geteway h1 {
+	font: normal normal 800 48px/59px Gilroy-ExtraBold;
+	color: #023047;
+	text-transform: uppercase;
+	margin-bottom: 60px;
+}
+section .geteway .container {
+	padding-top: 47px;
+}
+section .geteway .container > div {
+	max-width: 760px;
+}
+section .geteway p {
+	font: normal normal 300 24px/36px Gilroy-Light;
+	margin-bottom: 60px;
+}
+section .geteway button {
+	background: #D2302C;
+	box-shadow: 0px 10px 20px #00000014;
+	border-radius: 5px;
+	font: normal normal 24px/29px Gilroy-Medium;
+	width: 282px;
+	height: 57px;
+	color: #fff;
+}
+section .geteway button:hover {
+	background: #f65d5a;
+}
+section .promise {
+	padding-bottom: 251px;
+	background: url(../img/img1.png) no-repeat;
+	background-size: 268px auto;
+	background-position: left bottom;
+	margin-bottom: 171px;
+}
+section .promise .container {
+	display: flex;
+	justify-content: space-between;
+}
+section .promise-text {
+	max-width: 936px;
+	margin-left: 30px;
+}
+section .promise-text h3 {
+	font: normal normal 800 32px/40px Gilroy-ExtraBold;
+	color: #D2302C;
+	text-transform: capitalize;
+	margin-bottom: 14px;
+}
+section .promise-text h2 {
+	font: normal normal 800 48px/59px Gilroy-ExtraBold;
+	color: #023047;
+	text-transform: uppercase;
+	margin-bottom: 60px;
+}
+section .promise-text p {
+	font: normal normal 300 24px/36px Gilroy-Light;
+	margin-bottom: 0;
+}
+section .promise-imgbar {
+	text-align: center;
+}
+section .testimonials {
+	padding-bottom: 230px;
+	background: url(../img/img2.png) no-repeat;
+	background-size: 260px auto;
+	background-position: right bottom;
+}
+section .testimonials h3 {
+	text-align: center;
+	font: normal normal 800 32px/40px Gilroy-ExtraBold;
+	color: #D2302C;
+	text-transform: capitalize;
+	margin-bottom: 14px;
+}
+section .testimonials h2 {
+	text-align: center;
+	font: normal normal 800 48px/59px Gilroy-ExtraBold;
+	color: #023047;
+	text-transform: uppercase;
+	margin-bottom: 67px;
+}
+section .testimonials .star-content {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 159px;
+}
+section .testimonials .star-content > div {
+	display: flex;
+}
+section .testimonials .star-content p {
+	font: normal normal 24px/29px Gilroy-Medium;
+	margin-left: 34px;
+	margin-bottom: 0;
+}
+section .testimonials .star-content p span {
+	font-family: Gilroy-ExtraBold;
+}
+section .testimonials-item-content {
+	display: flex;
+	justify-content: space-between;
+}
+section .testimonials-item {
+	max-width: 386px;
+	margin-right: 20px;
+}
+section .testimonials-item .user {
+	display: flex;
+	align-items: center;
+	margin-bottom: 41px;
+}
+section .testimonials-item .user img {
+	width: 93px;
+	height: 93px;
+	margin-right: 28px;
+}
+section .testimonials-item .user h5 {
+	font: normal normal 24px/29px Gilroy-Medium;
+	margin-bottom: 6px;
+}
+section .testimonials-item .user h6 {
+	font: normal normal 300 18px/20px Gilroy-Light;
+	margin-bottom: 0;
+	text-transform: uppercase;
+}
+section .testimonials-item p {
+	font: normal normal 300 24px/33px Gilroy-Light;
+	margin-bottom: 0;
+}
+@media screen and (max-width: 1550px) {
+	section .geteway {
+		background-size: 575px auto;
+	}
+	section .bulk {
+		background-size: 100% 820px;
+	}
+}
+@media screen and (max-width: 1400px) {
+	section .bulk {
+		background-size: 100% 710px;
+	}
+	section .geteway .container > div {
+		max-width: 600px;
+	}
+	section .geteway {
+		background-size: 530px auto;
+	}
+}
+@media screen and (max-width: 1200px) {
+	section .bulk-img {
+		padding: 48px 0 21px;
+	}
+	section .bulk {
+		background-size: 100% 1550px;
+	}
+	section .bulk-img {
+		width: 100%;
+	}
+	section .bulk .container {
+		flex-direction: column;
+	}
+	section .geteway {
+		background-position: right bottom;
+		padding-bottom: 560px;
+		margin-bottom: 100px;
+	}
+	section .geteway .container > div {
+		max-width: 100%;
+	}
+	section .fontfamilytype {
+		margin-bottom: 100px;
+	}
+	section .valued-services {
+		margin-bottom: 140px;
+	}
+	section .promise {
+		padding-bottom: 180px;
+		margin-bottom: 100px;
+	}
+	section .testimonials h2 {
+		margin-bottom: 40px;
+	}
+	section .testimonials .star-content {
+		margin-bottom: 100px;
+	}
+}
+@media screen and (max-width: 992px) {
+	section .bulk {
+		background-size: 100% 1370px;
+	}
+	section .promise .container {
+		flex-direction: column-reverse;
+	}
+	section .testimonials-item-content {
+		flex-direction: column;
+		align-items: center;
+	}
+	section .testimonials-item {
+		max-width: 100%;
+		margin-right: 0;
+	}
+	section .testimonials-item .user {
+		margin-bottom: 31px;
+	}
+}
+@media screen and (max-width: 768px) {
+	section .bulk {
+		background-size: 100% 1200px;
+	}
+	section .valued-services .service-item-content {
+		flex-direction: column;
+	}
+	section .valued-services .service-item {
+		margin-right: 0;
+		max-width: 100%;
+		margin-bottom: 35px;
+	}
+	section .valued-services .service-item img {
+		margin-bottom: 27px;
+	}
+	section .valued-services .service-item h2 {
+		margin-bottom: 27px;
+	}
+	section .valued-services {
+		margin-bottom: 49px;
+	}
+	section .testimonials h3,
+	section .testimonials h2 {
+		text-align: left;
+	}
+	section .testimonials .star-content {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	section .testimonials .star-content p {
+		margin-left: 0;
+	}
+}
+@media screen and (max-width: 576px) {
+	section .bulk {
+		background-size: 100% calc(100% - (100% - 373px) * 0.2);
+	}
+	section .bulk-text {
+		padding-top: 62px;
+		text-align: center;
+		margin-bottom: 26px;
+	}		
+	section .bulk-text h1 {
+		font-size: 35px;
+		line-height: 42px;
+		margin-bottom: 7px;
+	}
+	section .bulk-text h1 span {
+		font-size: 97px;
+		top: -80px;
+    	left: calc(50% + 50px);
+	}
+	section .bulk-text h2 {
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 9px;
+	}
+	section .bulk-text h3 {
+		font-size: 18px;
+		line-height: 21px;
+		margin-bottom: 12px;
+	}
+	section .bulk-text p {
+		font-size: 12px;
+		line-height: 18px;
+		margin-bottom: 24px;
+	}
+	section .bulk-text button {
+		width: 218px;
+		height: 43px;
+		font-size: 16px;
+	}
+	section .fontfamilytype .font-title img {
+		margin-right: 15px;
+	}
+	section .fontfamilytype .font-title p {
+		font-size: 18px;
+		letter-spacing: -0.36px;
+	}
+	section .fontfamilytype .font-title .container {
+		margin-bottom: 41px;
+	}
+	section .fontfamilytype {
+		margin-bottom: 87px;
+	}
+	section .valued-services h1 {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 35px;
+	}
+	section .valued-services h6 {
+		font-size: 14px;
+		line-height: 22px;
+		margin-bottom: 35px;
+	}
+	section .valued-services .service-item h2 {
+		font-size: 24px;
+		line-height: 29px;
+	}
+	section .valued-services .service-item p {
+		font-size: 14px;
+		font-weight: 22px;
+	}
+	section .geteway h1 {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 33px;
+	}
+	section .geteway p {
+		font-size: 14px;
+		line-height: 22px;
+		margin-bottom: 33px;
+	}
+	section .geteway button {
+		width: 171px;
+		height: 39px;
+		font-size: 14px;
+		line-height: 16px;
+	}
+	section .geteway {
+		padding-bottom: 390px;
+		margin-bottom: 95px;
+		background-size: 355px auto;
+	}
+	section .promise-text h3 {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 8px;
+	}
+	section .promise-text h2 {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 33px;
+	}
+	section .promise-text p {
+		font-size: 14px;
+		line-height: 22px;
+	}
+	section .promise-text {
+		margin-left: 0;
+		margin-bottom: 34px;
+	}
+	section .promise-imgbar img {
+		width: 243px;
+	}
+	section .promise {
+		padding-bottom: 80px;
+		margin-bottom: 71px;
+		background-size: 98px auto;
+	}
+	section .testimonials h3 {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 8px;
+	}
+	section .testimonials h2 {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 32px;
+	}
+	section .testimonials .star-content img {
+		width: 31.3px;
+	}
+	section .testimonials .star-content > div {
+		margin-bottom: 7.6px;
+	}
+	section .testimonials .star-content p {
+		font-size: 14px;
+		line-height: 17px;
+	}
+	section .testimonials .star-content {
+		margin-bottom: 89px;
+	}
+	section .testimonials-item {
+		max-width: 276px;
+	}
+	section .testimonials-item .user h5 {
+		font-size: 18px;
+		line-height: 21px;
+		margin-bottom: 5px;
+	}
+	section .testimonials-item .user h6 {
+		font-size: 13px;
+		line-height: 15px;
+	}
+	section .testimonials-item p {
+		font-size: 14px;
+		line-height: 22px;
+	}
+	section .testimonials-item .user img {
+		margin-right: 21px;
+	}
+	section .testimonials {
+		padding-bottom: 123px;
+		background-size: 113px auto;
+	}
+}
