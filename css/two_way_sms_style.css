@@ -117,7 +117,7 @@ section .connect {
 	padding: 208px 0;
 }
 section .connect h1 {
-	font: normal normal 800 48px/59px Gilroy;
+	font: normal normal 800 48px/59px Gilroy-ExtraBold;
 	color: #023047;
 	margin-bottom: 56px;
 }
@@ -248,6 +248,11 @@ section .connect p {
 	section .engage h1 {
 		font-size: 36px;
 		margin-bottom: 50px;
+	}
+	section .conversations h1,
+	section .connect h1 {
+		font-size: 36px;
+		margin-bottom: 40px;
 	}
 	section .engage-item {
 		margin-bottom: 26px;

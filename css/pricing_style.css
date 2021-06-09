@@ -50,22 +50,12 @@ section .rivet-title button {
 section .rivet-title button:hover {
 	background: #f65d5a;
 }
-
-
-
-
-
-
-
-
-
-
-
-/*label span {
+label span {
 	color: #D2302C;
-}*/
+}
 section .pricing-option {
 	padding-top: 160px;
+	margin-bottom: 107px;
 }
 section .pricing-option h1 {
 	text-align: center;
@@ -95,7 +85,7 @@ section .pricing-option p {
 }
 section .buynowbuttonbar {
 	text-align: center;
-	margin: 107px 0 126px;
+	margin-bottom: 126px;
 }
 section .buynowbuttonbar p {
 	font: normal normal 32px/39px Gilroy-Medium;
@@ -104,11 +94,20 @@ section .buynowbuttonbar p {
 }
 section .buynowbuttonbar button {
 	background: #D2302C;
-	padding: 14px 34px;
 	box-shadow: 0px 10px 20px #00000014;
 	border-radius: 5px;
-	font: normal normal 24px/29px Gilroy-Medium;
 	color: #FFFFFF;
+}
+section .buynowbuttonbar .desktop-button {
+	width: 164px;
+	height: 57px;
+	font: normal normal 24px/29px Gilroy-Medium;
+}
+section .buynowbuttonbar .mobile-button {
+	display: none;
+	width: 228px;
+	height: 41px;
+	font: normal normal 16px/19px Gilroy-Medium;
 }
 section .buynowbuttonbar button:hover {
 	background: #f65d5a;
@@ -116,12 +115,14 @@ section .buynowbuttonbar button:hover {
 section .table-controlbar {
 	margin-bottom: 40px;
 }
-section .table-controlbar .selectbar {
+section .table-controlbar .country-select,
+section .table-controlbar .sort-select {
 	position: relative;
 	width: 214px;
 	margin-right: 24px;
 }
-section .table-controlbar .selectbar .select-arrow {
+section .table-controlbar .country-select .select-arrow,
+section .table-controlbar .sort-select .select-arrow {
 	position: absolute;
 	transform: matrix(0, -1, 1, 0, 0, 0);
 	right: 33px;
@@ -169,6 +170,9 @@ section .table-controlbar .searchbar input {
 	border: 1px solid #E8E8E8;
 	border-radius: 5px;
 }
+section .table-controlbar .downloadbar {
+	display: flex;
+}
 section .table-controlbar .pdfdownload,
 section .table-controlbar .xlsdownload {
 	height: 47px;
@@ -199,12 +203,12 @@ section .table-main table {
 	margin-bottom: 72px;
 }
 section .table-main table thead tr {
-	border-bottom: 1px solid #b8b8b8;
+	border-bottom: 1px solid #d5d5d5;
 }
 section .table-main table thead tr th {
 	position: relative;
 	font: normal normal 20px/24px Gilroy-Medium;
-	padding: 33px 0 20px;
+	padding: 33px 0 23px;
 }
 section .table-main table thead tr th select {
 	margin-left: 12px;
@@ -229,13 +233,12 @@ section .table-main table thead tr th .arrow-down {
 	width: 8px;
 	height: 14px;
 }
-section .table-main table tbody tr {
-	
-	border-bottom: 1px solid #e8e8e8;
-}
 section .table-main table tbody tr td {
 	font: normal normal 300 20px/23px Gilroy-Light;
 	padding: 21px 0 22px;
+}
+section .table-main table tbody tr:nth-child(1) td {
+	padding-top: 44px;
 }
 section .table-main table thead tr th:nth-child(1),
 section .table-main table tbody tr td:nth-child(1) {
@@ -331,8 +334,9 @@ section .require-form .submitbutton {
 	margin-top: 60px;
 }
 section .require-form .submitbutton button {
+	width: 238px;
+	height: 47px;
 	background: #D2302C;
-	padding: 13px 88px;
 	border-radius: 5px;
 	font: normal normal 18px/21px Gilroy-Medium;
 	letter-spacing: 0.9px;
@@ -406,6 +410,9 @@ section .require-form .submitbutton button:hover {
 	}
 }
 @media (max-width:992px) {
+	section .pricing-option {
+		padding-top: 100px;
+	}
 	section .rivet-title .container {
 		flex-direction: column;
 		text-align: center;
@@ -431,11 +438,28 @@ section .require-form .submitbutton button:hover {
 		width: 100%;
 		margin-bottom: 30px;
 	}
-	section .table-controlbar .selectbar {
+	section .table-controlbar .container .downloadbar {
+		margin-bottom: 0 !important;
+	}
+	section .table-controlbar .country-select,
+	section .table-controlbar .sort-select {
 		margin-right: 0;
+	}
+	section .table-controlbar .pdfdownload {
+		margin-left: 0;
+	}
+	section .table-controlbar .xlsdownload {
+		margin-left: 22.6px;
+	}
+	section .table-controlbar {
+		margin-bottom: 23.45px;
 	}
 }
 @media (max-width:768px) {
+	section .pricing-option {
+		padding-top: 62px;
+		margin-bottom: 50px;
+	}
 	section .pricing-option .container > div {
 		flex-direction: column;
 	}
@@ -443,10 +467,24 @@ section .require-form .submitbutton button:hover {
 		margin-bottom: 20px;
 	}
 	section .pricing-option h1 {
-		font-size: 38px;
+		font-size: 32px;
+		line-height: 36px;
+		margin-bottom: 80px;
 	}
 	section .buynowbuttonbar p {
-		font-size: 22px;
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 28px;
+	}
+	section .require-form h1 {
+		font-size: 32px;	
+		line-height: 36px;
+		margin-bottom: 40px;
+	}
+	section .require-form h5 {
+		font-size: 20px;
+		line-height: 24px;
+		margin-bottom: 50px;
 	}
 	section .require-form .input-item {
 		flex-direction: column;
@@ -462,26 +500,47 @@ section .require-form .submitbutton button:hover {
 		max-width: 100%;
 		margin-bottom: 30px;
 	}
-	section .table-main table {
-		width: 768px;
-	}
-	section .table-main .container {
-		overflow-x: scroll;
-	}
-	section .table-main .table-page {
-		flex-direction: column;
-	}
 	section .table-main .table-page .prevbutton, 
 	section .table-main .table-page .nextbutton {
 		margin: 0 10px;
 	}
-	section .table-main .table-page p {
-		text-align: center;
-		margin-bottom: 20px;
-	}
 	.prevbutton {
 		display: block !important;
 		visibility: hidden;
+	}
+	section .table-main .table-page ul {
+		margin: 0 10px;
+	}
+	section .buynowbuttonbar .desktop-button {
+		display: none;
+	}
+	section .buynowbuttonbar .mobile-button {
+		display: initial;
+	}
+	section .buynowbuttonbar {
+		margin-bottom: 62px;
+	}
+	section .table-controlbar label {
+		font-size: 18px;
+		line-height: 20px;
+		margin-bottom: 7px;
+	}
+	section .table-controlbar select {
+		font-size: 14px;
+	}
+	section .table-controlbar .country-select {
+		margin-bottom: 15px !important;
+	}
+	section .table-controlbar .sort-select,
+	section .table-controlbar .searchbar {
+		margin-bottom: 24px !important;
+	}
+	section .table-controlbar .pdfdownload a, 
+	section .table-controlbar .xlsdownload a {
+		font-size: 14px;
+	}
+	section .table-main {
+		margin-bottom: 45px;
 	}
 }
 @media (max-width:576px) {
@@ -506,6 +565,98 @@ section .require-form .submitbutton button:hover {
 		font-size: 16px;
 	}
 	section .require-form h1 {
-		font-size: 38px;
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 18px;
+		text-align: left;
+	}
+	section .require-form h5 {
+		font-size: 14px;
+		line-height: 22px;
+		margin-bottom: 28px;
+		text-align: left;
+	}
+	section .pricing-option h1 {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 62px;	
+	}
+	section .pricing-option .optionimg {
+		margin-bottom: 28px;
+	}
+	section .pricing-option h6 {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 25px;
+	}
+	section .pricing-option p {
+		font-size: 14px;
+		line-height: 22px;
+	}
+	section .pricing-option .pricing-option-item {
+		margin-bottom: 50px;
+	}
+	section .pricing-option {
+		margin-bottom: 0;
+	}
+	section .table-main table {
+		margin-bottom: 46.5px;
+	}
+	section .table-main table thead tr th {
+		padding: 27px 0 18.5px;
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 600;
+	}
+	section .table-main table tbody tr td {
+		font-size: 14px;
+		line-height: 16px;
+		padding: 30px 0;
+	}
+	section .table-main table tbody tr:nth-child(1) td {
+		padding-top: 10px;
+	}
+	section .table-main table thead tr {
+		border: none;
+	}
+	section .table-main table thead tr th select {
+		width: 47px;
+		height: 23px;
+		font-size: 10px;
+		padding-left: 6px;
+	}
+	section .table-main table thead tr th .arrow-down {
+		left: 75px;
+		bottom: 24px;
+		font-size: 10px;	
+ 	}
+	section .require-form label {
+		font-size: 14px;
+		line-height: 16px;
+		margin-bottom: 11px;
+	}
+	section .require-form input::placeholder,
+	section .require-form textarea::placeholder,
+	section .require-form input, 
+	section .require-form textarea {
+		font-size: 14px;
+	}
+	section .require-form .input-item > div {
+		margin-bottom: 13px;
+	}
+	section .require-form .submitbutton {
+		margin-top: 32px;
+	}
+	section .require-form {
+		margin-bottom: 33px;
+	}
+	section .require-form .submitbutton button {
+		width: 176px;
+		height: 41px;
+		letter-spacing: 0.8px;
+		font-size: 16px;
+	}
+	section .require-form .submitbutton {
+		text-align: left;
 	}
 }
