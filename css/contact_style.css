@@ -159,6 +159,9 @@ section .contact-main-content .buttonbar button.submit {
 	margin-right: 12px;
 	color: white;
 }
+section .contact-main-content .buttonbar button.submit:hover {
+	background: #f65d5a;
+}
 section .contact-main-content .buttonbar button.reset {
 	background: white;
 	color: #023047;

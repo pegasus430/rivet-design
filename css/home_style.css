@@ -357,6 +357,10 @@ section .testimonials-item p {
 	section .testimonials-item .user {
 		margin-bottom: 31px;
 	}
+	section .promise-text {
+		margin-left: 0;
+		margin-bottom: 34px;
+	}
 }
 @media screen and (max-width: 768px) {
 	section .bulk {
@@ -495,10 +499,6 @@ section .testimonials-item p {
 	section .promise-text p {
 		font-size: 14px;
 		line-height: 22px;
-	}
-	section .promise-text {
-		margin-left: 0;
-		margin-bottom: 34px;
 	}
 	section .promise-imgbar img {
 		width: 243px;

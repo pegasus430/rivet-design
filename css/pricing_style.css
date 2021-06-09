@@ -1,97 +1,69 @@
-section .test-drive {
-	background: #FCFCFC;
+section .rivet-title {
+	background: #fcfcfc;
 }
-section .test-drive-content {
+section .rivet-title-bg {
+	background-position: right bottom;
+}
+section .rivet-title .container {
+	display: flex;
+	justify-content: space-between;
+}
+section .rivet-title-text {
 	padding-top: 169px;
-	background: url(../img/sectionbg.png) no-repeat;
-	background-position: right;	
-	background-size: auto 100%;
+	margin-right: 20px;
 }
-section .test-drive-text {
-	max-width: 665px;
+section .rivet-title-img img {
+	width: 100%;
+	height: 100%;
 }
-section .test-drive h1 {
+section .rivet-title-img {
+	padding: 29.33px 0 23.14px;
+}
+section .rivet-title h1 {
 	font: normal normal 800 60px/73px Gilroy-ExtraBold;
 	color: #D2302C;
 	text-transform: capitalize;
 	margin-bottom: 13px;
 }
-section .test-drive h2 {
+section .rivet-title h2 {
+	max-width: 620px;
 	font: normal normal 800 42px/51px Gilroy-ExtraBold;
 	color: #023047;
 	text-transform: capitalize;
 	margin-bottom: 12px;
 }
-section .test-drive p {
+section .rivet-title p {
+	max-width: 630px;
 	font: normal normal 24px/29px Gilroy-Medium;
 	color: #023047;
 	margin-bottom: 29px;
 }
-section .test-drive button {
-	font: normal normal 24px/29px Gilroy-Medium;
-	background: #D2302C;
+section .rivet-title button {
+	width: 282px;
+	height: 57px;
+	background: #D2302C 0% 0% no-repeat padding-box;
 	box-shadow: 0px 10px 20px #00000014;
 	border-radius: 5px;
-	color: white;
-	padding: 14px 34px;
-	margin-bottom: 155px;
+	font: normal normal 24px/29px Gilroy-Medium;
+	color: #FFFFFF;
 }
-section .test-drive button:hover {
+section .rivet-title button:hover {
 	background: #f65d5a;
 }
-section .callbackbar {
-	background: #023047;
-	padding: 42px 0;
-}
-section .callbackbar h4 {
-	font: normal normal 800 32px/40px Gilroy-ExtraBold;
-	color: #FFFFFF;
-	margin-bottom: 13px;
-}
-section .callbackbar p {
-	max-width: 300px;
-	font: normal normal 300 18px/20px Gilroy-Light;
-	color: #FFFFFF;
-	margin-bottom: 0;
-}
-section .callbackbar label {
-	width: 100%;
-	font: normal normal 300 18px/20px Gilroy-Light;
-	color: white;
-	margin-bottom: 10px;
-}
-label span {
+
+
+
+
+
+
+
+
+
+
+
+/*label span {
 	color: #D2302C;
-}
-section .callbackbar input {
-	width: 100%;	
-	background: #FFFFFF;
-	border-radius: 5px;
-	font: normal normal 300 18px/45px Gilroy-Light;
-	color: rgb(0, 0, 0, 0.5);
-	padding: 0 0 0 14px;
-	border: 1px solid white;
-}
-section .callbackbar input::placeholder {
-	font: normal normal 300 18px/20px Gilroy-Light;
-	color: rgb(0, 0, 0, 0.5);
-}
-section .callbackbar .inputbar {
-	max-width: 238px;
-	margin-right: 18px;
-}
-section .callbackbar button {
-	font: normal normal 18px/21px Gilroy-Medium;
-	letter-spacing: 0.9px;
-	color: #FFFFFF;
-	padding: 13px 0;
-	width: 238px;
-	border-radius: 5px;
-	background: #d2302d;
-}
-section .callbackbar button:hover {
-	background: #f65d5a;
-}
+}*/
 section .pricing-option {
 	padding-top: 160px;
 }
@@ -369,12 +341,36 @@ section .require-form .submitbutton button {
 section .require-form .submitbutton button:hover {
 	background: #f65d5a;
 }
+@media screen and (max-width: 1550px) {
+	section .rivet-title-text {
+		padding-top: 140px;
+ 	}
+}
 @media (max-width: 1400px) {
-	section .test-drive-content {
-		background: transparent;
+	section .rivet-title h1 {
+		font-size: 48px;
+	}	
+	section .rivet-title h2 {
+		font-size: 32px;
+		line-height: 36px;
 	}
+	section .rivet-title p {
+		font-size: 20px;
+		line-height: 22px;
+	}
+	section .rivet-title button {
+		width: 240px;
+    	height: 51px;
+		font-size: 20px;
+	}
+	section .rivet-title-text {
+		padding-top: 120px;
+ 	}
 }
 @media (max-width:1200px) {
+	section .rivet-title-text {
+		padding-top: 60px;
+ 	}
 	section .callbackbar .container {
 		flex-direction: column;
 	}
@@ -410,6 +406,23 @@ section .require-form .submitbutton button:hover {
 	}
 }
 @media (max-width:992px) {
+	section .rivet-title .container {
+		flex-direction: column;
+		text-align: center;
+	}
+	section .rivet-title-text {
+		margin-right: 0;
+	}
+	section .rivet-title h2,
+	section .rivet-title p {
+		max-width: 100%;
+	}
+	section .rivet-title-img {
+		padding: 79.89px 0 0;
+	}
+	section .rivet-title-bg {
+		padding-bottom: 67.33px;
+	}
 	section .table-controlbar .container {
 		flex-direction: column;
 		align-items: center!important;
@@ -423,12 +436,6 @@ section .require-form .submitbutton button:hover {
 	}
 }
 @media (max-width:768px) {
-	section .test-drive h1 {
-		font-size: 50px;
-	}
-	section .test-drive h2 {
-		font-size: 37px;
-	}
 	section .pricing-option .container > div {
 		flex-direction: column;
 	}
@@ -478,20 +485,27 @@ section .require-form .submitbutton button:hover {
 	}
 }
 @media (max-width:576px) {
-	section .test-drive h1 {
-		font-size: 40px;
+	section .rivet-title h1 {
+		font-size: 32px;
+		line-height: 40px;
+		margin-bottom: 8px;
 	}
-	section .test-drive h2 {
+	section .rivet-title h2 {
 		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 18px;
+	}
+	section .rivet-title p {
+		font-size: 18px;
+		line-height: 21px;
+		margin-bottom: 8px;
+	}
+	section .rivet-title button {
+		width: 228px;
+		height: 41px;
+		font-size: 16px;
 	}
 	section .require-form h1 {
 		font-size: 38px;
 	}
-	section .test-drive p {
-		font-size: 18px;
-	}
-	section .test-drive button {
-		padding: 10px 16px;
-	}
 }
-

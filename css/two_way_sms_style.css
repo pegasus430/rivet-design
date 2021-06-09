@@ -1,0 +1,352 @@
+section .rivet-title {
+	background: #fcfcfc;
+}
+section .rivet-title-bg {
+	background: url(../img/bg1.png) no-repeat;
+	background-position: right bottom;
+	background-size: auto 619px;
+	padding: 169px 0 155px;
+}
+section .rivet-title h1 {
+	font: normal normal 800 60px/73px Gilroy-ExtraBold;
+	color: #D2302C;
+	text-transform: capitalize;
+	margin-bottom: 13px;
+}
+section .rivet-title h2 {
+	max-width: 737px;
+	font: normal normal 800 42px/51px Gilroy-ExtraBold;
+	color: #023047;
+	text-transform: capitalize;
+	margin-bottom: 12px;
+}
+section .rivet-title p {
+	max-width: 620px;
+	font: normal normal 24px/29px Gilroy-Medium;
+	color: #023047;
+	margin-bottom: 29px;
+}
+section .rivet-title button {
+	width: 282px;
+	height: 57px;
+	background: #D2302C 0% 0% no-repeat padding-box;
+	box-shadow: 0px 10px 20px #00000014;
+	border-radius: 5px;
+	font: normal normal 24px/29px Gilroy-Medium;
+	color: #FFFFFF;
+}
+section .rivet-title button:hover {
+	background: #f65d5a;
+}
+section .engage {
+	padding-top: 160px;
+	margin-bottom: 75.78px;
+}
+section .engage h1 {
+	font: normal normal 800 48px/59px Gilroy-ExtraBold;
+	color: #023047;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 107px;
+}
+section .engage-item-content {
+	display: flex;
+	justify-content: space-around;
+}
+section .engage-item-content img {
+	height: 99.88px;
+	margin-bottom: 22.12px;
+}
+section .engage-item-content h2 {
+	font: normal normal 28px/34px Gilroy-Medium;
+	color: #D2302C;
+	margin-bottom: 24px;
+}
+section .engage-item-content p {
+	font: normal normal 300 18px/36px Gilroy-Light;
+	color: #000000;
+	margin-bottom: 0;
+}
+section .engage-item {
+	max-width: 424px;
+	text-align: center;
+}
+section .conversations {
+	padding: 250px 0 292px;
+	background: url(../img/bg2.png) no-repeat;
+	background-position: right top;
+	background-size: auto calc(100% - 35.78px);
+	margin-bottom: 35.78px;
+}
+section .conversations h1 {
+	font: normal normal 800 48px/59px Gilroy-ExtraBold;
+	color: #023047;
+	margin-bottom: 56px;
+}
+section .conversations h6 {
+	font: normal normal 300 24px/36px Gilroy-Light;
+	margin-bottom: 60px;
+	max-width: 809px;
+}
+section .conversations h2 {
+	font: normal normal 800 32px/40px Gilroy-ExtraBold;
+	color: #D2302C;
+	margin-bottom: 22px;
+}
+section .conversations p {
+	font: normal normal 300 24px/36px Gilroy-Light;
+	margin-bottom: 51px;
+	max-width: 809px;
+}
+section .conversations button {
+	width: 282px;
+	height: 57px;
+	background: #D2302C 0% 0% no-repeat padding-box;
+	box-shadow: 0px 10px 20px #00000014;
+	border-radius: 5px;
+	font: normal normal 24px/29px Gilroy-Medium;
+	color: #FFFFFF;
+}
+section .conversations button:hover {
+	background: #f65d5a;
+}
+section .connect {
+	background: url(../img/bg3.png) no-repeat;
+	background-position: right bottom;
+	background-size: auto 100%;
+	padding: 208px 0;
+}
+section .connect h1 {
+	font: normal normal 800 48px/59px Gilroy;
+	color: #023047;
+	margin-bottom: 56px;
+}
+section .connect p {
+	font: normal normal 300 24px/36px Gilroy-Light;
+	max-width: 670px;
+	margin-bottom: 20px;
+}
+@media screen and (max-width: 1550px) {
+	section .rivet-title h2 {
+		max-width: 620px;
+	}
+	section .conversations h6,
+	section .conversations p {
+		max-width: 700px;
+	}
+}
+@media screen and (max-width: 1400px) {
+	section .conversations {
+		padding: 115px 0;
+		background-size: 580px auto;
+	}
+	section .rivet-title-bg {
+		background-size: auto 530px;
+		padding: 150px 0;
+	}
+	section .rivet-title h1 {
+		font-size: 48px;
+		line-height: 52px;
+	}	
+	section .rivet-title h2 {
+		font-size: 32px;
+		line-height: 36px;
+		max-width: 560px;
+
+	}
+	section .rivet-title p {
+		font-size: 20px;
+		line-height: 22px;
+		max-width: 450px;
+	}
+	section .rivet-title button {
+		width: 240px;
+    	height: 51px;
+		font-size: 20px;
+	}
+	section .conversations h1 {
+		max-width: 700px;
+	}
+	section .conversations h6, 
+	section .conversations p {
+		max-width: 635px;
+	}
+	section .connect {
+		background-size: auto 610px;		
+		padding: 150px 0;
+	}
+	section .connect p {
+		max-width: 630px;
+	}
+}
+@media screen and (max-width: 1200px) {
+	section .rivet-title-bg {
+		padding: 80px 0;
+		background-size: auto 456px;
+	}
+	section .rivet-title h2 {
+		max-width: 460px;
+	}
+	section .rivet-title p {
+		max-width: 360px;
+ 	}
+ 	section .conversations {
+		background-size: 450px auto;
+		padding: 100px 0;
+	}
+	section .conversations h1,
+	section .conversations h6, 
+	section .conversations p {
+		max-width: 550px;
+	}
+	section .connect p {
+		max-width: 100%;
+	}
+	section .connect {
+		padding: 75px 0 500px;
+	}
+}
+@media screen and (max-width: 992px) {
+	section .rivet-title-bg {
+		background-position: center bottom;
+		background-size: 100% auto;
+		padding-bottom: calc(58.56% + 100px);
+	}
+	section .rivet-title .container {
+		text-align: center;
+	}
+	section .conversations h1,
+	section .conversations h6, 
+	section .conversations p,
+	section .rivet-title h2,
+	section .rivet-title p {
+		max-width: 100%;
+	}
+	section .conversations {
+		background-size: auto 900px;
+		background-position: right bottom;
+		padding-bottom: 925.76px;
+	}
+	section .connect {
+		background-size: 100% auto;
+		padding-bottom: calc(67.72% + 10px);
+	}
+}
+@media screen and (max-width: 768px) {
+	section .engage-item-content {
+		flex-direction: column;
+	}
+	section .engage-item {
+		max-width: 100%;
+	}
+	section .rivet-title-bg {
+		padding-top: 70px;
+ 	}
+	section .engage {
+		padding-top: 100px;
+	}
+	section .engage h1 {
+		font-size: 36px;
+		margin-bottom: 50px;
+	}
+	section .engage-item {
+		margin-bottom: 26px;
+	}
+	section .engage-item-content h2 {
+		margin-bottom: 5px;
+ 	}
+ 	section .engage {
+ 		margin-bottom: 40px;
+ 	}
+ 	section .conversations {
+		padding-top: 62px;
+	}
+}
+@media screen and (max-width: 576px) {
+	section .rivet-title-bg {
+		padding-top: 36px;
+	}
+	section .rivet-title h1 {
+		font-size: 32px;
+		line-height: 40px;
+		margin-bottom: 8px;
+	}
+	section .rivet-title h2 {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 8px;
+	}
+	section .rivet-title p {
+		font-size: 18px;
+		line-height: 21px;
+		margin-bottom: 24px;
+	}
+	section .rivet-title button {
+		width: 228px;
+		height: 41px;
+		font-size: 16px;
+	}
+	section .engage {
+		padding-top: 60.43px;
+	}
+	section .engage h1 {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 60px;
+	}
+	section .engage-item-content img {
+		margin-bottom: 26.12px;
+	}
+	section .engage-item-content h2 {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 12px;
+	}
+	section .engage-item-content p {
+		font-size: 14px;
+		line-height: 22px;
+		margin-bottom: 22px;
+	}
+	section .engage {
+		margin-bottom: 10px;
+	}
+	section .conversations {
+		background-size: auto 586.37px;
+		background-position: right bottom;
+		padding-bottom: 612.13px;
+	}
+	section .conversations h1 {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 26px;
+	}
+	section .conversations h6 {
+		font-size: 14px;
+		line-height: 22px;
+		margin-bottom: 30px;
+	}
+	section .conversations h2 {
+		font-size: 18px;
+		line-height: 22px;
+		margin-bottom: 12px;
+	}
+	section .conversations p {
+		font-size: 14px;
+		line-height: 22px;
+		margin-bottom: 34px;
+	}
+	section .conversations button {
+		width: 228px;
+		height: 41px;
+		font-size: 16px;
+	}
+	section .connect h1 {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 42px;
+	}
+	section .connect p {
+		font-size: 14px;
+		line-height: 22px;
+	}
+}
