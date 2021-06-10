@@ -97,7 +97,14 @@
 					<h1>SMS API Service</h1>
 					<p>We made it simple yet trusted and most reliable integration for developer-friendly global SMS API into your communications platform. It is to send SMS text messages to your customers fast and easily. Get up and running quickly with clear documentation, developer tools, and comprehensive reporting.</p>
 					<div class="download">
-						<input type="email" name="email" placeholder="Please enter your work email" pattern=".+@.+.com" required maxlength="45"/>
+						<div class="input-field">
+							<input type="email" name="email" placeholder=" " pattern=".+@.+.com" required maxlength="45"/>
+  							<!-- <input id="input-text-field" type="text" placeholder=" "></input> -->
+  							<label for="input-text-field">
+    							<span class="first-letter">Please enter your work email</span>
+    							<span class="second-letter">*</span>
+  							</label>
+						</div>
 						<button><img src="./img/download_black_24dp.svg" alt=""/>Download API</button>
 					</div>
 				</div>
@@ -218,47 +225,50 @@
 					</div>
 					<div class="container">
 						<div class="form-content">
-							<h3>Have a project we can help with?</h3>
-							<p>Let our team help you cater you technical requirements</p>
-							<form>
-								<div class="input-user">
-									<div class="firstname">
-										<label>First Name<span>*</span></label>
-										<input type="text" name="firstname" placeholder="Enter your first name" required maxlength="45">
+							<div class="form-content-main">
+								<h3>Have a project we can help with?</h3>
+								<p>Let our team help you cater you technical requirements</p>
+								<form>
+									<div class="input-user">
+										<div class="firstname">
+											<label>First Name<span>*</span></label>
+											<input type="text" name="firstname" placeholder="Enter your first name" required maxlength="45">
+										</div>
+										<div class="lastname">
+											<label>Last Name<span>*</span></label>
+											<input type="text" name="lastname" placeholder="Enter your last name" required maxlength="45">
+										</div>
+										<div class="workemail">
+											<label>Work Email<span>*</span></label>
+											<input type="text" name="email" placeholder="Enter your work email" pattern=".+@.+.com" required maxlength="45">
+										</div>
 									</div>
-									<div class="lastname">
-										<label>Last Name<span>*</span></label>
-										<input type="text" name="lastname" placeholder="Enter your last name" required maxlength="45">
+									<div class="input-info">
+										<div class="phone-number">
+											<label>Phone Number<span>*</span></label>
+											<input type="text" name="phoneNumber" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required maxlength="45">
+										</div>
+										<div class="company">
+											<label>Company<span>*</span></label>
+											<input type="text" name="company" placeholder="Enter your company's name" required maxlength="45">
+										</div>
+										<div class="website">
+											<label>Website</label>
+											<input type="text" name="website" placeholder="Enter your work email" required maxlength="45">
+										</div>
 									</div>
-									<div class="workemail">
-										<label>Work Email<span>*</span></label>
-										<input type="text" name="workemail" placeholder="Enter your work email" pattern=".+@.+.com" required maxlength="45">
+									<div class="description">
+										<label>Description</label>
+										<textarea required placeholder="Enter Description"></textarea>
 									</div>
-								</div>
-								<div class="input-info">
-									<div class="phone-number">
-										<label>Phone Number<span>*</span></label>
-										<input type="text" name="phoneNumber" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required maxlength="45">
+									<div class="submitbutton">
+										<button type="submit">Submit</button>
 									</div>
-									<div class="company">
-										<label>Company<span>*</span></label>
-										<input type="text" name="company" placeholder="Enter your company's name" required maxlength="45">
-									</div>
-									<div class="website">
-										<label>Website</label>
-										<input type="text" name="website" placeholder="Enter your work email" required maxlength="45">
-									</div>
-								</div>
-								<div>
-									<label>Description</label>
-									<textarea required placeholder="Enter Description"></textarea>
-								</div>
-								<div>
-									<button type="submit">Submit</button>
-								</div>
-							</form>
+								</form>
+							</div>
 						</div>
 					</div>
+					<img src="./img/bg5.png" alt=""/>
 				</div>
 			</div>
 		</section>
@@ -304,19 +314,19 @@
 						<form>
 							<div>
 								<label>Name<span>*</span></label>
-								<input type="text" name="fullName" placeholder="Enter your full name"/>
+								<input type="text" name="fullName" placeholder="Enter your full name" required maxlength="45" />
 							</div>
 							<div class="d-flex">
 								<div class="email-bottom">
 									<label>Work Email<span>*</span></label>
-									<input type="email" name="email" placeholder="Enter your work email"/>	
+									<input type="email" name="email" placeholder="Enter your work email" pattern=".+@.+.com" required maxlength="45" />	
 								</div>
 								<div class="phone-bottom">
 									<label>Phone Number<span>*</span></label>
-									<input type="text" name="phoneNumber" placeholder="Enter your phone number"/>
+									<input type="text" name="phoneNumber" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required maxlength="10" />
 								</div>
 							</div>
-							<button>Send Request</button>
+							<button type="submit">Send Request</button>
 						</form>
 					</div>
 				</div>

@@ -43,9 +43,16 @@ section .rivet-title button:nth-child(1) {
 	color: #FFFFFF;
 	margin-right: 12px;
 }
+section .rivet-title button:nth-child(1):hover {
+	background: #f65d5a;
+}
 section .rivet-title button:nth-child(2) {
 	color: #023047;
 	background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+section .rivet-title button:nth-child(2):hover {
+	color: white;
+	background: #D2302C;
 }
 section .sms-api-service {
 	padding-top: 160px;
@@ -79,15 +86,53 @@ section .sms-api-service .download input {
 	font: normal normal 300 18px/20px Gilroy-Light;
 	color: #000000;
 }
-section .sms-api-service .download input::placeholder {
+section .sms-api-service .download .input-field {
+	position: relative;
+	display: inline-block;
+}
+section .sms-api-service .download label {
+	position: absolute;
+	left: 27px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+/*.input-field {
+  
+.input-field > label {
+  position: absolute;
+  left: 0.5em;
+  top: 50%;
+  margin-top: -0.5em;
+  opacity: 0.5;
+  display: none;
+}
+
+.input-field > input[type=text]:placeholder-shown + label {
+  display: block;
+}
+
+.input-field > label > span {
+  letter-spacing: -2px;
+}
+
+.first-letter {
+  color: red;
+}
+
+.second-letter {
+  color: blue;
+}*/
+
+
+
+/*section .sms-api-service .download input::placeholder {
 	font: normal normal 300 18px/20px Gilroy-Light;
 	color: #000000;
-}
-section .sms-api-service .download input[placeholder]:after {
+}*/
+/*section .sms-api-service .download input[placeholder]::after {
 	content: "*";
-	/*color: #D2302C;*/
-	color: red;
-}
+	color: #D2302C;
+}*/
 section .sms-api-service .download button {
 	width: 282px;
 	height: 100%;
@@ -97,6 +142,9 @@ section .sms-api-service .download button {
 	font: normal normal 24px/29px Gilroy-Medium;
 	color: #FFFFFF;
 }
+section .sms-api-service .download button:hover {
+	background: #D2302C;
+} 
 section .sms-api-service .download button img {
 	margin-right: 12px;
 }
@@ -185,10 +233,20 @@ section .salient-features-item-img {
 }
 section .why-sms-content {
 	background: #F8F8F8;
+	padding-bottom: 31px;
 }
 section .why-sms {
+	position: relative;
 	background: transparent radial-gradient(closest-side at 71% 72%, #006497 0%, #023047 100%) 0% 0% no-repeat padding-box;
 	padding-top: 132px;
+	background-size: 100% 1473px;
+}
+section .why-sms > img {
+	position: absolute;
+	top: 772.5px;
+	width: 734.93px;
+	height: auto;
+	right: calc((100% - 1520px)/2);
 }
 section .why-sms h1 {
 	font: normal normal 800 48px/59px Gilroy-ExtraBold;
@@ -204,11 +262,11 @@ section .why-sms-item-content {
 	display: flex;
 	width: 920px;
 	flex-wrap: wrap;
-	margin-bottom: 57px;
+	margin-bottom: 25px;
 	margin-left: 107px;
 }
 section .why-sms-item {
-	max-width: 387px;
+	width: 387px;
 	height: 320px;
 	margin-right: 73px;
 	margin-bottom: 32px;
@@ -217,7 +275,7 @@ section .why-sms-item img {
 	margin-bottom: 23.7px;
 }
 section .why-sms-item h2 {
-	font: normal normal medium 28px/34px Gilroy-Medium;
+	font: normal normal 28px/34px Gilroy-Medium;
 	color: #F9D142;
 	margin-bottom: 24px;
 }
@@ -225,10 +283,15 @@ section .why-sms-item p {
 	margin-bottom: 0;
 }
 section .why-sms .form-content {
+	width: 100%;
 	background: #FFFFFF 0% 0% no-repeat padding-box;
 	box-shadow: 0px 0px 20px #00000014;
 	border-radius: 5px;
-	padding: 279px 208px 0;
+	padding: 279px 15px 86px;
+}
+section .why-sms .form-content-main {
+	max-width: 1104px;
+	margin: auto;
 }
 section .why-sms h3 {
 	font: normal normal 800 48px/59px Gilroy-ExtraBold;
@@ -254,6 +317,7 @@ section .why-sms input {
 	height: 47px;
 }
 section .why-sms textarea {
+	padding-top: 13px;
 	height: 126px;
 }
 section .why-sms input,
@@ -262,6 +326,7 @@ section .why-sms textarea {
 	background: #F8F8F8 0% 0% no-repeat padding-box;
 	border: 1px solid #E8E8E8;
 	border-radius: 5px;
+	padding-left: 14px;
 }
 section .why-sms input,
 section .why-sms input::placeholder,
@@ -285,13 +350,31 @@ section .why-sms .phone-number,
 section .why-sms .company {
 	margin-right: 24px;
 }
-
-
-
-
+section .why-sms .description {
+	margin-bottom: 60px;
+}
+section .why-sms .submitbutton {
+	text-align: center;
+}
+section .why-sms .submitbutton button {
+	width: 238px;
+	height: 47px;
+	background: #D2302C 0% 0% no-repeat padding-box;
+	border-radius: 5px;
+	font: normal normal 18px/21px Gilroy-Medium;
+	letter-spacing: 0.9px;
+	color: #FFFFFF;
+}
+section .why-sms .submitbutton button:hover {
+	background: #f65d5a;
+}
 @media screen and (max-width: 1550px) {
 	section .rivet-title-bg {
 		background-size: 900px auto;
+	}
+	section .why-sms > img {
+		top: 820px;
+		right: calc((100% - 1320px)/2 + 12px);
 	}
 }
 @media screen and (max-width: 1400px) {
@@ -301,6 +384,11 @@ section .why-sms .company {
 	section .article-text {
 		padding-top: 85px;
 	}
+	section .why-sms > img {
+		width: 600px;
+		top: 900px;
+		right: calc((100% - 1140px)/2 + 12px);
+	}
 }
 @media screen and (max-width: 1200px) {
 	section .rivet-title-bg {
@@ -309,6 +397,14 @@ section .why-sms .company {
 	}
 	section .article-text {
 		padding-top: 40px;
+	}
+	section .why-sms-item-content {
+		margin-left: 0;
+	}
+	section .why-sms > img {
+		width: 560px;
+		top: 960px;
+		right: calc((100% - 960px)/2 + 12px);
 	}
 }
 @media screen and (max-width: 992px) {
@@ -326,8 +422,36 @@ section .why-sms .company {
 	section .article-text {
 		width: 100%;
 	}
+	section .why-sms {
+		background-size: 100% 2100px;
+	}
+	section .why-sms .form-content {
+		padding-top: 310px;
+	}
+	section .why-sms-item-content {
+		width: 100%;
+		margin-bottom: 230px;
+	}
+	section .why-sms-item {
+		width: 100%;
+		text-align: center;
+		margin-right: 0;
+	}
+	section .why-sms > img {
+		width: 600px;
+		top: 1610px;
+		right: calc((100% - 720px)/2 + 12px);
+	}
 }
 @media screen and (max-width: 768px) {
+	section .rivet-title button {
+		width: 220px;
+		height: 50px;
+		font-size: 20px;
+	}
+	section .rivet-title .container > div {
+		justify-content: center;
+	}
 	section .rivet-title-bg {
 		padding-top: 48px;
 		text-align: center;
@@ -372,6 +496,59 @@ section .why-sms .company {
 		font-size: 36px;
 		line-height: 44px;
 		margin-bottom: 80px;
+	}
+	section .why-sms {
+		background-size: 100% 1620px;
+	}
+	section .why-sms .container:nth-child(2) {
+		max-width: 100%;
+		padding: 0;
+	}
+	section .why-sms .form-content-main {
+		max-width: 540px;
+		padding: 0 12px;
+		margin: auto;
+	}
+	section .why-sms h3 {
+		font-size: 36px;
+		line-height: 44px;
+		margin-bottom: 40px;
+	}
+	section .why-sms p {
+		text-align: center;
+		font-size: 18px;
+		line-height: 26px;
+	}
+	section .salient-features p {
+		line-height: 26px;
+	}
+	section .why-sms .form-content {
+		padding-top: 270px;
+	}
+	section .why-sms .form-content p {
+		margin-bottom: 60px;
+	}
+	section .why-sms .input-user, 
+	section .why-sms .input-info {
+		flex-direction: column;
+	}
+	section .why-sms .input-user > div, 
+	section .why-sms .input-info > div {
+		width: 100%;
+	}
+	section .why-sms h1 {
+		font-size: 36px;
+		line-height: 44px;
+		text-align: center;
+	}
+	section .why-sms-item {
+		height: auto;
+		margin-bottom: 62px;
+	}
+	section .why-sms > img {
+		width: 516px;
+		top: 1385px;
+		right: calc((100% - 540px)/2 + 12px);
 	}
 }
 @media screen and (max-width: 576px) {
@@ -485,5 +662,73 @@ section .why-sms .company {
 	}
 	section .salient-features-item {
 		margin-bottom: 53px;
+	}
+	section .why-sms h3 {
+		font-size: 24px;
+		line-height: 29px;
+		text-align: left;
+		margin-bottom: 18px;
+	}
+	section .why-sms .form-content {
+		padding-top: 161px;
+	}
+	section .why-sms .form-content p {
+		margin-bottom: 28px;
+		text-align: left;
+	}
+	section .why-sms p {
+		font-size: 14px;
+		line-height: 22px;
+		margin-bottom: 81px;
+	}
+	section .why-sms-item p {
+		margin-bottom: 0;
+	}
+	section .why-sms-item-content {
+		margin-bottom: 152px;
+	}
+	section .why-sms label {
+		font-size: 14px;
+		line-height: 16px;
+		margin-bottom: 11px;
+	}
+	section .why-sms input, 
+	section .why-sms input::placeholder, 
+	section .why-sms textarea, 
+	section .why-sms textarea::placeholder {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	section .why-sms .input-user > div, 
+	section .why-sms .input-info > div {
+		margin-bottom: 13px;
+	}
+	section .why-sms .description {
+		margin-bottom: 32px;
+	}
+	section .why-sms .submitbutton {
+		text-align: left;
+	}
+	section .why-sms .submitbutton button {
+		width: 176px;
+		height: 41px;
+		font-size: 16px;
+		letter-spacing: 0.8px;
+	}
+	section .why-sms h1 {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 53px;
+	}
+	section .why-sms-item h2 {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 12px;
+	}
+	section .why-sms > img {
+		width: 360px;
+		top: auto;
+		bottom: 1025px;
+		right: calc((100% - 360px) / 2);
 	}
 }

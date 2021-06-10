@@ -486,6 +486,10 @@ footer .conditions .paypalimgbar {
 	.bottom .about > div {
 		display: none;
 	}
+	footer .conditions .paypalimgbar {
+		display: flex;
+		max-width: 151.3px;
+	}
 }
 @media screen and (max-width:768px) {
 	nav .container > img {
@@ -524,10 +528,6 @@ footer .conditions .paypalimgbar {
 	footer ul {
 		display: none;
 	}
-	footer .conditions .paypalimgbar {
-		display: flex;
-		max-width: 151.3px;
-	}
 	footer .conditions .paypalimgbar > div {
 		width: 50%;
 	}
@@ -540,6 +540,13 @@ footer .conditions .paypalimgbar {
 	footer .container .conditions {
 		width: 100%;
 		justify-content: space-between;
+	}
+	.bottom p {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	.bottom h4 {
+		line-height: 26px;
 	}
 }
 @media screen and (max-width: 576px) {

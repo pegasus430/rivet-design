@@ -146,7 +146,8 @@ section .contact-main-content .check-robot > div img {
 section .contact-main-content .buttonbar {
 	margin-left: 169px;
 }
-section .contact-main-content .buttonbar button {
+section .contact-main-content .buttonbar button,
+section .contact-main-content .buttonbar input {
 	width: 221px;
 	height: 47px;
 	box-shadow: 0px 10px 20px #00000014;
@@ -154,17 +155,22 @@ section .contact-main-content .buttonbar button {
 	font: normal normal 18px/21px Gilroy-Medium;
 	letter-spacing: 0.9px;
 }
-section .contact-main-content .buttonbar button.submit {
+section .contact-main-content .buttonbar button {
 	background: #D2302C;
 	margin-right: 12px;
 	color: white;
 }
-section .contact-main-content .buttonbar button.submit:hover {
+section .contact-main-content .buttonbar button:hover {
 	background: #f65d5a;
 }
-section .contact-main-content .buttonbar button.reset {
+section .contact-main-content .buttonbar input {
 	background: white;
 	color: #023047;
+	transition: 0.3s all ease-in;
+}
+section .contact-main-content .buttonbar input:hover {
+	background: #D2302C;
+	color: white;
 }
 section .contact-main-content .google-map {
 	position: relative;
@@ -296,6 +302,14 @@ section .contact-main-content .google-map p {
 		bottom: 15px;
 		right: 27px;
 	}
+	section .contact-title h1 {
+		font-size: 36px;
+		line-height: 44px;
+	}
+	section .contact-main-content h2 {
+		font-size: 28px;
+		line-height: 36px;
+	}
 }
 @media screen and (max-width: 576px) {
 	section .contact-title {
@@ -328,10 +342,11 @@ section .contact-main-content .google-map p {
 	section .contact-main-content textarea {
 		height: 126px;
 	}
-	section .contact-main-content .buttonbar button.submit {
+	section .contact-main-content .buttonbar button {
 		margin-right: 8px;
 	}
-	section .contact-main-content .buttonbar button {
+	section .contact-main-content .buttonbar button,
+	section .contact-main-content .buttonbar input {
 		height: 41px;
 		font-size: 16px;
 	}

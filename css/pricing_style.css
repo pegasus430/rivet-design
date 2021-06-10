@@ -372,8 +372,8 @@ section .require-form .submitbutton button:hover {
 		line-height: 22px;
 	}
 	section .rivet-title button {
-		width: 240px;
-    	height: 51px;
+		width: 250px;
+    	height: 50px;
 		font-size: 20px;
 	}
 	section .rivet-title-text {
@@ -491,8 +491,8 @@ section .require-form .submitbutton button:hover {
 		margin-bottom: 40px;
 	}
 	section .require-form h5 {
-		font-size: 20px;
-		line-height: 24px;
+		font-size: 18px;
+		line-height: 26px;
 		margin-bottom: 50px;
 	}
 	section .require-form .input-item {
@@ -554,6 +554,14 @@ section .require-form .submitbutton button:hover {
 	section .table-main {
 		margin-bottom: 45px;
 	}
+	section .pricing-option p {
+		line-height: 26px;
+	}
+	section .table-main table thead tr th,
+	section .table-main table tbody tr td {
+		font-size: 18px;
+		line-height: 20px;
+	}
 }
 @media (max-width:576px) {
 	section .rivet-title h1 {
@@ -569,7 +577,7 @@ section .require-form .submitbutton button:hover {
 	section .rivet-title p {
 		font-size: 18px;
 		line-height: 21px;
-		margin-bottom: 8px;
+		margin-bottom: 32px;
 	}
 	section .rivet-title button {
 		width: 228px;

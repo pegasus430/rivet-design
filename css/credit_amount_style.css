@@ -1,50 +1,19 @@
-@font-face {
-	font-family: "Gilroy-ExtraBold";
-	src: url("../fonts/Gilroy-ExtraBold.otf");
-}
-@font-face {
-	font-family: "Gilroy-Light";
-	src: url("../fonts/Gilroy-Light.otf");
-}
-@font-face {
-	font-family: "Gilroy-Medium";
-	src: url("../fonts/Gilroy-Medium.ttf");
-}
-@font-face {
-	font-family: "Segoe-Print-Bold";
-	src: url("../fonts/Segoe-Print-Bold_39951.ttf");
-}
-* {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-}
-button {
-	cursor: pointer;
-	border: none;
-	outline: none;
-}
-.container {
-	box-shadow: 0px 0px 20px #00000014;
-	border: 1px solid #e8e8e8;
-	border-radius: 5px;
-	padding: 50px 10px;
-	margin: 10px auto;
-}
 .credit-amount {
 	max-width: 587px;
 	margin: auto;
+	padding: 52px 0 98px;
 }
 .payment-billing {
 	max-width: 880px;
+	padding: 52px 0 98px;
 	margin: auto;
+	display: none;
 }
 .main-title {
-	font-size: 24px;
-	font-weight: 700;
 	text-align: center;
-	margin-bottom: 29px;
-	font-family: Gilroy-ExtraBold;
+	font: normal normal 800 32px/40px Gilroy-ExtraBold;
+	color: #023047;
+	margin-bottom: 45px;
 }
 .smscard {
 	margin-bottom: 13px;
@@ -55,6 +24,8 @@ button {
 	justify-content: center;
 	width: 100%;
 	background: #5baed8;
+	height: 71px;
+	border-radius: 5px 5px 0 0;
 } 
 .smscard-footer {
 	position: relative;
@@ -62,14 +33,9 @@ button {
 	display: flex;
 	align-items: center;
 	width: 100%;
+	height: 71px;
 	background: #5baed8;
-}
-.smscard-header {
-	height: 72px;
-	border-radius: 5px 5px 0 0;
-}
-.smscard-footer {
-	padding: 16px 37px;
+	padding: 0 37px;
 	border-radius: 0 0 5px 5px;
 }
 .smscard-header-main {
@@ -77,13 +43,9 @@ button {
 	justify-content: space-between;
 	align-items: center;
 	width: 238px;
+	height: 40px;
 	background: white;
-	padding: 5px 15px;
 	border-radius: 5px;
-}
-.smscard-header input {
-	width: 100%;
-	padding-right: 25px;
 }
 .smscard-footer-main {
 	position: absolute;
@@ -91,43 +53,38 @@ button {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 238px;
+	height: 40px;
 	margin: auto;
 	background: white;
-	padding: 5px 15px;
+	padding: 5px 10px;
 	border-radius: 5px;
 }
 .smscard-header input {
+	width: 100%;
+	padding-right: 50px;
 	outline: none;
 	border:  none;
-} 
+}
 .smscard-footer-title {
 	position: absolute;
 	top: 50%;
-	font-size: 18px;
-	line-height: 21px;
+	transform: translateY(-50%);
 	color: #e8e8e8;
+	font: normal normal 800 24px/29px Gilroy-ExtraBold;
+	letter-spacing: 1.2px;
 }
 .smscard-header-title {
-	font-size: 18px;
-	line-height: 21px;
-	color: #e8e8e8;
-	font-family: Gilroy-Medium;
-	left: 50%;
-}
-.smscard-footer-title {
-	transform: translateY(-50%);
-	font-family: Gilroy-ExtraBold;
+	font: normal normal 18px/21px Gilroy-Medium;
+	color: #E8E8E8;
+	margin-left: 16px;
 }
 .smscard-header input, 
 .smscard-footer-value {
-	font-size: 24px;
-	line-height: 29px;
-	font-weight: 800;
 	text-align: center;
-	color: #023047;
+	font: normal normal 800 24px/29px Gilroy-ExtraBold;
 	letter-spacing: 1.2px;
+	color: #023047;
 	margin-bottom: 0;
-	font-family: Gilroy-ExtraBold;
 }
 .smscard-section {
 	display: flex;
@@ -170,67 +127,57 @@ button {
 	cursor: pointer;
 	background: white;
 	max-width: 103px;
-	max-height: 103px;
+	min-height: 103px;
+	height: 103px;
 	margin: auto;
 	border-radius: 10px;
 	border: 1px solid #e8e8e8;
 	color: #023047;
-	padding: 25px 0 20px;
+	padding-top: 25px;
 }
 .smscard-section-card-main h1 {
-	font-size: 32px;
-	line-height: 39px;
+	font: normal normal 32px/39px Gilroy-Medium;
 	letter-spacing: 1.6px;
-	font-weight: 500;
-	font-family: Gilroy-Medium;
 }
 .smscard-section-card-main h2 {
-	font-size: 12px;
-	line-height: 15px;
-	font-weight: 500;
-	font-family: Gilroy-Medium;
+	font: normal normal 12px/15px Gilroy-Medium;
 }
 .smscard-footer h3 {
-	color: #fff;
-	opacity: 0.32;
-	font-size: 12px;
-	line-height: 14px;
-	font-weight: 400;
-	font-family: Gilroy-Light;
+	font: normal normal 300 12px/14px Gilroy-Light;
+	color: rgba(255, 255, 255, 0.32);
+	margin-bottom: 0;
 }
 .smscard-footer h4 {
+	font: normal normal 300 12px/14px Gilroy-Light;
 	color: #fff;
-	font-size: 12px;
-	line-height: 14px;
-	font-weight: 300;
-	font-family: Gilroy-Light;
+	margin-bottom: 0;
+}
+.smscard-footer-right {
+	text-align: right;
 }
 .smalltxt {
 	display: flex;
 	justify-content: space-between;
 	color: #023047;
-	font-size: 12px;
-	line-height: 14px;
+	font: normal normal 300 12px/14px Gilroy-Light;
 	margin-bottom: 40px;
-	font-family: Gilroy-Light;
+}
+.smalltxt p {
+	margin-bottom: 0;
 }
 .smalltxt p a {
 	color: #D2302C;
-	font-size: 12px;
 }
 .checkout {
-	font-size: 18px;
-	line-height: 21px;
+	font: normal normal 18px/21px Gilroy-Medium;
 	color: #023047;
 	text-align: center;
 	margin-bottom: 29px;
-	font-family: Gilroy-Medium;
 }
 .paypalbar {
 	display: flex;
 	justify-content: center;
-	padding: 0 30px;
-	margin-bottom: 30px;
+	margin-bottom: 63px;
 }
 .paypal, .credit-card-txt {
 	cursor: pointer;
@@ -241,8 +188,6 @@ button {
 	border-radius: 5px;
 	background: #d2302c;
 	border: 1px solid #d2302c;
-	color: white;
-	font-family: Gilroy-Medium;
 	transition: 0.3s all ease-in;
 }
 .paypal {
@@ -260,26 +205,31 @@ button {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+.paypal img {
+	width: 94px;
+	height: 24px;
+}
 .credit-card-txt p {
 	width: 100%;
-	font-size: 24px;
-	line-height: 29px;
+	font: normal normal 24px/29px Gilroy-Medium;
+	color: white;
 }
 .visa {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 20px;
+	width: 113px;
+	height: 29px;
+	margin: auto;
+	margin-bottom: 15.08px;
+}
+.visa img {
+	width: 100%;
+	height: 100%;
 }
 .footer-txt {
+	font: normal normal 300 12px/14px Gilroy-Light;
 	color: #023047;
-	font-size: 12px;
-	line-height: 14px;
 	text-align: center;
-	padding: 0 30px;
-	font-family: Gilroy-Light;
-}
-.payment-billing {
-	display: none;
+	max-width: 504px;
+	margin: auto;
 }
 .payment-billing-details {
 	display: flex;
@@ -296,15 +246,12 @@ button {
 .detail-title {
 	background: #5baed8;
 	color: white;
-	padding: 10px 50px;
+	padding: 11px 50px 10px;
 	border-radius: 5px;
-	font-size: 18px;
-	line-height: 21px;
-	font-family: Gilroy-Medium;
+	font: normal normal 18px/21px Gilroy-Medium;
 }
-
 .detail-form {
-	padding: 24px 50px;
+	padding: 24px 50px 20px;
 }
 .detail-form > div {
 	position: relative;
@@ -314,27 +261,25 @@ button {
 }
 .detail-form label {
 	color: #023047;
-	font-size: 14px;
-	line-height: 16px;
 	width: 100%;
 	font-weight: 300;
 	margin-bottom: 8px;
-	font-family: Gilroy-Light;
+	font: normal normal 300 14px/16px Gilroy-Light;
 }
 .detail-form .select_arrow {
 	position: absolute;
 	transform: matrix(0, -1, 1, 0, 0, 0);
-	right: 15px;
-	bottom: 15px;
+	right: 24.38px;
+	bottom: 19px;
 	font-size: 16px;	
 }
 .detail-form input, .detail-form select {
 	width: 100%;
-	padding: 0 15px;
-	line-height: 38px;
+	padding-left: 15px;
+	height: 40px;
 	border-radius: 5px;
 	border: 1px solid #e8e8e8;
-	margin-bottom: 8px;
+	margin-bottom: 12px;
 }
 .detail-form .credit-number {
 	position: relative;
@@ -342,11 +287,11 @@ button {
 .detail-form .credit-number img { 
 	position: absolute;
 	width: 65px;
-	right: 10px;
-	bottom: 15px;
+	right: 24.37px;
+	bottom: 19px;
 }
 .detail-form select {
-	height: 40px;
+	padding-right: 35px;
 	-webkit-box-sizing: border-box;
   	-moz-box-sizing: border-box;
   	-webkit-appearance: none;
@@ -356,10 +301,15 @@ button {
 	width: 25px;
 	height: 25px;
 	margin-right: 7px;
+	margin-bottom: 0;
 }
 .checkboxbar {
 	display: flex;
 	place-items: center;
+	margin-bottom: 18px;
+}
+.checkboxbar label {
+	margin-bottom: 0;
 }
 .detail-form .city-country,
 .detail-form .state-postcode {
@@ -374,34 +324,26 @@ button {
 	margin-right: 16px;
 }
 .detail-form-footer-txt {
+	font: normal normal 300 12px/14px Gilroy-Light;
 	color: #c4c4c4;
-	font-size: 12px;
-	line-height: 14px;
-	font-weight: 300;
-	font-family: Gilroy-Light;
-	margin-top: 10px;
 }
 .purchase-button {
 	text-align: center;
 }
 .purchase-button button {
-	padding: 15px 30px;
-	background: #d2302c;
+	background: #D2302C 0% 0% no-repeat padding-box;
 	box-shadow: 0px 10px 20px #00000014;
-	color: white;
-	font-size: 24px;
-	line-height: 29px;
 	border-radius: 5px;
-	font-family: Gilroy-Medium;
+	color: white;
+	width: 380px;
+	height: 59px;
+	font: normal normal 24px/29px Gilroy-Medium;
 	transition: 0.3s all ease-in;
 }
 .purchase-button button:hover {
 	background: #ec625f;
 }
- @media screen and (max-width: 576px) {
-	.container {
-		padding: 30px 10px;
-	}
+ @media screen and (max-width: 768px) {
 	.payment-billing-details {
 		flex-direction: column;
 	}
@@ -411,11 +353,40 @@ button {
 	.details-container {
 		width: 100%;
 	}
+	.detail-form {
+		padding: 20px 0;
+	}
 	.purchase-button button {
-		font-size: 16px;
+		width: 350px;
+    	height: 50px;
+		font-size: 20px;
 	}
 	.smscard-header-main,
 	.smscard-footer-main {
 		width: 150px;
 	}
+	.payment-billing, .credit-amount {
+		padding-bottom: 50px;
+	}
+	.paypal, .credit-card-txt {
+		width: 180px;
+		height: 50px;
+	}
+	.credit-card-txt p {
+		font-size: 20px;
+	}
 } 
+@media screen and (max-width: 576px) {
+	.main-title {
+		font-size: 26px;
+		line-height: 30px;
+	}
+	.purchase-button button {
+		font-size: 16px;
+		width: 260px;
+		height: 42px;
+	}
+	.smscard-section, .smscard-footer {
+		padding: 0 10px;
+	}
+}

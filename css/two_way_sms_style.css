@@ -159,11 +159,6 @@ section .connect p {
 		line-height: 22px;
 		max-width: 450px;
 	}
-	section .rivet-title button {
-		width: 240px;
-    	height: 51px;
-		font-size: 20px;
-	}
 	section .conversations h1 {
 		max-width: 700px;
 	}
@@ -180,6 +175,11 @@ section .connect p {
 	}
 }
 @media screen and (max-width: 1200px) {
+	section .rivet-title button {
+		width: 250px;
+    	height: 50px;
+		font-size: 20px;
+	}
 	section .rivet-title-bg {
 		padding: 80px 0;
 		background-size: auto 456px;
@@ -247,11 +247,13 @@ section .connect p {
 	}
 	section .engage h1 {
 		font-size: 36px;
+		line-height: 44px;
 		margin-bottom: 50px;
 	}
 	section .conversations h1,
 	section .connect h1 {
 		font-size: 36px;
+		line-height: 44px;
 		margin-bottom: 40px;
 	}
 	section .engage-item {
@@ -265,6 +267,21 @@ section .connect p {
  	}
  	section .conversations {
 		padding-top: 62px;
+	}
+	section .conversations h6,
+	section .conversations p,
+	section .connect p {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	section .conversations h2 {
+		font-size: 26px;
+		line-height: 32px;
+	}
+	section .conversations button {
+		width: 250px;
+    	height: 50px;
+		font-size: 20px;
 	}
 }
 @media screen and (max-width: 576px) {
@@ -285,11 +302,6 @@ section .connect p {
 		font-size: 18px;
 		line-height: 21px;
 		margin-bottom: 24px;
-	}
-	section .rivet-title button {
-		width: 228px;
-		height: 41px;
-		font-size: 16px;
 	}
 	section .engage {
 		padding-top: 60.43px;

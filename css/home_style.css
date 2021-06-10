@@ -79,6 +79,7 @@ section .fontfamilytype .fonttype {
 section .fontfamilytype .fonttype p {
 	white-space: nowrap;
 	padding: 0 30px;
+	margin-bottom: 5px;
 }
 section .fontfamilytype .fonttype .qanaya {
 	font: normal normal normal 30px/34px Qanaya-Regular;
@@ -311,6 +312,9 @@ section .testimonials-item p {
 	section .bulk {
 		background-size: 100% 1550px;
 	}
+	section .bulk-text p {
+		max-width: 100%;
+	}
 	section .bulk-img {
 		width: 100%;
 	}
@@ -356,9 +360,10 @@ section .testimonials-item p {
 	section .testimonials-item {
 		max-width: 100%;
 		margin-right: 0;
+		margin-bottom: 20px;
 	}
 	section .testimonials-item .user {
-		margin-bottom: 31px;
+		margin-bottom: 20px;
 	}
 	section .promise-text {
 		margin-left: 0;
@@ -366,11 +371,41 @@ section .testimonials-item p {
 	}
 }
 @media screen and (max-width: 768px) {
+	section .bulk-text {
+		text-align: center;
+		padding-top: 120px;
+	}
+	section .bulk-text h1 span {
+		font-size: 152px;
+		left: calc(50% + 70px);
+	}
+	section .bulk-text h1 {
+		font-size: 56px;
+		line-height: 64px;
+	}
+	section .bulk-text h2 {
+		font-size: 32px;
+		line-height: 40px;
+	}
+	section .bulk-text h3 {
+		font-size: 24px;
+		line-height: 30px;
+	}
+	section .bulk-text p {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	section .bulk-text button,
+	section .geteway button {
+		width: 250px;
+		height: 50px;
+		font-size: 20px;
+	}
 	section .fontfamilytype .fonttype {
 		overflow-x: scroll;
 	}
 	section .bulk {
-		background-size: 100% 1200px;
+		background-size: 100% 1050px;
 	}
 	section .valued-services .service-item-content {
 		flex-direction: column;
@@ -400,6 +435,27 @@ section .testimonials-item p {
 	section .testimonials .star-content p {
 		margin-left: 0;
 	}
+	section .valued-services h1,
+	section .geteway h1,
+	section .promise-text h2,
+	section .testimonials h2 {
+		font-size: 36px;
+		line-height: 44px;
+	}
+	section .promise-text h3,
+	section .testimonials h3 {
+		font-size: 28px;
+		line-height: 34px;
+	}
+	section .valued-services h6,
+	section .geteway p,
+	section .promise-text p,
+	section .testimonials .star-content p,
+	section .testimonials-item p,
+	section .valued-services .service-item p {
+		font-size: 18px;
+		line-height: 26px;
+	}
 }
 @media screen and (max-width: 576px) {
 	section .bulk {
@@ -407,7 +463,6 @@ section .testimonials-item p {
 	}
 	section .bulk-text {
 		padding-top: 62px;
-		text-align: center;
 		margin-bottom: 26px;
 	}		
 	section .bulk-text h1 {

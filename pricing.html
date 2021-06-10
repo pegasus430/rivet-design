@@ -387,6 +387,7 @@
   				});
   				$(".prevbutton").click(function(){
   					pagenumber--;
+  					if (pagenumber < 0) return;
   					$(".table-page ul li:eq(0)").html(pagenumber * 5 + 1)
   					$(".table-page ul li:eq(1)").html(pagenumber * 5 + 2)
   					$(".table-page ul li:eq(2)").html(pagenumber * 5 + 3)

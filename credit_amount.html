@@ -2,195 +2,331 @@
 <html lang="en">
 	<head>
 		<title>Credit Amount</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-		<link rel="stylesheet" type="text/css" href="css/credit_amount_style.css">
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous"/>
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/credit_amount_style.css"/>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body>
-		<div class="container">
-			<div class="credit-amount ridge">
-				<div class="title-container">
-					<p class="main-title">Please Enter Credit Amount</p>
+		<header>
+			<div class="container d-flex justify-content-between align-items-center">
+				<div class="mail-address">
+					<img src="./img/mail-24px.svg" alt="info@rivet.solutions"/>
+					<span class="tooltiptext">info@rivet.solutions</span>
 				</div>
-				<div class="smscard">
-					<div class="smscard-header">
-						<div class="smscard-header-main">
-							<span class="smscard-header-title">AED</span>
-							<input class="smscard-header-value" type="text" name="smsvalue" value="20"/>
-						</div>
+				<div class="phone-number">
+					<img src="./img/call-24(solid)px.svg" alt="+971 6 7474794 | +971 52 7088651"/>
+					<span class="tooltiptext">+971 6 7474794 | +971 52 7088651</span>
+				</div>
+				<ul class="d-flex align-items-center">
+					<li role="button"><i class="fa fa-facebook"></i></li>
+					<li role="button"><i class="fa fa-twitter"></i></li>
+					<li role="button"><i class="fa fa-instagram"></i></li>
+					<li role="button"><i class="fa fa-linkedin"></i></li>
+					<li role="button" style="margin-right: 0"><i class="fa fa-youtube-play"></i></li>
+				</ul>
+			</div>
+		</header>
+		<nav>
+			<div class="container d-flex justify-content-between align-items-center">
+				<img src="./img/Logo.svg" alt=""/>
+				<div class="list" id="navlist">
+					<ul class="align-items-center">
+						<li><a href="./home.html">Home</a></li>
+						<li><a href="./sms_api.html">SMS API</a></li>
+						<li><a href="./two_way_sms.html">Two-Way SMS</a></li>
+						<li><a href="./pricing.html">Pricing</a></li>
+						<li><a href="#">Bulk SMS Marketing</a></li>
+						<li><a href="#">FAQs</a></li>
+						<li><a href="./contact.html" style="color: #D2302C;">Contact</a></li>
+					</ul>
+					<button class="login-button">Login</button>
+				</div>
+				<button class="navbar-toggle">
+					<img src="./img/menu-24px.svg" alt=""/>
+				</button>
+			</div>
+		</nav>
+		<section>
+			<div class="container">
+				<div class="credit-amount ridge">
+					<div class="title-container">
+						<p class="main-title">Please Enter Credit Amount</p>
 					</div>
-					<div class="smscard-section">
-						<div class="smscard-section-card">
-							<div class="smscard-section-card-top"></div>
-							<div class="smscard-section-card-main">
-								<h1>7.0</h1>
-								<h2>Fils/SMS</h2>
+					<div class="smscard">
+						<div class="smscard-header">
+							<div class="smscard-header-main">
+								<span class="smscard-header-title">AED</span>
+								<input class="smscard-header-value" type="text" name="smsvalue" value="20"/>
 							</div>
-							<div class="smscard-section-card-bottom"></div>
 						</div>
-						<div class="smscard-section-card">
-							<div class="smscard-section-card-top"></div>
-							<div class="smscard-section-card-main">
-								<h1>6.5</h1>
-								<h2>Fils/SMS</h2>
+						<div class="smscard-section">
+							<div class="smscard-section-card">
+								<div class="smscard-section-card-top"></div>
+								<div class="smscard-section-card-main">
+									<h1>7.0</h1>
+									<h2>Fils/SMS</h2>
+								</div>
+								<div class="smscard-section-card-bottom"></div>
 							</div>
-							<div class="smscard-section-card-bottom"></div>
-						</div>
-						<div class="smscard-section-card">
-							<div class="smscard-section-card-top"></div>
-							<div class="smscard-section-card-main">
-								<h1>5.6</h1>
-								<h2>Fils/SMS</h2>
+							<div class="smscard-section-card">
+								<div class="smscard-section-card-top"></div>
+								<div class="smscard-section-card-main">
+									<h1>6.5</h1>
+									<h2>Fils/SMS</h2>
+								</div>
+								<div class="smscard-section-card-bottom"></div>
 							</div>
-							<div class="smscard-section-card-bottom"></div>
-						</div>
-						<div class="smscard-section-card" style="margin-right: 0;">
-							<div class="smscard-section-card-top"></div>
-							<div class="smscard-section-card-main">
-								<h1>5.3</h1>
-								<h2>Fils/SMS</h2>
+							<div class="smscard-section-card">
+								<div class="smscard-section-card-top"></div>
+								<div class="smscard-section-card-main">
+									<h1>5.6</h1>
+									<h2>Fils/SMS</h2>
+								</div>
+								<div class="smscard-section-card-bottom"></div>
 							</div>
-							<div class="smscard-section-card-bottom"></div>
+							<div class="smscard-section-card" style="margin-right: 0;">
+								<div class="smscard-section-card-top"></div>
+								<div class="smscard-section-card-main">
+									<h1>5.3</h1>
+									<h2>Fils/SMS</h2>
+								</div>
+								<div class="smscard-section-card-bottom"></div>
+							</div>
+						</div>
+						<div class="smscard-footer">
+							<div class="smscard-footer-left">
+								<h3>Estimated</h3>
+								<h4>SMS Volume:</h4>
+							</div>
+							<div>
+								<div class="smscard-footer-main">
+								<p class="smscard-footer-title">=</p>
+								<p class="smscard-footer-value">285</p>
+							</div>
+							</div>
+							<div class="smscard-footer-right">
+								<h3>Plan</h3>
+								<h4 class="smscard-footer-change">Freestyle</h4>
+							</div>
 						</div>
 					</div>
-					<div class="smscard-footer">
-						<div class="smscard-footer-left">
-							<h3>Estimated</h3>
-							<h4>SMS Volume:</h4>
+					<div class="smalltxt">
+						<p class="smalltxt-left">Have a voucher? <a href=#>Apply Here</a></p>
+						<p class="smalltxt-right">*Message rates based on: UAE</p>
+					</div>
+					<div class="checkout">
+						Checkout with
+					</div>
+					<div class="paypalbar">
+						<div class="paypal" role="button">
+							<img src="./img/paypal.png" alt=""/>
 						</div>
-						<div>
-							<div class="smscard-footer-main">
-							<p class="smscard-footer-title">=</p>
-							<p class="smscard-footer-value">285</p>
-						</div>
-						</div>
-						<div class="smscard-footer-right">
-							<h3>Plan</h3>
-							<h4 class="smscard-footer-change">Freestyle</h4>
+						<div class="credit-card-txt" role="button">
+							<p>Credit Card</p>
 						</div>
 					</div>
-				</div>
-				<div class="smalltxt">
-					<p class="smalltxt-left">Have a voucher? <a href=#>Apply Here</a></p>
-					<p class="smalltxt-right">*Message rates based on: UAE</p>
-				</div>
-				<div class="checkout">
-					Checkout with
-				</div>
-				<div class="paypalbar">
-					<div class="paypal" role="button">
-						<img src="./img/paypal.png" alt=""/>
+					<div class="visa">
+						<img src="./img/visa.png" alt=""/>
 					</div>
-					<div class="credit-card-txt" role="button">
-						<p>Credit Card</p>
+					<div class="footer-txt">
+						We follow a standard review procedure for PayPal payments to ensure legitimate use of our service and to prevent fraudulent activities. The manual review can take up to 24 hrs.
 					</div>
 				</div>
-				<div class="visa">
-					<img src="./img/visa.png" alt=""/>
-				</div>
-				<div class="footer-txt">
-					We follow a standard review procedure for PayPal payments to ensure legitimate use of our service and to prevent fraudulent activities. The manual review can take up to 24 hrs.
+				<div class="payment-billing">
+					<form action="./pricing.html">
+						<div class="title-container">
+							<p class="main-title">Please Comfirm Payment and Billing Details</p>
+						</div>
+						<div class="payment-billing-details">
+							<div class="details-container details-container-left">
+								<div class="detail-title">
+									Payment Details
+								</div>
+								<div class="detail-form">
+									<div>
+										<label><span>*</span>Name on credit card</label>
+										<input type="text" name="credit-name" required maxlength="45" />
+									</div>
+									<div class="credit-number">
+										<label><span>*</span>Credit card number</label>
+										<input type="text" name="number" required maxlength="10" pattern="{0-9}" />
+										<img src="./img/visa.png" alt=""/>
+									</div>
+									<div>
+										<label><span>*</span>Expiration month</label>
+										<div class="select_arrow">&#10094;</div>
+										<select>
+											<option></option>
+										</select>
+									</div>
+									<div>
+										<label><span>*</span>Expiration year</label>
+										<div class="select_arrow">&#10094;</div>
+										<select>
+											<option></option>
+										</select>
+									</div><div>
+										<label><span>*</span>CVN</label>
+										<input type="text" name="cvn" required maxlength="45">
+									</div>
+									<div class="checkboxbar">
+										<input type="checkbox" name="save">
+										<label>Save my card info</label>
+									</div>
+									<div class="detail-form-footer-txt">
+										Only VISA and MasterCard are accepted
+									</div>
+								</div>
+							</div>
+							<div class="details-container">
+								<div class="detail-title">
+									Billing Details
+								</div>
+								<div class="detail-form">
+									<div>
+										<label><span>*</span>Name</label>
+										<input type="text" name="name" required maxlength="45" />
+									</div>
+									<div>
+										<label><span>*</span>Email</label>
+										<input type="email" name="email" required maxlength="45" pattern=".+@.+.com" />
+									</div>
+									<div>
+										<label><span>*</span>Address</label>
+										<input type="text" name="address" required maxlength="45" />
+									</div>
+									<div class="city-country">
+										<div class="city-input">
+											<label><span>*</span>City</label>
+											<input type="text" name="city" required maxlength="45" />
+										</div>
+										<div class="country-input">
+											<label><span>*</span>Country</label>
+											<input type="text" name="country" required maxlength="45" />
+										</div>	
+									</div>
+									<div class="state-postcode">
+										<div class="state-input">
+											<label><span>*</span>State</label>
+											<input type="text" name="state" required maxlength="45" />
+										</div>
+										<div class="postcode-input">
+											<label><span>*</span>Postcode</label>
+											<input type="text" name="postcode" required maxlength="45" />
+										</div>	
+									</div>
+									<div class="checkboxbar">
+										<input type="checkbox" name="save">
+										<label>Save my billing info</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="purchase-button">
+							<button type="submit">Confirm Purchase of AED <span id="sms-value">285</span></button>
+						</div>
+					</form>
 				</div>
 			</div>
-			<div class="payment-billing">
-				<div class="title-container">
-					<p class="main-title">Please Comfirm Payment and Billing Details</p>
-				</div>
-				<div class="payment-billing-details">
-					<div class="details-container details-container-left">
-						<div class="detail-title">
-							Payment Details
-						</div>
-						<div class="detail-form">
-							<div>
-								<label><span>*</span>Name on credit card</label>
-								<input type="text" name="credit-name"/>
-							</div>
-							<div class="credit-number">
-								<label><span>*</span>Credit card number</label>
-								<input type="text" name="number"/>
-								<img src="./img/visa.png" alt=""/>
-							</div>
-							<div>
-								<label><span>*</span>Expiration month</label>
-								<div class="select_arrow">&#10094;</div>
-								<select>
-									<option></option>
-								</select>
-							</div>
-							<div>
-								<label><span>*</span>Expiration year</label>
-								<div class="select_arrow">&#10094;</div>
-								<select>
-									<option></option>
-								</select>
-							</div><div>
-								<label><span>*</span>CVN</label>
-								<input type="text" name="cvn">
-							</div>
-							<div class="checkboxbar">
-								<input type="checkbox" name="save">
-								<label>Save my card info</label>
-							</div>
-							<div class="detail-form-footer-txt">
-								Only VISA and MasterCard are accepted
-							</div>
+		</section>
+		<div class="bottom">
+			<div class="container">
+				<div class="logo-bottom">
+					<img src="./img/Logo.svg" alt=""/>
+					</div>
+				<div class="bottom-main d-flex justify-content-between">
+					<div class="about">
+						<h5>About</h5>
+						<h4>
+							We're a client-focused, corporate SMS provider you can count on...
+							We are a privately held, self funded, profitable company based in Ajman, United Arab Emirates.
+							We form that vital link between mobile networks and businesses who want to communicate via text message with their potential customers.
+						</h4>
+						<div class="align-items-center">
+							<img style="margin-right: 15px;" src="./img/visa2.png" alt=""/>
+							<img src="./img/paypal2.png" alt=""/>
 						</div>
 					</div>
-					<div class="details-container">
-						<div class="detail-title">
-							Billing Details
+					<div class="contact-info">
+						<h5>Contact Info</h5>
+						<h6>Adress</h6>
+						<p>B1 422, Ajman Free Zone, Ajman, United Arab Emirates</p>
+						<div class="d-flex">
+							<div class="office-number">
+								<h6>Office</h6>
+								<p>00971 6 7474794</p>
+							</div>
+							<div>
+								<h6>Mobile</h6>
+								<p>00971 52 708 8651</p>
+							</div>
 						</div>
-						<div class="detail-form">
-							<div>
-								<label><span>*</span>Name</label>
-								<input type="text" name="name"/>
-							</div>
-							<div>
-								<label><span>*</span>Email</label>
-								<input type="email" name="email"/>
-							</div>
-							<div>
-								<label><span>*</span>Address</label>
-								<input type="text" name="address"/>
-							</div>
-							<div class="city-country">
-								<div class="city-input">
-									<label><span>*</span>City</label>
-									<input type="text" name="city"/>
-								</div>
-								<div class="country-input">
-									<label><span>*</span>Country</label>
-									<input type="text" name="country"/>
-								</div>	
-							</div>
-							<div class="state-postcode">
-								<div class="state-input">
-									<label><span>*</span>State</label>
-									<input type="text" name="state"/>
-								</div>
-								<div class="postcode-input">
-									<label><span>*</span>Postcode</label>
-									<input type="text" name="postcode"/>
-								</div>	
-							</div>
-							<div class="checkboxbar">
-								<input type="checkbox" name="save">
-								<label>Save my billing info</label>
-							</div>
+						<div>
+							<h6>Mail</h6>
+							<p style="margin-bottom: 0;">info@rivet.solutions</p>
 						</div>
 					</div>
-				</div>
-				<div class="purchase-button">
-					<button>Confirm Purchase of AED <span id="sms-value">285</span></button>
+					<div class="form-call-back">
+						<h5>Receive a call-back</h5>
+						<form>
+							<div>
+								<label>Name<span>*</span></label>
+								<input type="text" name="fullName" placeholder="Enter your full name" required maxlength="45" />
+							</div>
+							<div class="d-flex">
+								<div class="email-bottom">
+									<label>Work Email<span>*</span></label>
+									<input type="email" name="email" placeholder="Enter your work email" pattern=".+@.+.com" required maxlength="45" />	
+								</div>
+								<div class="phone-bottom">
+									<label>Phone Number<span>*</span></label>
+									<input type="text" name="phoneNumber" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required maxlength="10" />
+								</div>
+							</div>
+							<button type="submit">Send Request</button>
+						</form>
+					</div>
 				</div>
 			</div>
 		</div>
+		<footer>
+			<div class="container d-flex justify-content-between align-items-center">
+				<div class="fotter-iconbar d-flex align-items-center">
+					<ul class="align-items-center">
+						<li role="button"><i class="fa fa-facebook"></i></li>
+						<li role="button"><i class="fa fa-twitter"></i></li>
+						<li role="button"><i class="fa fa-instagram"></i></li>
+						<li role="button"><i class="fa fa-linkedin"></i></li>
+						<li role="button"><i class="fa fa-youtube-play"></i></li>
+					</ul>
+					<p>&copy; 2013 - 2021 Rivet Solutions FZE All Rights Reserved.</p>
+				</div>
+				<div class="conditions">
+					<div class="paypalimgbar align-items-center">
+						<div style="margin-right: 15px">
+							<img src="./img/visa2.png" alt=""/>
+						</div>
+						<div>
+							<img src="./img/paypal2.png" alt=""/>
+						</div>
+					</div>
+					<div class="footerlinkbar">
+						<a href="#">Terms & Conditions</a> | 
+						<a href="#">Privacy Policy</a>
+					</div>
+				</div>
+			</div>
+		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){	
+				$(".navbar-toggle").click(function(){
+    				$("#navlist").toggle();
+  				});
   				$(".smscard-section-card-main:eq(0)").click(function(){
   					$(this).css({'background': '#5baed8', 'color': 'white'});
   					$(".smscard-section-card-main:eq(1)").css({'background': 'white', 'color': '#023047'})
@@ -281,8 +417,14 @@
   					$(".detail-title:eq(1)").css({'background': bgcolor})
   					$("#sms-value").html(value)
   				});
-  				$(".purchase-button button").click(function(){
-  					window.location.href = "./pricing.html"
+  				$(".paypal").click(function(){
+  					$(".credit-amount").css({'display': 'none'})
+  					$(".payment-billing").css({'display': 'block'})
+  					let bgcolor = $(".smscard-header").css('background-color')
+  					let value = $(".smscard-footer-value").html()
+  					$(".detail-title:eq(0)").css({'background': bgcolor})
+  					$(".detail-title:eq(1)").css({'background': bgcolor})
+  					$("#sms-value").html(value)
   				});
 			});
 
