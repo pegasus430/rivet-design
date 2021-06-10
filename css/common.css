@@ -543,6 +543,12 @@ footer .conditions .paypalimgbar {
 	}
 }
 @media screen and (max-width: 576px) {
+	nav .container > img {
+		left: 27px;
+	}
+	nav .navbar-toggle {
+		right: 27px;
+	}
 	.list {
 		text-align: center;
 	}

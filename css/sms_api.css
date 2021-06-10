@@ -151,16 +151,140 @@ section .article-text p {
 	color: #000000;
 
 }
-
-
-
-
-
-
-
-
-
-
+section .salient-features {
+	padding-top: 121px;
+	margin-bottom: 40px;
+}
+section .salient-features h1 {
+	text-align: center;
+	font: normal normal 800 48px/59px Gilroy-ExtraBold;
+	color: #023047;
+	margin-bottom: 107px;
+}
+section .salient-features h2 {
+	font: normal normal 28px/34px Gilroy-Medium;
+	color: #D2302C;
+	margin-bottom: 24px;
+}
+section .salient-features p {
+	font: normal normal 300 18px/36px Gilroy-Light;
+	margin-bottom: 0;
+}
+section .salient-features-item-content {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+section .salient-features-item {
+	display: flex;
+	margin-bottom: 86px;
+	max-width: 547px;
+}
+section .salient-features-item-img {
+	margin-right: 25.16px;
+}
+section .why-sms-content {
+	background: #F8F8F8;
+}
+section .why-sms {
+	background: transparent radial-gradient(closest-side at 71% 72%, #006497 0%, #023047 100%) 0% 0% no-repeat padding-box;
+	padding-top: 132px;
+}
+section .why-sms h1 {
+	font: normal normal 800 48px/59px Gilroy-ExtraBold;
+	color: #F9D142;
+	margin-bottom: 60px;
+}
+section .why-sms p {
+	font: normal normal 300 24px/36px Gilroy-Light;
+	color: #FFFFFF;
+	margin-bottom: 106px;
+}
+section .why-sms-item-content {
+	display: flex;
+	width: 920px;
+	flex-wrap: wrap;
+	margin-bottom: 57px;
+	margin-left: 107px;
+}
+section .why-sms-item {
+	max-width: 387px;
+	height: 320px;
+	margin-right: 73px;
+	margin-bottom: 32px;
+}
+section .why-sms-item img {
+	margin-bottom: 23.7px;
+}
+section .why-sms-item h2 {
+	font: normal normal medium 28px/34px Gilroy-Medium;
+	color: #F9D142;
+	margin-bottom: 24px;
+}
+section .why-sms-item p {
+	margin-bottom: 0;
+}
+section .why-sms .form-content {
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 0px 20px #00000014;
+	border-radius: 5px;
+	padding: 279px 208px 0;
+}
+section .why-sms h3 {
+	font: normal normal 800 48px/59px Gilroy-ExtraBold;
+	color: #023047;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 60px;
+}
+section .why-sms .form-content p {
+	color: #000000;
+	text-align: center;
+	margin-bottom: 76px;
+}
+section .why-sms label {
+	width: 100%;
+	font: normal normal 300 18px/20px Gilroy-Light;
+	margin-bottom: 10px;
+}
+section .why-sms label span {
+	color: #D2302C;
+}
+section .why-sms input {
+	height: 47px;
+}
+section .why-sms textarea {
+	height: 126px;
+}
+section .why-sms input,
+section .why-sms textarea {
+	width: 100%;
+	background: #F8F8F8 0% 0% no-repeat padding-box;
+	border: 1px solid #E8E8E8;
+	border-radius: 5px;
+}
+section .why-sms input,
+section .why-sms input::placeholder,
+section .why-sms textarea,
+section .why-sms textarea::placeholder {
+	font: normal normal 300 18px/20px Gilroy-Light;
+	color: rgba(0, 0, 0, 0.5);
+}
+section .why-sms .input-user,
+section .why-sms .input-info {
+	display: flex;
+}
+section .why-sms .input-user > div,
+section .why-sms .input-info > div {
+	width: 35%;
+	margin-bottom: 32px;
+}
+section .why-sms .firstname,
+section .why-sms .lastname,
+section .why-sms .phone-number,
+section .why-sms .company {
+	margin-right: 24px;
+}
 
 
 
@@ -244,6 +368,11 @@ section .article-text p {
 	section .operational-costs {
 		background-image: revert;
 	}
+	section .salient-features h1 {
+		font-size: 36px;
+		line-height: 44px;
+		margin-bottom: 80px;
+	}
 }
 @media screen and (max-width: 576px) {
 	section .rivet-title h3 {
@@ -310,6 +439,9 @@ section .article-text p {
 		box-shadow: 0px 10px 20px #00000014;
 		border-radius: 5px;
 	}
+	section .article {
+		margin-bottom: 38px;
+	}
 	section .article-img {
 		width: 100%;
 		height: auto;
@@ -323,5 +455,35 @@ section .article-text p {
 		font-size: 14px;
 		line-height: 22px;
 		margin-bottom: 3px;
+	}
+	section .salient-features {
+		padding-top: 50px;
+	}
+	section .salient-features-item {
+		flex-direction: column;
+		align-items: center;
+	}
+	section .salient-features-item-img {
+		margin-right: 0;
+		margin-bottom: 21px;
+	}
+	section .salient-features h1 {
+		text-align: center;
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 57px;
+	}
+	section .salient-features h2 {
+		text-align: center;
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 25px;
+	}
+	section .salient-features p {
+		font-size: 14px;
+		line-height: 22px;
+	}
+	section .salient-features-item {
+		margin-bottom: 53px;
 	}
 }

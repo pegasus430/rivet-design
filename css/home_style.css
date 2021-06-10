@@ -72,9 +72,12 @@ section .fontfamilytype .font-title img {
 section .fontfamilytype .fonttype {
 	color: #AAAAAA;
 	display: flex;
-	width: max-content;
+	flex-wrap: nowrap;
+	width: 100%;
+	overflow-x: hidden;
 }
 section .fontfamilytype .fonttype p {
+	white-space: nowrap;
 	padding: 0 30px;
 }
 section .fontfamilytype .fonttype .qanaya {
@@ -363,6 +366,9 @@ section .testimonials-item p {
 	}
 }
 @media screen and (max-width: 768px) {
+	section .fontfamilytype .fonttype {
+		overflow-x: scroll;
+	}
 	section .bulk {
 		background-size: 100% 1200px;
 	}
