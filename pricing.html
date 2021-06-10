@@ -36,7 +36,7 @@
 				<div class="list" id="navlist">
 					<ul class="align-items-center">
 						<li><a href="./home.html">Home</a></li>
-						<li><a href="#">SMS API</a></li>
+						<li><a href="./sms_api.html">SMS API</a></li>
 						<li><a href="./two_way_sms.html">Two-Way SMS</a></li>
 						<li><a href="./pricing.html">Pricing</a></li>
 						<li><a href="#">Bulk SMS Marketing</a></li>
@@ -58,7 +58,7 @@
 							<h1>Test Drive</h1>
 							<h2>Our State-Of-The-Art Secure SMS Gateway Rest API</h2>
 							<p>With an open rate of 98%, SMS is the most direct and effective way to connect with your customers and clients.</p>
-							<button>Buy Now</button>
+							<button onclick="location.href='./credit_amount.html'">Buy Now</button>
 						</div>
 						<div class="rivet-title-img">
 							<img src="./img/PricingGraphic.svg" alt=""/>
@@ -248,40 +248,40 @@
 							<div class="input-item d-flex justify-content-center">
 								<div>
 									<label>First Name<span>*</span></label>
-									<input type="text" name="firstName" placeholder="Enter your first name"/>
+									<input type="text" name="firstName" placeholder="Enter your first name" required maxlength="45" />
 								</div>
 								<div>
 									<label>Last Name<span>*</span></label>
-									<input type="text" name="lastName" placeholder="Enter your last name"/>
+									<input type="text" name="lastName" placeholder="Enter your last name" required maxlength="45"/>
 								</div>
 								<div style="margin-right: 0">
 									<label>Work Email<span>*</span></label>
-									<input type="text" name="email" placeholder="Enter your work email"/>
+									<input type="text" name="email" placeholder="Enter your work email" pattern=".+@.+.com" required maxlength="45"/>
 								</div>
 							</div>
 
 							<div class="input-item d-flex justify-content-center">
 								<div>
 									<label>Phone Number<span>*</span></label>
-									<input type="text" name="phoneNumber" placeholder="Enter your phone number"/>
+									<input type="text" name="phoneNumber" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required maxlength="10" />
 								</div>
 								<div>
 									<label>Company<span>*</span></label>
-									<input type="text" name="lastName" placeholder="Enter your company's name"/>
+									<input type="text" name="company" placeholder="Enter your company's name" required maxlength="45" />
 								</div>
 								<div style="margin-right: 0">
 									<label>Website<span>*</span></label>
-									<input type="text" name="email" placeholder="Enter URL of your website"/>
+									<input type="text" name="website" placeholder="Enter URL of your website" required maxlength="45"/>
 								</div>
 							</div>
 
 							<div class="textarea-form">
 								<label>Description</label>
-								<textarea placeholder="Enter Description"></textarea>
+								<textarea placeholder="Enter Description" required></textarea>
 							</div>
 
 							<div class="submitbutton">
-								<button>Submit</button>
+								<button type="submit">Submit</button>
 							</div>
 						</form>
 					</div>
@@ -330,19 +330,19 @@
 						<form>
 							<div>
 								<label>Name<span>*</span></label>
-								<input type="text" name="fullName" placeholder="Enter your full name"/>
+								<input type="text" name="fullName" placeholder="Enter your full name" required maxlength="45" />
 							</div>
 							<div class="d-flex">
 								<div class="email-bottom">
 									<label>Work Email<span>*</span></label>
-									<input type="email" name="email" placeholder="Enter your work email"/>	
+									<input type="email" name="email" placeholder="Enter your work email" pattern=".+@.+.com" required maxlength="45" />	
 								</div>
 								<div class="phone-bottom">
 									<label>Phone Number<span>*</span></label>
-									<input type="text" name="phoneNumber" placeholder="Enter your phone number"/>
+									<input type="text" name="phoneNumber" placeholder="Enter your phone number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required maxlength="10" />
 								</div>
 							</div>
-							<button>Send Request</button>
+							<button type="submit">Send Request</button>
 						</form>
 					</div>
 				</div>

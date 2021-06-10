@@ -284,6 +284,9 @@ section .receive-callbackbar button:hover {
 .bottom .form-call-back {
 	max-width: 445px;
 }
+.office-number {
+	margin-right: 20px;
+}
 .bottom label {
 	width: 100%;
 	font: normal normal 300 18px/20px Gilroy-Light;
@@ -419,9 +422,6 @@ footer .conditions .paypalimgbar {
 	}
 	nav .login-button {
 		margin-left: 32px;
-	}
-	.office-number {
-		padding-right: 40px;
 	}
 	.bottom .email-bottom,
 	.bottom .phone-bottom {

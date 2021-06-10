@@ -1,0 +1,327 @@
+section .rivet-title {
+	background: #f5f5f5;
+}
+section .rivet-title-bg {
+	background: url(../img/bg4.png) no-repeat;
+	background-position: right bottom;
+	background-size: 1140.46px auto;
+	padding: 190px 0 163px;
+}
+section .rivet-title h3 {
+	font: normal normal 800 24px/29px Gilroy-ExtraBold;
+	color: #023047;
+	margin-bottom: 13px;
+}
+section .rivet-title h1 {
+	font: normal normal 800 42px/51px Gilroy-ExtraBold;
+	color: #D2302C;
+	margin-bottom: 13px;
+}
+section .rivet-title h2 {
+	font: normal normal 32px/39px Gilroy-Medium;
+	color: #023047;	
+	margin-bottom: 13px;
+}
+section .rivet-title p {
+	font: normal normal 24px/31px Gilroy-Medium;
+	color: #023047;
+	margin-bottom: 38px;
+}
+section .rivet-title .container > div {
+	display: flex;
+}
+section .rivet-title button {
+	width: 250px;
+	height: 57px;
+	box-shadow: 0px 10px 20px #00000014;
+	border-radius: 5px;
+	font: normal normal 24px/29px Gilroy-Medium;
+	
+}
+section .rivet-title button:nth-child(1) {
+	background: #D2302C 0% 0% no-repeat padding-box;
+	color: #FFFFFF;
+	margin-right: 12px;
+}
+section .rivet-title button:nth-child(2) {
+	color: #023047;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+}
+section .sms-api-service {
+	padding-top: 160px;
+	margin-bottom: 84px;
+}
+section .sms-api-service h1 {
+	text-align: center;
+	font: normal normal 800 48px/59px Gilroy-ExtraBold;
+	color: #023047;
+	margin-bottom: 60px;
+}
+section .sms-api-service p {
+	text-align: center;
+	font: normal normal 300 24px/36px Gilroy-Light;
+	color: #000000;
+	margin-bottom: 56px;
+}
+section .sms-api-service .download {
+	display: flex;
+	width: 652px;
+	height: 57px;
+	margin: auto;
+	background: #F8F8F8 0% 0% no-repeat padding-box;
+	border: 1px solid #E8E8E8;
+}
+section .sms-api-service .download input {
+	width: 370px;
+	height: 100%;
+	padding-left: 27px;
+	border: none;
+	font: normal normal 300 18px/20px Gilroy-Light;
+	color: #000000;
+}
+section .sms-api-service .download input::placeholder {
+	font: normal normal 300 18px/20px Gilroy-Light;
+	color: #000000;
+}
+section .sms-api-service .download input[placeholder]:after {
+	content: "*";
+	/*color: #D2302C;*/
+	color: red;
+}
+section .sms-api-service .download button {
+	width: 282px;
+	height: 100%;
+	background: #E8E8E8 0% 0% no-repeat padding-box;
+	box-shadow: 0px 10px 20px #00000014;
+	border-radius: 5px;
+	font: normal normal 24px/29px Gilroy-Medium;
+	color: #FFFFFF;
+}
+section .sms-api-service .download button img {
+	margin-right: 12px;
+}
+section .article > div {
+	padding: 95px 0;
+}
+section .article > div .container {
+	display: flex;
+	justify-content: space-between;
+}
+section .article-img {
+	width: 573px;
+	height: 548px;
+}
+section .article-img img {
+	width: 100%;
+}
+section .article-text {
+	padding-top: 140px;
+	width: 809px;
+}
+section .article-text h1 {
+	font: normal normal 800 32px/40px Gilroy-ExtraBold;
+	margin-bottom: 60px;
+}
+section .reach-engage,
+section .improve-experience {
+	background: url(../img/img2.png) no-repeat;
+	background-position: right bottom;
+	background-size: 267.9px auto;
+}
+section .notification-alert,
+section .operational-costs {
+	background: url(../img/img1.png) no-repeat;
+	background-position: left bottom;
+	background-size: 263.67px auto;
+}
+section .reach-engage .article-text h1 {
+	color: #CE98B9;
+}
+section .notification-alert .article-text h1 {
+	color: #32B4A7;
+}
+section .improve-experience .article-text h1 {
+	color: #DF331B;
+}
+section .operational-costs .article-text h1 {
+	color: #FBB000;
+}
+section .article-text p {
+	font: normal normal 300 24px/36px Gilroy-Light;
+	color: #000000;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1550px) {
+	section .rivet-title-bg {
+		background-size: 900px auto;
+	}
+}
+@media screen and (max-width: 1400px) {
+	section .rivet-title-bg {
+		padding: 80px 0 275px;
+	}
+	section .article-text {
+		padding-top: 85px;
+	}
+}
+@media screen and (max-width: 1200px) {
+	section .rivet-title-bg {
+		background-size: 100% auto;
+		padding-bottom: calc(42.6% + 60px);
+	}
+	section .article-text {
+		padding-top: 40px;
+	}
+}
+@media screen and (max-width: 992px) {
+	section .article .reach-engage .container,
+	section .article .improve-experience .container {
+		flex-direction: column;
+	}
+	section .article .notification-alert .container,
+	section .article .operational-costs .container {	
+		flex-direction: column-reverse;
+	}
+	section .article > div {
+		padding: 50px 0;
+	}
+	section .article-text {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 768px) {
+	section .rivet-title-bg {
+		padding-top: 48px;
+		text-align: center;
+	}
+	section .sms-api-service {
+		padding-top: 110px;
+		margin-bottom: 0;
+	}
+	section .sms-api-service h1 {
+		font-size: 36px;
+		line-height: 44px;
+	}
+	section .sms-api-service p {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	section .sms-api-service .download {
+		width: 100%;
+	}
+	section .article > div {
+		padding: 23px 0 33px;
+	}
+	section .article-text {
+		padding-top: 0;
+	}
+	section .article-text h1 {
+		font-size: 28px;
+		line-height: 34px;
+		margin-bottom: 30px;
+	}
+	section .article-text p {
+		font-size: 18px;
+		line-height: 26px;
+	}
+	section .reach-engage,
+	section .improve-experience,
+	section .notification-alert,
+	section .operational-costs {
+		background-image: revert;
+	}
+}
+@media screen and (max-width: 576px) {
+	section .rivet-title h3 {
+		font-size: 18px;
+		line-height: 22px;
+		margin-bottom: 8px;
+	}
+	section .rivet-title h1 {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 8px;
+	}
+	section .rivet-title h2 {
+		font-size: 24px;
+		line-height: 31px;
+		margin-bottom: 7px;
+	}
+	section .rivet-title p {
+		font-size: 18px;
+		line-height: 28px;
+		margin-bottom: 28px;
+	}
+	section .rivet-title button {
+		font-size: 16px;
+		width: 176px;
+		height: 41px;
+	}
+	section .rivet-title button:nth-child(1) {
+		margin-right: 8px;
+	}
+	section .sms-api-service {
+		padding-top: 63.4px;
+	}
+	section .sms-api-service h1 {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 33px;
+	}
+	section .sms-api-service p {
+		font-size: 14px;
+		line-height: 22px;
+		margin-bottom: 23px;
+	}
+	section .sms-api-service .download {
+		flex-direction: column;
+		border: none;
+		height: auto;
+	}
+	section .sms-api-service .download input {
+		width: 100%;
+		height: 49px;
+		background: #F8F8F8 0% 0% no-repeat padding-box;
+		border: 1px solid #E8E8E8;
+		border-radius: 5px;
+		margin-bottom: 7px;
+	}
+	section .sms-api-service .download input::placeholder {
+		text-align: center;
+	}
+	section .sms-api-service .download button {
+		width: 100%;
+		height: 49px;
+		background: #E8E8E8 0% 0% no-repeat padding-box;
+		box-shadow: 0px 10px 20px #00000014;
+		border-radius: 5px;
+	}
+	section .article-img {
+		width: 100%;
+		height: auto;
+	}
+	section .article-text h1 {
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 24px;
+	}
+	section .article-text p {
+		font-size: 14px;
+		line-height: 22px;
+		margin-bottom: 3px;
+	}
+}

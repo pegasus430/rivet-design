@@ -244,10 +244,17 @@ section .table-main table thead tr th:nth-child(1),
 section .table-main table tbody tr td:nth-child(1) {
 	padding-left: 81px;
 	width: 714px;
+	padding-right: 15px;
 }
 section .table-main table thead tr th:nth-child(2),
 section .table-main table tbody tr td:nth-child(2) {
 	width: 508px;
+	padding-right: 15px;
+
+}
+section .table-main table thead tr th:nth-child(3),
+section .table-main table tbody tr td:nth-child(3) {
+	padding-right: 16px;
 }
 section .table-main .table-page {
 	font: normal normal 300 18px/24px Gilroy-Light;
@@ -257,6 +264,7 @@ section .table-main .table-page .prevbutton,
 section .table-main .table-page .nextbutton {
 	text-decoration: underline;
 	margin-right: 71px;
+	font: normal normal 300 18px/20px Gilroy-Light;
 	letter-spacing: 1.1px;
 	padding: 0;
 	background: transparent;
@@ -276,10 +284,11 @@ section .table-main .table-page p {
 section .table-main .table-page ul {
 	padding-left: 0;
 	margin: 0 48px;
-	width: 164px;
+	width: 144px;
 }
 section .table-main .table-page ul li {
-	
+	font: normal normal 300 18px/20px Gilroy-Light;
+	letter-spacing: 1.1px
 }
 section .table-main .table-page ul li:hover {
 	color: #d2302d;
@@ -406,7 +415,7 @@ section .require-form .submitbutton button:hover {
 	}
 	section .table-main table thead tr th:nth-child(1),
 	section .table-main table tbody tr td:nth-child(1) {
-		padding-left: 0;
+		padding-left: 19px;
 	}
 }
 @media (max-width:992px) {
@@ -510,6 +519,9 @@ section .require-form .submitbutton button:hover {
 	}
 	section .table-main .table-page ul {
 		margin: 0 10px;
+	}
+	section .table-main .table-page p {
+		margin-right: 10px;
 	}
 	section .buynowbuttonbar .desktop-button {
 		display: none;
@@ -658,5 +670,23 @@ section .require-form .submitbutton button:hover {
 	}
 	section .require-form .submitbutton {
 		text-align: left;
+	}
+	section .table-main .table-page p {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	section .table-main .table-page .prevbutton, 
+	section .table-main .table-page .nextbutton,
+	section .table-main .table-page ul li {
+		letter-spacing: 0.85px;
+		font-size: 14px;
+	}
+	section .table-main .table-page ul {
+		width: 100px;
+		margin: 0;
+		/*margin: 0 32px;*/
+	}
+	section .table-main .container {
+		padding-bottom: 40px;
 	}
 }
