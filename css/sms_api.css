@@ -95,44 +95,19 @@ section .sms-api-service .download label {
 	left: 27px;
 	top: 50%;
 	transform: translateY(-50%);
+	display: none;
 }
-/*.input-field {
-  
-.input-field > label {
-  position: absolute;
-  left: 0.5em;
-  top: 50%;
-  margin-top: -0.5em;
-  opacity: 0.5;
-  display: none;
+section .sms-api-service .download input[type=email]:placeholder-shown + label {
+  	display: block;
 }
-
-.input-field > input[type=text]:placeholder-shown + label {
-  display: block;
-}
-
-.input-field > label > span {
-  letter-spacing: -2px;
-}
-
 .first-letter {
-  color: red;
+  	font: normal normal 300 18px/20px Gilroy-Light;
+	color: #000000;
 }
 
 .second-letter {
-  color: blue;
-}*/
-
-
-
-/*section .sms-api-service .download input::placeholder {
-	font: normal normal 300 18px/20px Gilroy-Light;
-	color: #000000;
-}*/
-/*section .sms-api-service .download input[placeholder]::after {
-	content: "*";
-	color: #D2302C;
-}*/
+  	color: #D2302C;
+}
 section .sms-api-service .download button {
 	width: 282px;
 	height: 100%;

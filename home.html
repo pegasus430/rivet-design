@@ -72,7 +72,7 @@
 						<p>Trusted by Businesses all over the world</p>
 					</div>
 				</div>
-				<div class="fonttype" ondragend="scroll()">
+				<div class="fonttype" role="button">
 					<p class="qanaya">Client Business Name</p>
 					<p class="inkfree">Client Business Name</p>
 					<p class="kaushan">Client Business Name</p>
@@ -276,14 +276,33 @@
 		</div>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 		<script type="text/javascript">
+			let pos = {left: 0, x: 0};
 			$(document).ready(function(){
   				$(".navbar-toggle").click(function(){
     				$("#navlist").toggle();
   				});
+  				$(".fonttype").mousedown(function(e) {
+
+  					this.style.cursor = 'grabbing';
+    				this.style.userSelect = 'none';
+  					pos = {
+        				left: this.scrollLeft,
+        				x: e.clientX,
+    				};
+    				$(this).mousemove(function(e) {
+    					const dx = e.clientX - pos.x;
+    					this.scrollLeft = pos.left - dx;	
+    				})
+  				});
+  				// $(".fonttype").mousemove(function(e) {
+  				// 	const dx = e.clientX - pos.x;
+    		// 		this.scrollLeft = pos.left - dx;
+  				// });
+  				$(".fonttype").mouseup(function(e) {
+  					this.style.cursor = 'grab';
+    				this.style.removeProperty('user-select');
+  				})
 			});
-			function scroll() {
-				
-			}
 		</script>
 	</body>
 </html>

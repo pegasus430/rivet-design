@@ -51,7 +51,13 @@
 	src: url("../fonts/impact.ttf");
 }
 body {
-	overflow-x: hidden;
+	overflow-x: hidden;	
+	animation-name: loading;
+	animation-duration: 1s;
+}
+@keyframes loading {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
 }
 * {
 	box-sizing: border-box;

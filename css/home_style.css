@@ -70,16 +70,20 @@ section .fontfamilytype .font-title img {
 	margin-right: 12px;
 }
 section .fontfamilytype .fonttype {
+	cursor: pointer;
+	height: 40px;
 	color: #AAAAAA;
 	display: flex;
 	flex-wrap: nowrap;
 	width: 100%;
-	overflow-x: hidden;
+	overflow: hidden;
+}
+section .fontfamilytype .fonttype:hover {
+	overflow-x: scroll;
 }
 section .fontfamilytype .fonttype p {
 	white-space: nowrap;
 	padding: 0 30px;
-	margin-bottom: 5px;
 }
 section .fontfamilytype .fonttype .qanaya {
 	font: normal normal normal 30px/34px Qanaya-Regular;
@@ -583,7 +587,7 @@ section .testimonials-item p {
 		width: 31.3px;
 	}
 	section .testimonials .star-content > div {
-		margin-bottom: 7.6px;
+			margin-bottom: 7.6px;
 	}
 	section .testimonials .star-content p {
 		font-size: 14px;
@@ -614,5 +618,19 @@ section .testimonials-item p {
 	section .testimonials {
 		padding-bottom: 123px;
 		background-size: 113px auto;
+	}
+}
+@media screen and (min-width: 768px) {
+	section .fontfamilytype .fonttype::-webkit-scrollbar {
+  		height: 5px;
+	}
+	section .fontfamilytype .fonttype::-webkit-scrollbar-track {
+  		background: #f1f1f1; 
+	}
+	section .fontfamilytype .fonttype::-webkit-scrollbar-thumb {
+  		background: #888; 
+	}
+	section .fontfamilytype .fonttype::-webkit-scrollbar-thumb:hover {
+  		background: #555; 
 	}
 }
