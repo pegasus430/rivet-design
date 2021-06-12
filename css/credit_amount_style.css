@@ -205,24 +205,14 @@
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-.paypal img {
-	width: 94px;
-	height: 24px;
-}
 .credit-card-txt p {
 	width: 100%;
 	font: normal normal 24px/29px Gilroy-Medium;
 	color: white;
 }
 .visa {
-	width: 113px;
-	height: 29px;
-	margin: auto;
+	text-align: center;
 	margin-bottom: 15.08px;
-}
-.visa img {
-	width: 100%;
-	height: 100%;
 }
 .footer-txt {
 	font: normal normal 300 12px/14px Gilroy-Light;
@@ -288,7 +278,7 @@
 	position: absolute;
 	width: 65px;
 	right: 24.37px;
-	bottom: 19px;
+	bottom: 22px;
 }
 .detail-form select {
 	padding-right: 35px;
@@ -342,6 +332,9 @@
 }
 .purchase-button button:hover {
 	background: #ec625f;
+}
+.purchase-button button:disabled {
+	background: #E8E8E8;
 }
  @media screen and (max-width: 768px) {
 	.payment-billing-details {

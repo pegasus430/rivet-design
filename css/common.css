@@ -54,6 +54,7 @@ body {
 	overflow-x: hidden;	
 	animation-name: loading;
 	animation-duration: 1s;
+	background: white;
 }
 @keyframes loading {
 	0% {opacity: 0;}
@@ -359,6 +360,9 @@ footer .conditions .paypalimgbar {
 	display: none;
 }
 @media screen and (max-width: 1550px) {
+	nav ul li {
+		margin-right: 35px;
+ 	}
 	section .receive-callbackbar .callbackbar-form {
 		margin-right: 0;
 	}
@@ -368,7 +372,7 @@ footer .conditions .paypalimgbar {
 }
 @media screen and (max-width: 1400px) {
 	nav ul li {
-		margin-right: 28px;
+		margin-right: 16px;
 	}
 	section .receive-callbackbar .container {
 		flex-direction: column;

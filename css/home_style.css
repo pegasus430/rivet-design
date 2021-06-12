@@ -2,7 +2,7 @@
 section .bulk {
 	width: 100%;
 	margin-bottom: 13px;
-	background: transparent linear-gradient(120deg, #D2302C 0%, #962CD2 100%) 0% 0% no-repeat padding-box;
+	background: url(../img/home_Banner.svg) no-repeat;
 	background-size: 100% 890px;
 }
 section .bulk .container {

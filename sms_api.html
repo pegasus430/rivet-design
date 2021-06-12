@@ -42,6 +42,7 @@
 						<li><a href="#">Bulk SMS Marketing</a></li>
 						<li><a href="#">FAQs</a></li>
 						<li><a href="./contact.html">Contact</a></li>
+						<li><a href="#">Register</a></li>
 					</ul>
 					<button class="login-button">Login</button>
 				</div>
@@ -100,12 +101,11 @@
 						<div class="download">
 							<div class="input-field">
 								<input type="email" name="email" placeholder=" " pattern=".+@.+.com" required maxlength="45"/>
-	  							<!-- <input id="input-text-field" type="text" placeholder=" "></input> -->
 	  							<label for="input-text-field">
 	    							<span class="first-letter">Please enter your work email</span><span class="second-letter">*</span>
 	  							</label>
 							</div>
-							<button><img src="./img/download_black_24dp.svg" alt=""/>Download API</button>
+							<button disabled><img src="./img/download_black_24dp.svg" alt=""/>Download API</button>
 
 						</div>
 					</form>
@@ -115,7 +115,7 @@
 				<div class="reach-engage">
 					<div class="container">
 						<div class="article-img">
-							<img src="./img/crop_picture_1.png" alt=""/>
+							<img src="./img/illustration1.svg" alt=""/>
 						</div>
 						<div class="article-text">
 							<h1>Reach and Engage More Customers</h1>
@@ -126,20 +126,22 @@
 					</div>
 				</div>
 				<div class="notification-alert">
-					<div class="container">
-						<div class="article-text">
-							<h1>Notifications and SMS Alerts</h1>
-							<p>Send transactional sms messages in time to your customers like share purchase receipt information, money transfer receipts, over due bill notifications, pay rental alert, installment due. Protect your customer data with 2 factor authentication notifications.</p>
-						</div>
-						<div class="article-img">
-							<img src="./img/crop_picture_2.png" alt=""/>
+					<div class="notification-alert-bg">
+						<div class="container">
+							<div class="article-text">
+								<h1>Notifications and SMS Alerts</h1>
+								<p>Send transactional sms messages in time to your customers like share purchase receipt information, money transfer receipts, over due bill notifications, pay rental alert, installment due. Protect your customer data with 2 factor authentication notifications.</p>
+							</div>
+							<div class="article-img">
+								<img src="./img/illustration2.svg" alt=""/>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="improve-experience">
 					<div class="container">
 						<div class="article-img">
-							<img src="./img/crop_picture_3.png" alt=""/>
+							<img src="./img/illustration3.svg" alt=""/>
 						</div> 
 						<div class="article-text">
 							<h1>Improve Customer Experiences</h1>
@@ -148,13 +150,15 @@
 					</div>
 				</div>
 				<div class="operational-costs">
-					<div class="container">
-						<div class="article-text">
-							<h1>Lower Operational Costs</h1>
-							<p>We have lifted all burden of messaging with 24/7 support. Brands that use SMS messages to communicate with customers can experience up to a 20% decrease in support calls and a 25% increase in customer satisfaction. Incorporate text messaging into your call center, deliver instant offers, and invite real-time feedback with an SMS API designed for your enterprise needs.</p>
-						</div>
-						<div class="article-img">
-							<img src="./img/crop_picture_4.png" alt=""/>
+					<div class="operational-costs-bg">
+						<div class="container">
+							<div class="article-text">
+								<h1>Lower Operational Costs</h1>
+								<p>We have lifted all burden of messaging with 24/7 support. Brands that use SMS messages to communicate with customers can experience up to a 20% decrease in support calls and a 25% increase in customer satisfaction. Incorporate text messaging into your call center, deliver instant offers, and invite real-time feedback with an SMS API designed for your enterprise needs.</p>
+							</div>
+							<div class="article-img">
+								<img src="./img/illustration4.svg" alt=""/>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -270,7 +274,7 @@
 							</div>
 						</div>
 					</div>
-					<img src="./img/bg5.png" alt=""/>
+					<img src="./img/message_illustration.svg" alt=""/>
 				</div>
 			</div>
 		</section>
@@ -368,6 +372,14 @@
 			$(document).ready(function(){
   				$(".navbar-toggle").click(function(){
     				$("#navlist").toggle();
+  				});
+  				$('.download input').on('input', function() {
+	  				if ($(this).val().length > 0) {
+	  					$('.download button').removeAttr('disabled');
+	  				}
+	  				else {
+	  					$('.download button').attr('disabled', 'true');
+	  				}
   				});
 			});
 		</script>

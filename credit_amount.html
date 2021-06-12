@@ -42,6 +42,7 @@
 						<li><a href="#">Bulk SMS Marketing</a></li>
 						<li><a href="#">FAQs</a></li>
 						<li><a href="./contact.html">Contact</a></li>
+						<li><a href="#">Register</a></li>
 					</ul>
 					<button class="login-button">Login</button>
 				</div>
@@ -123,14 +124,14 @@
 					</div>
 					<div class="paypalbar">
 						<div class="paypal" role="button">
-							<img src="./img/paypal.png" alt=""/>
+							<img src="./img/Paypal.svg" alt=""/>
 						</div>
 						<div class="credit-card-txt" role="button">
 							<p>Credit Card</p>
 						</div>
 					</div>
 					<div class="visa">
-						<img src="./img/visa.png" alt=""/>
+						<img src="./img/Master_card_and_VISA.svg" alt=""/>
 					</div>
 					<div class="footer-txt">
 						We follow a standard review procedure for PayPal payments to ensure legitimate use of our service and to prevent fraudulent activities. The manual review can take up to 24 hrs.
@@ -154,7 +155,7 @@
 									<div class="credit-number">
 										<label><span>*</span>Credit card number</label>
 										<input type="text" name="number" required maxlength="10" pattern="{0-9}" />
-										<img src="./img/visa.png" alt=""/>
+										<img src="./img/Master_card_and_VISA.svg" alt=""/>
 									</div>
 									<div>
 										<label><span>*</span>Expiration month</label>
@@ -227,7 +228,7 @@
 							</div>
 						</div>
 						<div class="purchase-button">
-							<button type="submit">Confirm Purchase of AED <span id="sms-value">285</span></button>
+							<button type="submit" disabled>Confirm Purchase of AED <span id="sms-value">285</span></button>
 						</div>
 					</form>
 				</div>
@@ -327,6 +328,16 @@
 				$(".navbar-toggle").click(function(){
     				$("#navlist").toggle();
   				});
+  				$('.payment-billing form input').on('input', function() {
+	  				$('.purchase-button button').removeAttr('disabled');
+	  				let j = 0;
+	  				for ( let i = 0; i < $('.payment-billing form input').length ; i++ ) {
+	  					if ( $('.payment-billing form input')[i].value.length == 0 || $('.payment-billing form input')[i].value == 'on' ) j++;
+	  					if (j == $('.payment-billing form input').length) {
+	  						$('.purchase-button button').attr('disabled', 'true');
+	  					}
+	  				}
+  				})
   				$(".smscard-section-card-main:eq(0)").click(function(){
   					$(this).css({'background': '#5baed8', 'color': 'white'});
   					$(".smscard-section-card-main:eq(1)").css({'background': 'white', 'color': '#023047'})
@@ -407,7 +418,6 @@
   					$('.smscard-footer-value').html("1428");
   					$('.smscard-footer-change').html("Enterprise");
   				});
-
   				$(".credit-card-txt").click(function(){
   					$(".credit-amount").css({'display': 'none'})
   					$(".payment-billing").css({'display': 'block'})
@@ -425,9 +435,8 @@
   					$(".detail-title:eq(0)").css({'background': bgcolor})
   					$(".detail-title:eq(1)").css({'background': bgcolor})
   					$("#sms-value").html(value)
-  				});
+  				});  	
 			});
-
 		</script>
 	</body>
 </html>

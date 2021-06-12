@@ -1,12 +1,9 @@
-body {
-	transition: 10s all ease-in;
-}
 section {
 	position: relative;
 }
 section .contact-title {
-	width: 100%;
-	background: #ff7171;
+	width: 100%;	
+	background: url(../img/Banner.svg) no-repeat;
 	height: 248px;
 	padding-top: 51px;
 }
@@ -58,6 +55,7 @@ section .contact-main-content input {
 	height: 47px;	
 }
 section .contact-main-content textarea {
+	padding-top: 13px;
 	width: 731px;	
 	height: 99px;
 }

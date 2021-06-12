@@ -38,10 +38,11 @@
 						<li><a href="./home.html">Home</a></li>
 						<li><a href="./sms_api.html">SMS API</a></li>
 						<li><a href="./two_way_sms.html">Two-Way SMS</a></li>
-						<li><a href="./pricing.html">Pricing</a></li>
+						<li><a href="./pricing.html" style="color: #D2302C">Pricing</a></li>
 						<li><a href="#">Bulk SMS Marketing</a></li>
 						<li><a href="#">FAQs</a></li>
 						<li><a href="./contact.html">Contact</a></li>
+						<li><a href="#">Register</a></li>
 					</ul>
 					<button class="login-button">Login</button>
 				</div>
@@ -106,7 +107,7 @@
 						</div>
 						<div class="pricing-option-item">
 							<div class="optionimg">
-								<img src="./img/paper-plane.png" alt=""/>
+								<img src="./img/Volume_discounts.svg" alt=""/>
 							</div>
 							<h6>Volume Discounts</h6>
 							<p>Discounts trigger as your usage grows, so you can always get a fair price</p>
@@ -151,11 +152,11 @@
 						<img src="./img/search-24px.svg" alt=""/>
 					</div>
 					<div class="downloadbar">
-						<div class="pdfdownload" class="d-flex align-items-center">
+						<div class="pdfdownload" class="d-flex align-items-center" role="button">
 							<img src="./img/pdf.svg" alt=""/>
 							<a href="#">Download PDF</a>
 						</div>
-						<div class="xlsdownload" class="d-flex align-items-center">
+						<div class="xlsdownload" class="d-flex align-items-center" role="button">
 							<img src="./img/xls.svg" alt=""/>
 							<a href="#">Download Excel</a>
 						</div>
@@ -164,13 +165,13 @@
 			</div>
 			<div class="table-main">
 				<div class="container">
-					<table>
+					<table id="simple_table">
 						<thead> 
 							<tr>
 								<th>Network Name</th>
 								<th>Country</th>
 								<th class="d-flex align-items-center">
-									Price 
+									<span>Price</span> 
 									<div class="arrow-down">&#10094;</div>
 									<select>
 										<option value="USD">USD</option>
@@ -378,13 +379,85 @@
 		</footer>
 		</div>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>  
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.6/jspdf.plugin.autotable.min.js"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 				let pagenumber = 0;
-				$('nav ul li a:eq(3)').css({'color': '#D2302C'})
   				$(".navbar-toggle").click(function(){
     				$("#navlist").toggle();
   				});
+  			// 	$('.pdfdownload').click( function() {
+					// let doc = new jsPDF('p', 'pt', 'letter');  
+    	// 			let htmlstring = '';  
+    	// 			let tempVarToCheckPageHeight = 0;  
+    	// 			let pageHeight = 0;  
+    	// 			pageHeight = doc.internal.pageSize.height;  
+    	// 			specialElementHandlers = {  
+     //    				'#bypassme': function(element, renderer) {  
+     //        				return true  
+     //    				}  
+    	// 			};  
+    	// 			margins = {  
+	    //     			top: 150,  
+     //    				bottom: 60,  
+     //    				left: 40,  
+     //    				right: 40,  
+     //    				width: 600  
+    	// 			};  
+    	// 			let y = 20;  
+    	// 			doc.setLineWidth(2);  
+    	// 			doc.text(200, y = y + 30, "TOTAL MARKS OF STUDENTS");  
+    	// 			doc.autoTable({  
+	    //     			html: '#simple_table',  
+     //    				startY: 70,  
+     //    				theme: 'grid',  
+     //    				columnStyles: {  
+	    //         			0: {  
+     //            				cellWidth: 180,  
+     //        				},  
+	    //         			1: {  
+     //            				cellWidth: 180,  
+	    //         			},  		
+    	//         			2: {  
+	    //             			cellWidth: 180,  
+     //    	    			}  
+     //    				},  
+     //    				styles: {  
+	    //         			minCellHeight: 40  
+     //    				}  
+    	// 			})  
+    	// 			doc.save('Table.pdf');
+  			// 	});
+  			// 	$('.xlsdownload').click( function() {
+  			// 		let rows = [];
+  			// 		for ( let i = 0, row ; row = $('table')[0].rows[i] ; i++ ) {
+  			// 			column1 = row.cells[0].innerText;
+     //    				column2 = row.cells[1].innerText;
+     //    				column3 = row.cells[2].innerText;
+     //    				if (i == 0) {
+     //    					column3 = $('table')[0].rows[0].cells[2].children[0].innerText;	
+     //    				}
+     //    				rows.push(
+     //    					[
+     //    						column1,
+     //    						column2,
+     //    						column3
+     //    					]
+     //    				);
+  			// 		}
+  			// 		csvContent = "data:text/csv;charset=utf-8,";
+  			// 		rows.forEach(function(rowArray){
+     //        			row = rowArray.join(",");
+     //        			csvContent += row + "\r\n";
+     //    			});
+  			// 		let encodedUri = encodeURI(csvContent);
+     //    			let link = document.createElement("a");
+     //    			link.setAttribute("href",  encodedUri);
+     //    			link.setAttribute("download", "Table.csv");
+			  //       document.body.appendChild(link);
+     //    			link.click();
+  			// 	});
   				$(".prevbutton").click(function(){
   					pagenumber--;
   					if (pagenumber < 0) return;
@@ -402,7 +475,6 @@
   				});
   				$(".nextbutton").click(function(){
   					pagenumber++;
-  					console.log("dfdf")
   					$(".table-page ul li:eq(0)").html(pagenumber * 5 + 1)
   					$(".table-page ul li:eq(1)").html(pagenumber * 5 + 2)
   					$(".table-page ul li:eq(2)").html(pagenumber * 5 + 3)

@@ -2,9 +2,9 @@ section .rivet-title {
 	background: #fcfcfc;
 }
 section .rivet-title-bg {
-	background: url(../img/bg1.png) no-repeat;
+	background: url(../img/Two_way_Banner.svg) no-repeat;
 	background-position: right bottom;
-	background-size: auto 619px;
+	background-size: auto 614px;
 	padding: 169px 0 155px;
 }
 section .rivet-title h1 {
@@ -73,7 +73,7 @@ section .engage-item {
 }
 section .conversations {
 	padding: 250px 0 292px;
-	background: url(../img/bg2.png) no-repeat;
+	background: url(../img/phone_mockup.png) no-repeat;
 	background-position: right top;
 	background-size: auto calc(100% - 35.78px);
 	margin-bottom: 35.78px;
@@ -111,9 +111,9 @@ section .conversations button:hover {
 	background: #f65d5a;
 }
 section .connect {
-	background: url(../img/bg3.png) no-repeat;
+	background: url(../img/Connect_illustration.svg) no-repeat;
 	background-position: right bottom;
-	background-size: auto 100%;
+	background-size: 1077.08px 633.9px;
 	padding: 208px 0;
 }
 section .connect h1 {
@@ -138,7 +138,7 @@ section .connect p {
 @media screen and (max-width: 1400px) {
 	section .conversations {
 		padding: 115px 0;
-		background-size: 580px auto;
+		background-size: 900px auto;
 	}
 	section .rivet-title-bg {
 		background-size: auto 530px;
@@ -191,7 +191,7 @@ section .connect p {
 		max-width: 360px;
  	}
  	section .conversations {
-		background-size: 450px auto;
+		background-size: 800px auto;
 		padding: 100px 0;
 	}
 	section .conversations h1,

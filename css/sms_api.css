@@ -2,7 +2,7 @@ section .rivet-title {
 	background: #f5f5f5;
 }
 section .rivet-title-bg {
-	background: url(../img/bg4.png) no-repeat;
+	background: url(../img/banner_illustration.svg) no-repeat;
 	background-position: right bottom;
 	background-size: 1140.46px auto;
 	padding: 190px 0 163px;
@@ -111,20 +111,20 @@ section .sms-api-service .download input[type=email]:placeholder-shown + label {
 section .sms-api-service .download button {
 	width: 282px;
 	height: 100%;
-	background: #E8E8E8 0% 0% no-repeat padding-box;
+	background: #D2302C;
 	box-shadow: 0px 10px 20px #00000014;
 	border-radius: 5px;
 	font: normal normal 24px/29px Gilroy-Medium;
 	color: #FFFFFF;
 }
 section .sms-api-service .download button:hover {
-	background: #D2302C;
+	background: #f65d5a;
 } 
+section .sms-api-service .download button:disabled {
+	background: #E8E8E8;
+}
 section .sms-api-service .download button img {
 	margin-right: 12px;
-}
-section .article > div {
-	padding: 95px 0;
 }
 section .article > div .container {
 	display: flex;
@@ -147,15 +147,21 @@ section .article-text h1 {
 }
 section .reach-engage,
 section .improve-experience {
-	background: url(../img/img2.png) no-repeat;
+	background: url(../img/2messages.svg) no-repeat;
 	background-position: right bottom;
 	background-size: 267.9px auto;
+	padding: 95px 0;
 }
 section .notification-alert,
 section .operational-costs {
-	background: url(../img/img1.png) no-repeat;
+	background: #FBFBFB;
+}
+section .notification-alert-bg,
+section .operational-costs-bg {
+	background: url(../img/3messages.svg) no-repeat;
 	background-position: left bottom;
 	background-size: 263.67px auto;
+	padding: 95px 0;
 }
 section .reach-engage .article-text h1 {
 	color: #CE98B9;
@@ -391,7 +397,10 @@ section .why-sms .submitbutton button:hover {
 	section .article .operational-costs .container {	
 		flex-direction: column-reverse;
 	}
-	section .article > div {
+	section .reach-engage,
+	section .improve-experience,
+	section .notification-alert-bg,
+	section .operational-costs-bg {
 		padding: 50px 0;
 	}
 	section .article-text {
@@ -446,7 +455,10 @@ section .why-sms .submitbutton button:hover {
 	section .sms-api-service .download {
 		width: 100%;
 	}
-	section .article > div {
+	section .reach-engage,
+	section .improve-experience,
+	section .notification-alert-bg,
+	section .operational-costs-bg {
 		padding: 23px 0 33px;
 	}
 	section .article-text {

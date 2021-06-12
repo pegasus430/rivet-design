@@ -2,6 +2,7 @@ section .rivet-title {
 	background: #fcfcfc;
 }
 section .rivet-title-bg {
+	background: url(../img/Banner_background.svg) no-repeat;
 	background-position: right bottom;
 }
 section .rivet-title .container {
