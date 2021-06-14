@@ -101,6 +101,9 @@ header .phone-number {
 	position: relative;	
 	flex-grow: 1;
 }
+.logo {
+	cursor: pointer;
+}
 header .mail-address img,
 header .phone-number img {
 	cursor: pointer;
@@ -374,36 +377,23 @@ footer .conditions .paypalimgbar {
 	section .receive-callbackbar h1 {
 		font-size: 30px;
 	}
-}
-@media screen and (max-width: 1400px) {
-	nav ul li {
-		margin-right: 7px;
+	nav .login-button,
+	nav .register-button {
+		margin-left: 32px;
+		margin-bottom: 10px;
 	}
-	section .receive-callbackbar .container {
+	nav .nav-button {
 		flex-direction: column;
-		justify-content: center;
 	}
-	section .receive-callbackbar p {
-		max-width: 100%;
+	.bottom .email-bottom,
+	.bottom .phone-bottom {
+		width: 50%;
 	}
-	section .receive-callbackbar .callbackbar-text {
-		margin-bottom: 20px;
-	}
-	section .receive-callbackbar .container {
-		height: 200px;
-	}
-}
-@media screen and (max-width:1200px) {
-	.bottom .about,
-	.bottom .contact-info,
-	.bottom .form-call-back {
-		width: 33%;
-	}
-	footer .container {
-		flex-direction: column-reverse;
-	}
-	footer .container .conditions {
-		margin-bottom: 20px;
+	.list {
+		display: none;
+		flex-direction: column;
+		padding-bottom: 10px;
+		padding-top: 80px;
 	}
 	nav .container > img {
 		position: absolute;
@@ -426,26 +416,38 @@ footer .conditions .paypalimgbar {
 		padding: 15px 0;
 		margin-right: 0;
 	}
+}
+@media screen and (max-width: 1400px) {
+	section .receive-callbackbar .container {
+		flex-direction: column;
+		justify-content: center;
+	}
+	section .receive-callbackbar p {
+		max-width: 100%;
+	}
+	section .receive-callbackbar .callbackbar-text {
+		margin-bottom: 20px;
+	}
+	section .receive-callbackbar .container {
+		height: 200px;
+	}
+
+}
+@media screen and (max-width:1200px) {
+	.bottom .about,
+	.bottom .contact-info,
+	.bottom .form-call-back {
+		width: 33%;
+	}
+	footer .container {
+		flex-direction: column-reverse;
+	}
+	footer .container .conditions {
+		margin-bottom: 20px;
+	}
+	
 	section {
 		padding-top: 142px;
-	}
-	.list {
-		display: none;
-		flex-direction: column;
-		padding-bottom: 10px;
-		padding-top: 80px;
-	}
-	nav .login-button,
-	nav .register-button {
-		margin-left: 32px;
-		margin-bottom: 10px;
-	}
-	nav .nav-button {
-		flex-direction: column;
-	}
-	.bottom .email-bottom,
-	.bottom .phone-bottom {
-		width: 50%;
 	}
 }
 @media screen and (max-width:992px) {
