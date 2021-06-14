@@ -32,7 +32,7 @@
 		</header>
 		<nav>
 			<div class="container d-flex justify-content-between align-items-center">
-				<img src="./img/Logo.svg" alt=""/>
+				<img class="logo" src="./img/Logo.svg" alt=""/>
 				<div class="list" id="navlist">
 					<ul class="align-items-center">
 						<li><a href="./home.html">Home</a></li>
@@ -42,9 +42,11 @@
 						<li><a href="#">Bulk SMS Marketing</a></li>
 						<li><a href="#">FAQs</a></li>
 						<li><a href="./contact.html" style="color: #D2302C;">Contact</a></li>
-						<li><a href="#">Register</a></li>
 					</ul>
-					<button class="login-button">Login</button>
+					<div class="d-flex nav-button">
+						<button class="login-button">Login</button>
+						<button class="register-button">Resiter</button>
+					</div>
 				</div>
 				<button class="navbar-toggle">
 					<img src="./img/menu-24px.svg" alt=""/>
@@ -123,7 +125,7 @@
 		<div class="bottom">
 			<div class="container">
 				<div class="logo-bottom">
-					<img src="./img/Logo.svg" alt=""/>
+					<img class="logo" src="./img/Logo.svg" alt=""/>
 					</div>
 				<div class="bottom-main d-flex justify-content-between">
 					<div class="about">
@@ -133,9 +135,8 @@
 							We are a privately held, self funded, profitable company based in Ajman, United Arab Emirates.
 							We form that vital link between mobile networks and businesses who want to communicate via text message with their potential customers.
 						</h4>
-						<div class="align-items-center">
-							<img style="margin-right: 15px;" src="./img/visa2.png" alt=""/>
-							<img src="./img/paypal2.png" alt=""/>
+						<div>
+							<img src="./img/payment_methods.svg" alt=""/>
 						</div>
 					</div>
 					<div class="contact-info">
@@ -193,13 +194,8 @@
 					<p>&copy; 2013 - 2021 Rivet Solutions FZE All Rights Reserved.</p>
 				</div>
 				<div class="conditions">
-					<div class="paypalimgbar align-items-center">
-						<div style="margin-right: 15px">
-							<img src="./img/visa2.png" alt=""/>
-						</div>
-						<div>
-							<img src="./img/paypal2.png" alt=""/>
-						</div>
+					<div class="paypalimgbar">
+						<img src="./img/payment_methods.svg" alt=""/>
 					</div>
 					<div class="footerlinkbar">
 						<a href="#">Terms & Conditions</a> | 
@@ -215,6 +211,9 @@
   				$(".navbar-toggle").click(function(){
     				$("#navlist").toggle();
   				});
+  				$(".logo").click(function() {
+  					document.documentElement.scrollTop = 0;
+  				})
 			});
 		</script>
 	</body>

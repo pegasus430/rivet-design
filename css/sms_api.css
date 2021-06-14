@@ -1,8 +1,5 @@
 section .rivet-title {
-	background: #f5f5f5;
-}
-section .rivet-title-bg {
-	background: url(../img/banner_illustration.svg) no-repeat;
+	background: url(../img/banner_illustration.svg) #f5f5f5 no-repeat;
 	background-position: right bottom;
 	background-size: 1140.46px auto;
 	padding: 190px 0 163px;
@@ -148,19 +145,13 @@ section .article-text h1 {
 section .reach-engage,
 section .improve-experience {
 	background: url(../img/2messages.svg) no-repeat;
-	background-position: right bottom;
-	background-size: 267.9px auto;
+	background-position: calc(100% + 48px) calc(100% + 80px);
 	padding: 95px 0;
 }
 section .notification-alert,
 section .operational-costs {
-	background: #FBFBFB;
-}
-section .notification-alert-bg,
-section .operational-costs-bg {
-	background: url(../img/3messages.svg) no-repeat;
-	background-position: left bottom;
-	background-size: 263.67px auto;
+	background: url(../img/3messages.svg) #FBFBFB no-repeat;
+	background-position: -36px calc(100% + 114px);
 	padding: 95px 0;
 }
 section .reach-engage .article-text h1 {
@@ -350,7 +341,7 @@ section .why-sms .submitbutton button:hover {
 	background: #f65d5a;
 }
 @media screen and (max-width: 1550px) {
-	section .rivet-title-bg {
+	section .rivet-title {
 		background-size: 900px auto;
 	}
 	section .why-sms > img {
@@ -359,7 +350,7 @@ section .why-sms .submitbutton button:hover {
 	}
 }
 @media screen and (max-width: 1400px) {
-	section .rivet-title-bg {
+	section .rivet-title {
 		padding: 80px 0 275px;
 	}
 	section .article-text {
@@ -372,7 +363,7 @@ section .why-sms .submitbutton button:hover {
 	}
 }
 @media screen and (max-width: 1200px) {
-	section .rivet-title-bg {
+	section .rivet-title {
 		background-size: 100% auto;
 		padding-bottom: calc(42.6% + 60px);
 	}
@@ -399,8 +390,8 @@ section .why-sms .submitbutton button:hover {
 	}
 	section .reach-engage,
 	section .improve-experience,
-	section .notification-alert-bg,
-	section .operational-costs-bg {
+	section .notification-alert,
+	section .operational-costs {
 		padding: 50px 0;
 	}
 	section .article-text {
@@ -436,7 +427,7 @@ section .why-sms .submitbutton button:hover {
 	section .rivet-title .container > div {
 		justify-content: center;
 	}
-	section .rivet-title-bg {
+	section .rivet-title {
 		padding-top: 48px;
 		text-align: center;
 	}
@@ -454,11 +445,29 @@ section .why-sms .submitbutton button:hover {
 	}
 	section .sms-api-service .download {
 		width: 100%;
+		flex-direction: column;
+		border: none;
+		height: auto;
+	}
+	section .sms-api-service .download input {
+		width: 100%;
+		height: 49px;
+		background: #F8F8F8 0% 0% no-repeat padding-box;
+		border: 1px solid #E8E8E8;
+		border-radius: 5px;
+		margin-bottom: 7px;
+	}
+	section .sms-api-service .download input::placeholder {
+		text-align: center;
+	}
+	section .sms-api-service .download button {
+		width: 100%;
+		height: 49px;
 	}
 	section .reach-engage,
 	section .improve-experience,
-	section .notification-alert-bg,
-	section .operational-costs-bg {
+	section .notification-alert,
+	section .operational-costs {
 		padding: 23px 0 33px;
 	}
 	section .article-text {
@@ -579,29 +588,6 @@ section .why-sms .submitbutton button:hover {
 		font-size: 14px;
 		line-height: 22px;
 		margin-bottom: 23px;
-	}
-	section .sms-api-service .download {
-		flex-direction: column;
-		border: none;
-		height: auto;
-	}
-	section .sms-api-service .download input {
-		width: 100%;
-		height: 49px;
-		background: #F8F8F8 0% 0% no-repeat padding-box;
-		border: 1px solid #E8E8E8;
-		border-radius: 5px;
-		margin-bottom: 7px;
-	}
-	section .sms-api-service .download input::placeholder {
-		text-align: center;
-	}
-	section .sms-api-service .download button {
-		width: 100%;
-		height: 49px;
-		background: #E8E8E8 0% 0% no-repeat padding-box;
-		box-shadow: 0px 10px 20px #00000014;
-		border-radius: 5px;
 	}
 	section .article {
 		margin-bottom: 38px;

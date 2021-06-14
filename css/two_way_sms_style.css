@@ -1,8 +1,5 @@
 section .rivet-title {
-	background: #fcfcfc;
-}
-section .rivet-title-bg {
-	background: url(../img/Two_way_Banner.svg) no-repeat;
+	background: url(../img/Two_way_Banner.svg) #fcfcfc no-repeat;
 	background-position: right bottom;
 	background-size: auto 614px;
 	padding: 169px 0 155px;
@@ -113,7 +110,7 @@ section .conversations button:hover {
 section .connect {
 	background: url(../img/Connect_illustration.svg) no-repeat;
 	background-position: right bottom;
-	background-size: 1077.08px 633.9px;
+	background-size: 1077.08px auto;
 	padding: 208px 0;
 }
 section .connect h1 {
@@ -127,6 +124,10 @@ section .connect p {
 	margin-bottom: 20px;
 }
 @media screen and (max-width: 1550px) {
+	section .connect {
+		background-size: 1000px auto;
+		padding: 150px 0;
+	}
 	section .rivet-title h2 {
 		max-width: 620px;
 	}
@@ -140,7 +141,7 @@ section .connect p {
 		padding: 115px 0;
 		background-size: 900px auto;
 	}
-	section .rivet-title-bg {
+	section .rivet-title {
 		background-size: auto 530px;
 		padding: 150px 0;
 	}
@@ -167,8 +168,8 @@ section .connect p {
 		max-width: 635px;
 	}
 	section .connect {
-		background-size: auto 610px;		
-		padding: 150px 0;
+		background-size: 800px auto;		
+		padding: 90px 0;
 	}
 	section .connect p {
 		max-width: 630px;
@@ -180,7 +181,7 @@ section .connect p {
     	height: 50px;
 		font-size: 20px;
 	}
-	section .rivet-title-bg {
+	section .rivet-title {
 		padding: 80px 0;
 		background-size: auto 456px;
 	}
@@ -203,11 +204,12 @@ section .connect p {
 		max-width: 100%;
 	}
 	section .connect {
-		padding: 75px 0 500px;
+		background-size: 100% auto;
+		padding: 75px 0 550px;
 	}
 }
 @media screen and (max-width: 992px) {
-	section .rivet-title-bg {
+	section .rivet-title {
 		background-position: center bottom;
 		background-size: 100% auto;
 		padding-bottom: calc(58.56% + 100px);
@@ -229,7 +231,7 @@ section .connect p {
 	}
 	section .connect {
 		background-size: 100% auto;
-		padding-bottom: calc(67.72% + 10px);
+		padding-bottom: calc(47.72% + 20px);
 	}
 }
 @media screen and (max-width: 768px) {
@@ -239,7 +241,7 @@ section .connect p {
 	section .engage-item {
 		max-width: 100%;
 	}
-	section .rivet-title-bg {
+	section .rivet-title {
 		padding-top: 70px;
  	}
 	section .engage {
@@ -283,9 +285,14 @@ section .connect p {
     	height: 50px;
 		font-size: 20px;
 	}
+	section .connect {
+		background-size: 130% auto;
+		background-position: bottom center;
+		padding-bottom: calc(67% + 20px);
+	}
 }
 @media screen and (max-width: 576px) {
-	section .rivet-title-bg {
+	section .rivet-title {
 		padding-top: 36px;
 	}
 	section .rivet-title h1 {
@@ -365,5 +372,10 @@ section .connect p {
 	section .connect p {
 		font-size: 14px;
 		line-height: 22px;
+	}
+	section .connect {
+		background-size: auto 457.28px;
+		background-position-x: calc(50% + 20px);
+		padding-bottom: 540px;
 	}
 }

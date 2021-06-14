@@ -166,7 +166,8 @@ nav ul li a {
 nav ul li a:hover {
 	color: #D2302C;
 }
-nav .login-button {
+nav .login-button,
+nav .register-button {
 	background: #FFFFFF;
 	width: 136px;
 	height: 45px;
@@ -175,7 +176,11 @@ nav .login-button {
 	margin-right: 0;
 	font: normal normal 18px/21px Gilroy-Medium;
 }
-nav .login-button:hover {
+nav .login-button {
+	margin-right: 12px;
+}
+nav .login-button:hover,
+nav .register-button:hover {
 	color: white;
 	background: #D2302C;
 	border-color: #D2302C;
@@ -268,7 +273,7 @@ section .receive-callbackbar button:hover {
 }
 .bottom h4 {
 	font: normal normal 300 18px/32px Gilroy-Light;
-	margin-bottom: 60px;
+	margin-bottom: 50px;
 }
 .bottom h6 {
 	font: normal normal 20px/32px Gilroy-medium;
@@ -361,7 +366,7 @@ footer .conditions .paypalimgbar {
 }
 @media screen and (max-width: 1550px) {
 	nav ul li {
-		margin-right: 35px;
+		margin-right: 32px;
  	}
 	section .receive-callbackbar .callbackbar-form {
 		margin-right: 0;
@@ -372,7 +377,7 @@ footer .conditions .paypalimgbar {
 }
 @media screen and (max-width: 1400px) {
 	nav ul li {
-		margin-right: 16px;
+		margin-right: 7px;
 	}
 	section .receive-callbackbar .container {
 		flex-direction: column;
@@ -430,8 +435,13 @@ footer .conditions .paypalimgbar {
 		padding-bottom: 10px;
 		padding-top: 80px;
 	}
-	nav .login-button {
+	nav .login-button,
+	nav .register-button {
 		margin-left: 32px;
+		margin-bottom: 10px;
+	}
+	nav .nav-button {
+		flex-direction: column;
 	}
 	.bottom .email-bottom,
 	.bottom .phone-bottom {
@@ -497,8 +507,11 @@ footer .conditions .paypalimgbar {
 		display: none;
 	}
 	footer .conditions .paypalimgbar {
-		display: flex;
-		max-width: 151.3px;
+		display: block;
+		margin-right: 50px;
+	}
+	footer .conditions .paypalimgbar img {
+		width: 151.3px;
 	}
 }
 @media screen and (max-width:768px) {
@@ -538,18 +551,15 @@ footer .conditions .paypalimgbar {
 	footer ul {
 		display: none;
 	}
-	footer .conditions .paypalimgbar > div {
-		width: 50%;
-	}
-	footer .conditions .paypalimgbar img {
-		width: 100%;
-	}
 	footer {
 		padding: 0;
 	}
 	footer .container .conditions {
 		width: 100%;
 		justify-content: space-between;
+	}
+	footer .conditions .paypalimgbar {
+		margin-right: 0;
 	}
 	.bottom p {
 		font-size: 18px;
@@ -612,8 +622,13 @@ footer .conditions .paypalimgbar {
 		height: 39px;
 		font-size: 14px;
 	}
-	nav .login-button {
+	nav .nav-button {
+		align-items: center;
+	}
+	nav .login-button,
+	nav .register-button {
 		margin-left: 0;
+		margin-right: 0;
 	}
 	nav ul {
 		padding-left: 0;

@@ -1,17 +1,28 @@
-
+section {
+	background: white;
+}
 section .bulk {
 	width: 100%;
 	margin-bottom: 13px;
 	background: url(../img/home_Banner.svg) no-repeat;
-	background-size: 100% 890px;
+	background-size: cover;
+	background-position-x: left;
 }
 section .bulk .container {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
+}
+section .bulk .container > img {
+	position: absolute;
+	z-index: 1;
+	top: 46.68px;
+	right: 553.17px;
 }
 section .bulk-text {
 	padding-top: 188px;
 	color: white;
+	margin-bottom: 48px;
 }
 section .bulk-text h1 {
 	position: relative;
@@ -154,29 +165,37 @@ section .valued-services .service-item p {
 	color: #000000;
 	margin-bottom: 0;
 }
-section .geteway {
-	background: url(../img/smartmockups_kobpaz9a.png) no-repeat;
-	background-size: 761px auto;
-	background-position: right center;
+section .gateway-content {
+	position: relative;
+	background: url(../img/Ellipse_background.svg), linear-gradient(white, white);
+	background-repeat: no-repeat;
+	background-size: auto 1074px, 100% 102px;
+	background-blend-mode: color-dodge;
+	background-position: calc(100% + 381px) 0, 0 100%;
 	margin-bottom: 185px;
 }
-section .geteway h1 {
+section .gateway {
+	background: url(../img/smartmockups_kobpaz9a.png) no-repeat;
+	background-position: calc(100% + 29px) 100%;
+	height: 889px;
+}
+section .gateway h1 {
 	font: normal normal 800 48px/59px Gilroy-ExtraBold;
 	color: #023047;
 	text-transform: uppercase;
 	margin-bottom: 60px;
 }
-section .geteway .container {
+section .gateway .container {
 	padding-top: 47px;
 }
-section .geteway .container > div {
+section .gateway .container > div {
 	max-width: 760px;
 }
-section .geteway p {
+section .gateway p {
 	font: normal normal 300 24px/36px Gilroy-Light;
 	margin-bottom: 60px;
 }
-section .geteway button {
+section .gateway button {
 	background: #D2302C;
 	box-shadow: 0px 10px 20px #00000014;
 	border-radius: 5px;
@@ -185,14 +204,13 @@ section .geteway button {
 	height: 57px;
 	color: #fff;
 }
-section .geteway button:hover {
+section .gateway button:hover {
 	background: #f65d5a;
 }
 section .promise {
 	padding-bottom: 251px;
-	background: url(../img/img1.png) no-repeat;
-	background-size: 268px auto;
-	background-position: left bottom;
+	background: url(../img/3messages.svg) no-repeat;
+	background-position: -30px calc(100% + 80px);
 	margin-bottom: 171px;
 }
 section .promise .container {
@@ -223,10 +241,9 @@ section .promise-imgbar {
 	text-align: center;
 }
 section .testimonials {
-	padding-bottom: 230px;
-	background: url(../img/img2.png) no-repeat;
-	background-size: 260px auto;
-	background-position: right bottom;
+	padding-bottom: 174px;
+	background: url(../img/2messages.svg) no-repeat;
+	background-position: calc(100% + 56px) calc(100% + 82px);
 }
 section .testimonials h3 {
 	text-align: center;
@@ -264,7 +281,11 @@ section .testimonials-item-content {
 	justify-content: space-between;
 }
 section .testimonials-item {
-	max-width: 386px;
+	max-width: 480px;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	box-shadow: 0px 0px 20px #00000014;
+	border-radius: 5px;
+	padding: 54px 72px 56px 40px;
 	margin-right: 20px;
 }
 section .testimonials-item .user {
@@ -291,46 +312,59 @@ section .testimonials-item p {
 	margin-bottom: 0;
 }
 @media screen and (max-width: 1550px) {
-	section .geteway {
-		background-size: 575px auto;
+	section .gateway {
+		background-size: 700px auto;
+		height: 830px;
 	}
-	section .bulk {
-		background-size: 100% 820px;
+	section .gateway .container > div {
+		max-width: 685px;
 	}
 }
-@media screen and (max-width: 1400px) {
-	section .bulk {
-		background-size: 100% 710px;
+@media screen and (max-width: 1400px) {	
+	section .bulk .container > img {
+		right: 475.17px;
 	}
-	section .geteway .container > div {
+	section .gateway .container > div {
 		max-width: 600px;
 	}
-	section .geteway {
-		background-size: 530px auto;
+	section .gateway {
+		background-size: 600px auto;
+	}
+	section .gateway-content {
+		background-size: auto 1010px, 100% 102px;
+	}
+	section .testimonials-item {
+		padding: 54px 40px;
 	}
 }
 @media screen and (max-width: 1200px) {
-	section .bulk-img {
-		padding: 48px 0 21px;
-	}
 	section .bulk {
-		background-size: 100% 1550px;
+		margin-bottom: 25px;
+	}
+	section .bulk .container > img {
+		right: auto;
+		top: 615px;
+		left: 50px;
 	}
 	section .bulk-text p {
 		max-width: 100%;
 	}
 	section .bulk-img {
 		width: 100%;
+		padding: 0;
 	}
 	section .bulk .container {
 		flex-direction: column;
 	}
-	section .geteway {
-		background-position: right bottom;
-		padding-bottom: 560px;
-		margin-bottom: 100px;
+	section .gateway-content {
+		background-position: calc(100% + 381px) 450px;
+		background-size: auto 1100px, 0 0;
 	}
-	section .geteway .container > div {
+	section .gateway {
+		height: auto;
+		padding-bottom: 715px;
+	}
+	section .gateway .container > div {
 		max-width: 100%;
 	}
 	section .fontfamilytype {
@@ -349,22 +383,31 @@ section .testimonials-item p {
 	section .testimonials .star-content {
 		margin-bottom: 100px;
 	}
-}
-@media screen and (max-width: 992px) {
-	section .bulk {
-		background-size: 100% 1370px;
-	}
-	section .promise .container {
-		flex-direction: column-reverse;
-	}
 	section .testimonials-item-content {
 		flex-direction: column;
 		align-items: center;
 	}
 	section .testimonials-item {
-		max-width: 100%;
 		margin-right: 0;
 		margin-bottom: 20px;
+	}
+}
+@media screen and (max-width: 992px) {
+	section .bulk .container > img {
+		right: auto;
+		top: 650px;
+		left: 0;
+	}
+	section .promise .container {
+		flex-direction: column-reverse;
+	}
+	section .gateway-content {
+		background-position: calc(100% + 200px) 555px;
+		background-size: auto 800px, 0 0;
+	}
+	section .gateway {
+		background-size: 500px auto;
+		padding-bottom: 563px;
 	}
 	section .testimonials-item .user {
 		margin-bottom: 20px;
@@ -375,6 +418,11 @@ section .testimonials-item p {
 	}
 }
 @media screen and (max-width: 768px) {
+	section .bulk .container > img {
+		width: 130px;
+    	top: 510px;
+    	left: 10px;
+	}
 	section .bulk-text {
 		text-align: center;
 		padding-top: 120px;
@@ -400,16 +448,20 @@ section .testimonials-item p {
 		line-height: 24px;
 	}
 	section .bulk-text button,
-	section .geteway button {
+	section .gateway button {
 		width: 250px;
 		height: 50px;
 		font-size: 20px;
 	}
+	section .gateway-content {
+		background-position: calc(100% + 200px) 500px;
+		background-size: auto 730px, 0 0;
+	}
+	section .gateway {
+		background-size: 500px auto;
+	}
 	section .fontfamilytype .fonttype {
 		overflow-x: scroll;
-	}
-	section .bulk {
-		background-size: 100% 1050px;
 	}
 	section .valued-services .service-item-content {
 		flex-direction: column;
@@ -440,7 +492,7 @@ section .testimonials-item p {
 		margin-left: 0;
 	}
 	section .valued-services h1,
-	section .geteway h1,
+	section .gateway h1,
 	section .promise-text h2,
 	section .testimonials h2 {
 		font-size: 36px;
@@ -452,7 +504,7 @@ section .testimonials-item p {
 		line-height: 34px;
 	}
 	section .valued-services h6,
-	section .geteway p,
+	section .gateway p,
 	section .promise-text p,
 	section .testimonials .star-content p,
 	section .testimonials-item p,
@@ -462,12 +514,13 @@ section .testimonials-item p {
 	}
 }
 @media screen and (max-width: 576px) {
-	section .bulk {
-		background-size: 100% calc(100% - (100% - 373px) * 0.2);
+	section .bulk .container > img {
+		width: 83.86px;
+    	top: 310px;
+    	left: calc(27px + 3%);
 	}
 	section .bulk-text {
 		padding-top: 62px;
-		margin-bottom: 26px;
 	}		
 	section .bulk-text h1 {
 		font-size: 35px;
@@ -530,26 +583,31 @@ section .testimonials-item p {
 		font-size: 14px;
 		line-height: 22px;
 	}
-	section .geteway h1 {
+	section .gateway-content {
+		background-size: auto 498px, 0 0;
+		background-position: calc(100% + 143px) calc(100% + 73px);
+		margin-bottom: 100px;
+	}
+	section .gateway {
+		padding-bottom: 458px;
+		background-size: auto 367px;
+		background-position: calc(100% + 66px) calc(100% - 39px);
+	}
+	section .gateway h1 {
 		font-size: 24px;
 		line-height: 29px;
 		margin-bottom: 33px;
 	}
-	section .geteway p {
+	section .gateway p {
 		font-size: 14px;
 		line-height: 22px;
 		margin-bottom: 33px;
 	}
-	section .geteway button {
+	section .gateway button {
 		width: 171px;
 		height: 39px;
 		font-size: 14px;
 		line-height: 16px;
-	}
-	section .geteway {
-		padding-bottom: 390px;
-		margin-bottom: 95px;
-		background-size: 355px auto;
 	}
 	section .promise-text h3 {
 		font-size: 24px;
@@ -587,7 +645,7 @@ section .testimonials-item p {
 		width: 31.3px;
 	}
 	section .testimonials .star-content > div {
-			margin-bottom: 7.6px;
+		margin-bottom: 7.6px;
 	}
 	section .testimonials .star-content p {
 		font-size: 14px;
@@ -595,9 +653,6 @@ section .testimonials-item p {
 	}
 	section .testimonials .star-content {
 		margin-bottom: 89px;
-	}
-	section .testimonials-item {
-		max-width: 276px;
 	}
 	section .testimonials-item .user h5 {
 		font-size: 18px;
@@ -616,7 +671,7 @@ section .testimonials-item p {
 		margin-right: 21px;
 	}
 	section .testimonials {
-		padding-bottom: 123px;
+		padding-bottom: 92px;
 		background-size: 113px auto;
 	}
 }

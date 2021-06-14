@@ -1,9 +1,6 @@
 section .rivet-title {
-	background: #fcfcfc;
-}
-section .rivet-title-bg {
-	background: url(../img/Banner_background.svg) no-repeat;
-	background-position: right bottom;
+	background: url(../img/Banner_background.svg) #fcfcfc no-repeat;
+	background-position: calc(100% + 50px) calc(100% + 80px);
 }
 section .rivet-title .container {
 	display: flex;
@@ -361,6 +358,9 @@ section .require-form .submitbutton button:hover {
  	}
 }
 @media (max-width: 1400px) {
+	section .rivet-title {
+		background-size: 920px auto;
+	}
 	section .rivet-title h1 {
 		font-size: 48px;
 	}	
@@ -382,6 +382,9 @@ section .require-form .submitbutton button:hover {
  	}
 }
 @media (max-width:1200px) {
+	section .rivet-title {
+		background-size: 800px auto;
+	}
 	section .rivet-title-text {
 		padding-top: 60px;
  	}
@@ -420,6 +423,9 @@ section .require-form .submitbutton button:hover {
 	}
 }
 @media (max-width:992px) {
+	section .rivet-title {
+		background-size: 125% auto;
+	}
 	section .pricing-option {
 		padding-top: 100px;
 	}
@@ -437,7 +443,7 @@ section .require-form .submitbutton button:hover {
 	section .rivet-title-img {
 		padding: 79.89px 0 0;
 	}
-	section .rivet-title-bg {
+	section .rivet-title {
 		padding-bottom: 67.33px;
 	}
 	section .table-controlbar .container {
