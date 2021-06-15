@@ -380,6 +380,15 @@ section .require-form .submitbutton button:hover {
 	section .rivet-title-text {
 		padding-top: 120px;
  	}
+ 	section .pricing-option h1,
+ 	section .require-form h1 {
+		font-size: 40px;
+	}
+	section .table-main table tbody tr td,
+	section .require-form h5,
+	section .table-controlbar label {
+		font-size: 18px;
+	}
 }
 @media (max-width:1200px) {
 	section .rivet-title {

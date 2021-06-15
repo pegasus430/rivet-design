@@ -336,6 +336,22 @@ section .testimonials-item p {
 	section .testimonials-item {
 		padding: 54px 40px;
 	}
+	section .testimonials .star-content img {
+		width: 35px;
+	}
+	section .valued-services h6,
+	section .gateway p,
+	section .promise-text p,
+	section .testimonials-item p,
+	section .testimonials .star-content p {
+		font-size: 18px;
+	}
+	section .valued-services h1,
+	section .gateway h1,
+	section .promise-text h2,
+	section .testimonials h2 {
+		font-size: 40px;
+	}
 }
 @media screen and (max-width: 1200px) {
 	section .bulk {

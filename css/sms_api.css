@@ -361,6 +361,14 @@ section .why-sms .submitbutton button:hover {
 		top: 900px;
 		right: calc((100% - 1140px)/2 + 12px);
 	}
+	section .sms-api-service p,
+	section .article-text p,
+	section .why-sms p {
+		font-size: 18px;
+	}
+	section .sms-api-service h1 {
+		font-size: 40px;
+	}
 }
 @media screen and (max-width: 1200px) {
 	section .rivet-title {
