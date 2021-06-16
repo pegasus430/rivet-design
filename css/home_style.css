@@ -398,7 +398,7 @@ section .testimonials-item p {
 		margin: auto;
 	}
 	section .promise-text {
-		width: 780px;
+		max-width: 780px;
 	}
 	section .promise {
 		padding-bottom: 180px;
