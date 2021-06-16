@@ -382,23 +382,27 @@ section .require-form .submitbutton button:hover {
  	}
  	section .pricing-option h1,
  	section .require-form h1 {
-		font-size: 40px;
+		font-size: 32px;
 	}
 	section .table-main table tbody tr td,
 	section .require-form h5,
-	section .table-controlbar label {
-		font-size: 18px;
+	section .table-controlbar label,
+	section .table-controlbar select,
+	section .table-controlbar .pdfdownload a, 
+	section .table-controlbar .xlsdownload a,
+	section .require-form label {
+		font-size: 16px;
 	}
 	section .pricing-option h6 {
-		font-size: 24px;
+		font-size: 20px;
 	}
 	section .buynowbuttonbar p {
-		font-size: 28px;
+		font-size: 22px;
 	}
 	section .buynowbuttonbar .desktop-button {
 		width: 140px;
-		height: 50px;
-		font-size: 20px;
+		height: 40px;
+		font-size: 18px;
 	}
 	section .buynowbuttonbar,
 	section .table-main {

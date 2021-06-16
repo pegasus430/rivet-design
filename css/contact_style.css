@@ -212,10 +212,19 @@ section .contact-main-content .google-map p {
 		margin-left: 120px;
 	}
 	section .contact-title h1 {
-		font-size: 42px;
+		font-size: 40px;
 	}
 	section .contact-main-content h2 {
-		font-size: 28px;
+		font-size: 24px;
+	}
+	section .contact-main-content label {
+		font-size: 16px;
+	}
+	section .contact-main-content .buttonbar button, 
+	section .contact-main-content .buttonbar input {
+		width: 210px;
+		height: 40px;
+		font-size: 18px;
 	}
 }
 @media screen and (max-width: 1200px) {

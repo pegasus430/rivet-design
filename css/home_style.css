@@ -348,35 +348,45 @@ section .testimonials-item p {
 	section .promise-text p,
 	section .testimonials-item p,
 	section .testimonials .star-content p {
-		font-size: 18px;
+		font-size: 16px;
+	}
+	section .valued-services h1 {
+		margin-bottom: 40px;
 	}
 	section .valued-services h1,
 	section .gateway h1,
 	section .promise-text h2,
 	section .testimonials h2 {
-		font-size: 40px;
+		font-size: 32px;
 	}
 	section .bulk-text h1 {
-		font-size: 60px;
+		font-size: 54px;
 	}
 	section .bulk-text h1 span {
-		font-size: 160px;
-		left: 210px;
+		font-size: 140px;
+		left: 190px;
+	}
+	section .bulk-text {
+		padding-top: 140px;
 	}
 	section .bulk-text h2 {
-		font-size: 36px;
+		font-size: 32px;
+	}
+	section .bulk-img {
+		width: 600px;
 	}
 	section .bulk-text h3 {
-		font-size: 28px;
+		font-size: 24px;
 	}
 	section .bulk-text p {
-		font-size: 20px;
+		font-size: 18px;
 		margin-bottom: 30px;
 	}
-	section .bulk-text button {
-		font-size: 20px;
-		width: 260px;
-		height: 50px;
+	section .bulk-text button,
+	section .gateway button {
+		font-size: 18px;
+		width: 210px;
+		height: 40px;
 	}
 	section .fontfamilytype .font-title p {
 		font-size: 20px;
@@ -405,19 +415,24 @@ section .testimonials-item p {
 		margin-bottom: 140px;
 	}
 	section .testimonials-item .user h5 {
-		font-size: 20px;
-	}
-	section .testimonials-item .user h6 {
-		font-size: 16px;
-	}
-	footer p, footer a {
 		font-size: 18px;
 	}
+	section .testimonials h2 {
+		margin-bottom: 40px;
+	}
+	section .testimonials-item .user h6,
+	section .valued-services .service-item p {
+		font-size: 16px;
+	}
 	section .testimonials .star-content {
-		margin-bottom: 100px;
+		margin-bottom: 80px;
 	}
 	section .testimonials {
 		padding-bottom: 140px;
+	}
+	section .promise-text h3,
+	section .testimonials h3 {
+		font-size: 26px;
 	}
 }
 @media screen and (max-width: 1200px) {

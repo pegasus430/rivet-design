@@ -383,18 +383,32 @@ footer .conditions .paypalimgbar {
 	}
 }
 @media screen and (max-width: 1400px) {
-	section .receive-callbackbar .container {
+	/*section .receive-callbackbar .container {
 		flex-direction: column;
 		justify-content: center;
+	}*/
+	section .receive-callbackbar input {
+		font-size: 16px;
+		padding-left: 5px;
 	}
-	section .receive-callbackbar p {
+	.bottom button {
+		width: 210px;
+		height: 40px;
+		font-size: 18px;
+	}
+	.bottom h6 {
+		font-size: 18px;
+	}
+	.bottom h5 {
+		font-size: 20px;
+	}
+	section .receive-callbackbar p,
+	section .receive-callbackbar label {
 		max-width: 100%;
+		font-size: 16px;
 	}
 	section .receive-callbackbar .callbackbar-text {
 		margin-bottom: 20px;
-	}
-	section .receive-callbackbar .container {
-		height: 200px;
 	}
 	nav ul li {
 		font-size: 16px;
@@ -410,9 +424,17 @@ footer .conditions .paypalimgbar {
 	.bottom .about {
 		max-width: 33%;
 	}
-	.bottom p {
-		font-size: 18px;
+	.bottom p,
+	.bottom h4,
+	.bottom label {
+		font-size: 16px;
 		line-height: 26px;
+	}
+	.bottom label {
+		line-height: 20px;
+	}
+	footer p, footer a {
+		font-size: 16px;
 	}
 }
 @media screen and (max-width:1200px) {
