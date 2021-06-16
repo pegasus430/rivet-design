@@ -373,7 +373,7 @@ section .require-form .submitbutton button:hover {
 		line-height: 22px;
 	}
 	section .rivet-title button {
-		width: 250px;
+		width: 240px;
     	height: 50px;
 		font-size: 20px;
 	}
@@ -388,6 +388,21 @@ section .require-form .submitbutton button:hover {
 	section .require-form h5,
 	section .table-controlbar label {
 		font-size: 18px;
+	}
+	section .pricing-option h6 {
+		font-size: 24px;
+	}
+	section .buynowbuttonbar p {
+		font-size: 28px;
+	}
+	section .buynowbuttonbar .desktop-button {
+		width: 140px;
+		height: 50px;
+		font-size: 20px;
+	}
+	section .buynowbuttonbar,
+	section .table-main {
+		margin-bottom: 80px;
 	}
 }
 @media (max-width:1200px) {

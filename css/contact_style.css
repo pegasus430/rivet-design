@@ -33,7 +33,7 @@ section .contact-main-content {
 	padding: 75px 85px 85px;
 }
 section .contact-main-content h2 {
-	font: normal normal 800 32px/40px Gilroy;
+	font: normal normal 800 32px/40px Gilroy-ExtraBold;
 	color: #023047;
 	text-transform: capitalize;
 	margin-bottom: 48px;
@@ -210,6 +210,12 @@ section .contact-main-content .google-map p {
 	section .contact-main-content .check-robot, 
 	section .contact-main-content .buttonbar {
 		margin-left: 120px;
+	}
+	section .contact-title h1 {
+		font-size: 42px;
+	}
+	section .contact-main-content h2 {
+		font-size: 28px;
 	}
 }
 @media screen and (max-width: 1200px) {
