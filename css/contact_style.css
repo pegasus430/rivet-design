@@ -46,8 +46,8 @@ section .contact-main-content label span {
 	color: #D2302C;
 }
 section .contact-main-content input::placeholder,
- section .contact-main-content textarea::placeholder {
-	font: normal normal 300 18px/20px Gilroy;
+section .contact-main-content textarea::placeholder {
+	font: normal normal 300 18px/20px Gilroy-Light;
 	color: rgba(0, 0, 0, 0.5);
 }
 section .contact-main-content input {
@@ -55,13 +55,13 @@ section .contact-main-content input {
 	height: 47px;	
 }
 section .contact-main-content textarea {
-	padding-top: 13px;
+	padding-top: 13px !important;
 	width: 731px;	
 	height: 99px;
 }
 section .contact-main-content input,
 section .contact-main-content textarea {
-	padding-left: 14px;
+	padding: 0 14px;
 	background: #F8F8F8 0% 0% no-repeat padding-box;
 	border: 1px solid #E8E8E8;
 	border-radius: 5px;

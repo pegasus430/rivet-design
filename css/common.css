@@ -221,7 +221,7 @@ section .receive-callbackbar label {
 section .receive-callbackbar input {
 	width: 100%;
 	height: 47px;
-	padding-left: 14px;
+	padding: 0 14px;
 	outline: none;
 	border: none;
 	background: #FFFFFF;
@@ -309,7 +309,7 @@ section .receive-callbackbar button:hover {
 }
 .bottom input {
 	width: 100%;
-	padding: 0 0 0 14px;
+	padding: 0 14px;
 	margin-bottom: 18px;
 	background: #FFFFFF;
 	border: 1px solid #E8E8E8;
@@ -383,18 +383,23 @@ footer .conditions .paypalimgbar {
 	}
 }
 @media screen and (max-width: 1400px) {
-	/*section .receive-callbackbar .container {
-		flex-direction: column;
-		justify-content: center;
-	}*/
-	section .receive-callbackbar input {
+	section .receive-callbackbar input,
+	section .receive-callbackbar input::placeholder {
 		font-size: 16px;
-		padding-left: 5px;
+	}
+	.bottom {
+		padding: 70px 0 80px;
+	}
+	.bottom .about > div img {
+		width: 235px;
 	}
 	.bottom button {
 		width: 210px;
 		height: 40px;
 		font-size: 18px;
+	}
+	.bottom h4 {
+		margin-bottom: 30px;
 	}
 	.bottom h6 {
 		font-size: 18px;

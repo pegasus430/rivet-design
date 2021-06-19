@@ -142,7 +142,7 @@ section .connect p {
 		background-size: 900px auto;
 	}
 	section .rivet-title {
-		background-size: auto 530px;
+		background-size: auto 480px;
 		padding: 150px 0;
 	}
 	section .rivet-title h1 {
@@ -196,6 +196,13 @@ section .connect p {
 	}
 	section .conversations h2 {
 		font-size: 24px;
+	}
+	section .engage {
+		padding-top: 90px;
+		margin-bottom: 20px;
+	}
+	section .engage h1 {
+		margin-bottom: 50px;
 	}
 }
 @media screen and (max-width: 1200px) {
