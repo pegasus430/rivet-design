@@ -362,28 +362,27 @@ section .require-form .submitbutton button:hover {
 		background-size: 920px auto;
 	}
 	section .rivet-title h1 {
-		font-size: 44px;
+		font-size: 48px;
 	}	
 	section .rivet-title h2 {
-		font-size: 28px;
+		font-size: 32px;
 		line-height: 36px;
 	}
 	section .rivet-title p {
-		font-size: 18px;
+		font-size: 20px;
 		line-height: 22px;
 	}
-	section .rivet-title button,
-	section .require-form .submitbutton button {
-		width: 200px;
-    	height: 40px;
-		font-size: 18px;
+	section .rivet-title button {
+		width: 240px;
+    	height: 50px;
+		font-size: 20px;
 	}
 	section .rivet-title-text {
 		padding-top: 120px;
  	}
  	section .pricing-option h1,
  	section .require-form h1 {
-		font-size: 28px;
+		font-size: 32px;
 	}
 	section .table-main table tbody tr td,
 	section .require-form h5,
@@ -391,26 +390,14 @@ section .require-form .submitbutton button:hover {
 	section .table-controlbar select,
 	section .table-controlbar .pdfdownload a, 
 	section .table-controlbar .xlsdownload a,
-	section .pricing-option p,
 	section .require-form label {
-		font-size: 14px;
+		font-size: 16px;
 	}
 	section .pricing-option h6 {
-		font-size: 18px;
-	}
-	section .buynowbuttonbar p {
 		font-size: 20px;
 	}
-	section .table-main table thead tr th,
-	section .table-main .table-page .prevbutton, 
-	section .table-main .table-page .nextbutton,
-	section .table-main .table-page ul li,
-	section .table-main .table-page p,
-	section .require-form input, 
-	section .require-form textarea,
-	section .require-form input::placeholder, 
-	section .require-form textarea::placeholder {
-		font-size: 14px;
+	section .buynowbuttonbar p {
+		font-size: 22px;
 	}
 	section .buynowbuttonbar .desktop-button {
 		width: 140px;
@@ -420,17 +407,6 @@ section .require-form .submitbutton button:hover {
 	section .buynowbuttonbar,
 	section .table-main {
 		margin-bottom: 80px;
-	}
-	section .table-controlbar .searchbar input {
-		line-height: 40px;
-	}
-	section .table-controlbar select {
-		height: 42px;
-	}
-	section .table-controlbar .country-select .select-arrow, 
-	section .table-controlbar .sort-select .select-arrow {
-		right: 22px;
-		bottom: 11px;
 	}
 }
 @media (max-width:1200px) {

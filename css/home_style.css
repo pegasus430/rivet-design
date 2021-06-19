@@ -325,71 +325,67 @@ section .testimonials-item p {
 }
 @media screen and (max-width: 1400px) {	
 	section .bulk .container > img {
-		top: 30px;
-		right: 440.17px;
-		width: 150px;
+		right: 475.17px;
 	}
 	section .gateway .container > div {
 		max-width: 600px;
 	}
 	section .gateway {
 		height: 700px;
-		background-size: 470px auto;
+		background-size: 500px auto;
 	}
 	section .gateway-content {
-		background-size: auto 850px, 100% 90px;
-		background-position: calc(100% + 381px) calc(100% + 200px), 0 100%;
-		margin-bottom: 120px;
+		background-size: auto 900px, 100% 90px;
 	}
 	section .testimonials-item {
 		padding: 54px 40px;
 	}
 	section .testimonials .star-content img {
-		width: 25px;
+		width: 35px;
 	}
 	section .valued-services h6,
 	section .gateway p,
 	section .promise-text p,
 	section .testimonials-item p,
 	section .testimonials .star-content p {
-		font-size: 14px;
+		font-size: 16px;
 	}
 	section .valued-services h1 {
-		margin-bottom: 30px;
+		margin-bottom: 40px;
 	}
 	section .valued-services h1,
 	section .gateway h1,
 	section .promise-text h2,
 	section .testimonials h2 {
-		font-size: 28px;
+		font-size: 32px;
 	}
 	section .bulk-text h1 {
-		font-size: 48px;
+		font-size: 54px;
 	}
 	section .bulk-text h1 span {
-		font-size: 120px;
-		left: 170px;
+		font-size: 140px;
+		left: 190px;
 	}
 	section .bulk-text {
 		padding-top: 140px;
 	}
 	section .bulk-text h2 {
-		font-size: 24px;
+		font-size: 32px;
 	}
 	section .bulk-img {
-		width: 550px;
+		width: 600px;
 	}
 	section .bulk-text h3 {
-		font-size: 18px;
+		font-size: 24px;
 	}
 	section .bulk-text p {
-		font-size: 16px;
+		font-size: 18px;
 		margin-bottom: 30px;
 	}
 	section .bulk-text button,
 	section .gateway button {
 		font-size: 18px;
-		width: 200px;
+		width: 210px;
 		height: 40px;
 	}
 	section .fontfamilytype .font-title p {
@@ -402,13 +398,13 @@ section .testimonials-item p {
 		margin-bottom: 100px;
 	}
 	section .valued-services .service-item h2 {
-		font-size: 20px;
+		font-size: 24px;
 	}
 	section .valued-services {
-		margin-bottom: 100px;
+		margin-bottom: 150px;
 	}
 	section .promise-imgbar {
-		width: 220px;
+		width: 300px;
 		margin: auto;
 	}
 	section .promise-text {
@@ -416,17 +412,17 @@ section .testimonials-item p {
 	}
 	section .promise {
 		padding-bottom: 180px;
-		margin-bottom: 100px;
+		margin-bottom: 140px;
 	}
 	section .testimonials-item .user h5 {
-		font-size: 16px;
+		font-size: 18px;
 	}
 	section .testimonials h2 {
-		margin-bottom: 30px;
+		margin-bottom: 40px;
 	}
 	section .testimonials-item .user h6,
 	section .valued-services .service-item p {
-		font-size: 12px;
+		font-size: 16px;
 	}
 	section .testimonials .star-content {
 		margin-bottom: 80px;
@@ -436,7 +432,7 @@ section .testimonials-item p {
 	}
 	section .promise-text h3,
 	section .testimonials h3 {
-		font-size: 22px;
+		font-size: 26px;
 	}
 }
 @media screen and (max-width: 1200px) {
@@ -497,7 +493,7 @@ section .testimonials-item p {
 @media screen and (max-width: 992px) {
 	section .bulk .container > img {
 		right: auto;
-		top: 530px;
+		top: 650px;
 		left: 0;
 	}
 	section .promise .container {

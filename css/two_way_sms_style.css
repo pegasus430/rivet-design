@@ -142,24 +142,21 @@ section .connect p {
 		background-size: 900px auto;
 	}
 	section .rivet-title {
-		background-size: auto 470px;
-		padding: 120px 0;
-	}
-	section .engage {
-		padding-top: 80px;
+		background-size: auto 530px;
+		padding: 150px 0;
 	}
 	section .rivet-title h1 {
-		font-size: 44px;
+		font-size: 48px;
 		line-height: 52px;
 	}	
 	section .rivet-title h2 {
-		font-size: 28px;
+		font-size: 32px;
 		line-height: 36px;
 		max-width: 560px;
 
 	}
 	section .rivet-title p {
-		font-size: 18px;
+		font-size: 20px;
 		line-height: 22px;
 		max-width: 450px;
 	}
@@ -180,25 +177,25 @@ section .connect p {
 	section .conversations h1,
 	section .connect h1,
 	section .engage h1 {
-		font-size: 28px;
+		font-size: 32px;
 	}
 	section .conversations h6, 
 	section .conversations p,
 	section .connect p,
 	section .engage-item-content p {
-		font-size: 14px;
+		font-size: 16px;
 	}
 	section .rivet-title button,
 	section .conversations button {
 		font-size: 18px;
-		width: 200px;
+		width: 210px;
 		height: 40px;
 	}
 	section .engage-item-content h2 {
-		font-size: 18px;
+		font-size: 20px;
 	}
 	section .conversations h2 {
-		font-size: 20px;
+		font-size: 24px;
 	}
 }
 @media screen and (max-width: 1200px) {
