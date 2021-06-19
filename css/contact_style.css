@@ -47,7 +47,7 @@ section .contact-main-content label span {
 }
 section .contact-main-content input::placeholder,
  section .contact-main-content textarea::placeholder {
-	font: normal normal 300 18px/20px Gilroy;
+	font: normal normal 300 18px/20px Gilroy-Light;
 	color: rgba(0, 0, 0, 0.5);
 }
 section .contact-main-content input {
@@ -218,13 +218,19 @@ section .contact-main-content .google-map p {
 		font-size: 24px;
 	}
 	section .contact-main-content label {
-		font-size: 16px;
+		font-size: 14px;
 	}
 	section .contact-main-content .buttonbar button, 
 	section .contact-main-content .buttonbar input {
-		width: 210px;
+		width: 200px;
 		height: 40px;
 		font-size: 18px;
+	}
+	section .contact-main-content input, 
+	section .contact-main-content textarea,
+	section .contact-main-content input::placeholder, 
+	section .contact-main-content textarea::placeholder {
+		font-size: 14px;
 	}
 }
 @media screen and (max-width: 1200px) {

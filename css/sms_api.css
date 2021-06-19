@@ -351,7 +351,8 @@ section .why-sms .submitbutton button:hover {
 }
 @media screen and (max-width: 1400px) {
 	section .rivet-title {
-		padding: 80px 0 190px;
+		padding: 80px 0 120px;
+		background-size: 800px auto;
 	}
 	section .article-text {
 		padding-top: 85px;
@@ -361,26 +362,41 @@ section .why-sms .submitbutton button:hover {
 		top: 900px;
 		right: calc((100% - 1140px)/2 + 12px);
 	}
+	section .sms-api-service {
+		padding-top: 100px;
+		margin-bottom: 50px;
+	}
+	section .sms-api-service .download {
+		height: 40px;
+		width: 500px;
+	}
+	section .sms-api-service .download input {
+		width: 250px;
+	}
 	section .sms-api-service p,
 	section .article-text p,
 	section .why-sms p,
-	section .salient-features p {
+	section .salient-features p,
+	.first-letter {
+		font-size: 14px;
+	}
+	section .sms-api-service .download button {
 		font-size: 16px;
 	}
 	section .sms-api-service h1,
 	section .why-sms h3,
 	section .rivet-title h1 {
-		font-size: 32px;
+		font-size: 28px;
 	}
 	section .rivet-title h3,
 	section .rivet-title p {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	section .rivet-title h2 {
-		font-size: 28px;
+		font-size: 26px;
 	}
 	section .rivet-title button {
-		width: 210px;
+		width: 200px;
 		height: 40px;
 		font-size: 18px;
 	}
@@ -397,23 +413,29 @@ section .why-sms .submitbutton button:hover {
 		padding: 10px 0;
 	}
 	section .article-text h1 {
-		font-size: 25px;
-		margin-bottom: 40px;
+		font-size: 22px;
+		margin-bottom: 30px;
 	}
 	section .salient-features h1 {
-		font-size: 32px;
+		font-size: 28px;
 		margin-bottom: 70px;
 	}
 	section .salient-features h2,
 	section .why-sms-item h2 {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	section .why-sms h1 {
-		font-size: 32px;
+		font-size: 28px;
 		margin-bottom: 50px;
 	}
 	section .why-sms label {
 		font-size: 16px;
+	}
+	section .why-sms input, 
+	section .why-sms input::placeholder, 
+	section .why-sms textarea, section 
+	.why-sms textarea::placeholder {
+		font-size: 14px;
 	}
 }
 @media screen and (max-width: 1200px) {
