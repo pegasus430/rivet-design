@@ -369,30 +369,33 @@ section .why-sms .submitbutton button:hover {
 	section .article-text p,
 	section .why-sms p,
 	section .salient-features p {
+		font-size: 15px;
+		line-height: 32px;
+	}
+	section .why-sms input, section .why-sms input::placeholder, section .why-sms textarea, section .why-sms textarea::placeholder {
 		font-size: 16px;
 	}
 	section .sms-api-service h1,
 	section .why-sms h3,
-	section .rivet-title h1 {
-		font-size: 32px;
+	section .rivet-title h1,
+	section .sms-api-service h1 {
+		font-size: 28px;
 	}
 	section .rivet-title h3,
 	section .rivet-title p {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	section .rivet-title h2 {
-		font-size: 28px;
+		font-size: 22px;
 	}
-	section .rivet-title button {
-		width: 210px;
-		height: 40px;
-		font-size: 18px;
+	section .rivet-title button,
+	section .why-sms .submitbutton button {
+		width: 170px;
+		height: 36px;
+		font-size: 16px;
 	}
 	section .sms-api-ser {
 		padding-top: 100px;
-	}
-	section .sms-api-service h1 {
-		margin-bottom: 30px;
 	}
 	section .sms-api-service p {
 		margin-bottom: 35px;
@@ -412,7 +415,7 @@ section .why-sms .submitbutton button:hover {
 		height: 430px;
 	}
 	section .article-text h1 {
-		font-size: 25px;
+		font-size: 24px;
 		margin-bottom: 40px;
 	}
 	section .salient-features h1 {
@@ -421,10 +424,10 @@ section .why-sms .submitbutton button:hover {
 	}
 	section .salient-features h2,
 	section .why-sms-item h2 {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	section .why-sms h1 {
-		font-size: 32px;
+		font-size: 28px;
 		margin-bottom: 40px;
 	}
 	section .why-sms p {
@@ -437,7 +440,7 @@ section .why-sms .submitbutton button:hover {
 		height: 270px;
 	}
 	section .why-sms label {
-		font-size: 16px;
+		font-size: 15px;
 	}
 	section .sms-api-service {
 		padding-top: 90px;

@@ -278,6 +278,15 @@
 		<script type="text/javascript">
 			let pos = {left: 0, x: 0};
 			$(document).ready(function(){
+				$(document).scroll(function() {
+					if ($(window).scrollTop() > 0) {
+						$("nav ul li a").css({'color': 'blue'})	
+						$(".nav-button button").css({'color': 'blue'})	
+					} else {
+						$("nav ul li a").css({'color': 'black'})	
+						$(".nav-button button").css({'color': 'black'})	
+					}
+				});
   				$(".navbar-toggle").click(function(){
     				$("#navlist").toggle();
   				});

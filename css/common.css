@@ -167,7 +167,7 @@ nav ul li a {
 	text-decoration: none;
 }
 nav ul li a:hover {
-	color: #D2302C;
+	color: #D2302C !important;
 }
 nav .login-button,
 nav .register-button {
@@ -375,7 +375,7 @@ footer .conditions .paypalimgbar {
 		margin-right: 0;
 	}
 	section .receive-callbackbar h1 {
-		font-size: 30px;
+		font-size: 26px;
 	}
 	.bottom .email-bottom,
 	.bottom .phone-bottom {
@@ -385,7 +385,7 @@ footer .conditions .paypalimgbar {
 @media screen and (max-width: 1400px) {
 	section .receive-callbackbar input,
 	section .receive-callbackbar input::placeholder {
-		font-size: 16px;
+		font-size: 15px;
 	}
 	.bottom {
 		padding: 70px 0 80px;
@@ -394,35 +394,39 @@ footer .conditions .paypalimgbar {
 		width: 235px;
 	}
 	.bottom button {
-		width: 210px;
-		height: 40px;
-		font-size: 18px;
+		width: 170px;
+		height: 36px;
+		font-size: 16px;
+	}
+	section .receive-callbackbar button {
+		font-size: 16px;
 	}
 	.bottom h4 {
 		margin-bottom: 30px;
 	}
 	.bottom h6 {
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.bottom h5 {
-		font-size: 20px;
+		font-size: 18px;
 	}
 	section .receive-callbackbar p,
 	section .receive-callbackbar label {
 		max-width: 100%;
-		font-size: 16px;
+		font-size: 15px;
+		line-height: 32px;
 	}
 	section .receive-callbackbar .callbackbar-text {
 		margin-bottom: 20px;
 	}
 	nav ul li {
-		font-size: 16px;
+		font-size: 15px;
 		margin-right: 26px;
 	}
 	nav .login-button, nav .register-button {
 		width: 100px;
 		height: 35px;
-		font-size: 16px;
+		font-size: 15px;
 	}
 	.bottom .form-call-back,
 	.bottom .contact-info,
@@ -432,14 +436,14 @@ footer .conditions .paypalimgbar {
 	.bottom p,
 	.bottom h4,
 	.bottom label {
-		font-size: 16px;
-		line-height: 26px;
+		font-size: 15px;
+		line-height: 24px;
 	}
 	.bottom label {
 		line-height: 20px;
 	}
 	footer p, footer a {
-		font-size: 16px;
+		font-size: 15px;
 	}
 }
 @media screen and (max-width:1200px) {
